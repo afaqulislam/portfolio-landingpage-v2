@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Afaq Ul Islam — Portfolio Landing Page
+
+A modern, animated portfolio landing page built with Next.js, TypeScript and Tailwind CSS — premium glassmorphism, a single constant accent colour, fluid motion and an accessibility-first build.
+
+- Repository: https://github.com/afaqulislam/portfolio-landingpage-v2
+
+## Features
+
+- **Premium glassmorphism UI** — double-bezel cards, film-grain overlay and layered depth without visual noise.
+- **One constant accent colour** — a single cyan hue (`#22d3ee`) used consistently across the whole UI, with no gradients anywhere.
+- **Scroll-reveal animations** — lightweight `IntersectionObserver` reveals that respect `prefers-reduced-motion`.
+- **Accessible by default** — semantic landmarks, a skip link, keyboard-friendly navigation, visible focus rings and tested colour contrast.
+- **Fully responsive** — fluid layouts from mobile through ultra-wide.
+- **Performance focused** — server-first components, GPU-only animations and stable layout.
+- **Content-driven** — all copy lives in a single `lib/data.ts` file.
+
+## Sections
+
+Hero · About · Skills / Tech Stack · Projects · Experience / Timeline · Testimonials · Contact
+
+## Tech Stack
+
+| Layer     | Technology                          |
+| --------- | ----------------------------------- |
+| Framework | Next.js 15 (App Router)             |
+| Language  | TypeScript                          |
+| UI        | React 19                            |
+| Styling   | Tailwind CSS 3.4                    |
+| Icons     | lucide-react                        |
+| Fonts     | Geist (local, via `next/font/local`) |
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18.18 or newer
+
+### Install and run
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 to view it in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command           | Description                     |
+| ----------------- | ------------------------------- |
+| `npm run dev`     | Start the dev server (Turbopack) |
+| `npm run build`   | Create a production build       |
+| `npm run start`   | Run the production build        |
+| `npm run lint`    | Lint with ESLint                |
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+portfolio-landingpage-v2/
+├─ app/
+│  ├─ components/     # Section and layout components
+│  ├─ fonts/          # Geist variable fonts
+│  ├─ globals.css     # Design tokens, utilities and base styles
+│  ├─ layout.tsx      # Root layout, metadata and backdrop
+│  └─ page.tsx        # Section composition
+├─ lib/
+│  ├─ data.ts         # All site content (edit here)
+│  └─ utils.ts        # `cn` class-merge helper
+├─ public/
+│  └─ portrait.svg    # Hero artwork
+├─ tailwind.config.ts
+└─ next.config.ts
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Content** — edit `lib/data.ts` for projects, experience, testimonials, skills and socials.
+- **Accent colour** — change `--brand-cyan` in `app/globals.css`.
+- **Metadata** — update `metadata` in `app/layout.tsx`.
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is ready to deploy on any platform that supports Next.js. The simplest option is [Vercel](https://vercel.com/new):
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push this repository to GitHub.
+2. Import it into Vercel.
+3. Deploy — no extra configuration required.
+
+## Author
+
+**Afaq Ul Islam** — Frontend Developer
+
+- GitHub: https://github.com/afaqulislam
+- Repository: https://github.com/afaqulislam/portfolio-landingpage-v2

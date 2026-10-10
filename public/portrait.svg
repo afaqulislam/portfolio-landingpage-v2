@@ -1,0 +1,24 @@
+<svg width="640" height="800" viewBox="0 0 640 800" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract portrait of Afaq Ul Islam">
+  <defs>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="800" fill="#050505"/>
+
+  <g filter="url(#soft)">
+    <circle cx="320" cy="300" r="220" fill="#22d3ee" opacity="0.16"/>
+    <circle cx="200" cy="200" r="120" fill="#22d3ee" opacity="0.12"/>
+    <circle cx="460" cy="560" r="150" fill="#22d3ee" opacity="0.10"/>
+  </g>
+
+  <g stroke="#22d3ee" fill="none">
+    <circle cx="320" cy="330" r="150" stroke-width="2.5"/>
+    <circle cx="320" cy="330" r="210" stroke-width="2.5" opacity="0.4"/>
+  </g>
+
+  <text x="320" y="300" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="220" font-weight="600" fill="#22d3ee">A</text>
+
+  <text x="320" y="700" text-anchor="middle" font-family="Geist Mono, monospace" font-size="18" letter-spacing="8" fill="#ffffff" opacity="0.5">FRONTEND DEVELOPER</text>
+</svg>
