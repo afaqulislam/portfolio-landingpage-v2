@@ -17,24 +17,24 @@ export default function Hero() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[hsl(var(--brand-cyan))] opacity-75" />
                 <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[hsl(var(--brand-cyan))]" />
               </span>
-              Available for select projects
+              Open to select work — Karachi, Pakistan
             </span>
           </Reveal>
 
           <Reveal delay={80}>
             <h1 className="mt-6 text-balance text-5xl font-semibold leading-[1.03] tracking-tight sm:text-6xl lg:text-7xl">
-              Frontend developer <br className="hidden sm:block" />
-              crafting{" "}
-              <span className="accent-text">interfaces that feel alive.</span>
+              Full-stack &amp; AI engineer <br className="hidden sm:block" />
+              building{" "}
+              <span className="accent-text">products that ship.</span>
             </h1>
           </Reveal>
 
           <Reveal delay={160}>
             <p className="mt-7 max-w-xl text-pretty text-base leading-relaxed text-white/60 sm:text-lg">
               I&apos;m{" "}
-              <span className="font-medium text-white/90">Afaq Ul Islam</span> — I
-              turn complex products into fast, accessible and beautifully
-              engineered experiences with React, Next.js and TypeScript.
+              <span className="font-medium text-white/90">Afaq Ul Islam</span> — Co-Founder &amp; COO at Neofyx. I
+              design, build and ship full-stack web applications, AI-powered
+              automation and SaaS products from spec to deployment.
             </p>
           </Reveal>
 
@@ -50,7 +50,11 @@ export default function Hero() {
                   />
                 </span>
               </a>
-              <a href="#contact" className="cta-ghost">
+              <a
+                href="/Afaq_Ul_Islam_Resume.pdf"
+                download
+                className="cta-ghost"
+              >
                 <Download className="size-4" strokeWidth={1.5} aria-hidden="true" />
                 Download CV
               </a>
@@ -94,15 +98,15 @@ export default function Hero() {
                 strokeWidth={1.5}
                 aria-hidden="true"
               />
-              <span className="text-xs font-medium">Pixel-perfect UI</span>
+              <span className="text-xs font-medium">Co-Founder &amp; COO</span>
             </div>
 
             <div className="absolute -right-3 bottom-10 hidden rounded-2xl border border-white/10 bg-[#0a0a0b]/80 px-3.5 py-3 backdrop-blur-xl sm:block">
               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40">
-                Lighthouse
+                Open Source
               </p>
               <p className="mt-1 text-2xl font-semibold tracking-tight">
-                100<span className="text-sm text-white/40">/100</span>
+                70+<span className="text-sm text-white/40"> repos</span>
               </p>
             </div>
           </Reveal>

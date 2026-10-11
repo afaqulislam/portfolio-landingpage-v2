@@ -8,6 +8,9 @@ const spans = [
   "lg:col-span-1",
   "lg:col-span-1",
   "lg:col-span-2",
+  "lg:col-span-1",
+  "lg:col-span-1",
+  "lg:col-span-1",
 ];
 
 export default function Skills() {
@@ -16,8 +19,8 @@ export default function Skills() {
       <div className="container">
         <SectionHeading
           eyebrow="Skills"
-          title="A toolkit honed for modern web products."
-          description="Deep expertise across the frontend stack — from architecture and design systems to motion, performance and accessibility."
+          title="A toolkit honed across the full stack."
+          description="Languages, frontend, backend, AI agents, auth and cloud — the tools I use to ship working software end to end."
         />
 
         <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -27,7 +30,7 @@ export default function Skills() {
               <Reveal
                 key={group.title}
                 delay={index * 80}
-                className={cn("h-full", spans[index])}
+                className={cn("h-full", spans[index % spans.length])}
               >
                 <div className="bezel h-full">
                   <div className="bezel-core flex h-full flex-col p-6 sm:p-7">

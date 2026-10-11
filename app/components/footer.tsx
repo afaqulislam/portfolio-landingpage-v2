@@ -1,4 +1,5 @@
 import { ArrowUp } from "lucide-react";
+import Image from "next/image";
 import { socials } from "@/lib/data";
 
 const columns = [
@@ -14,7 +15,7 @@ const columns = [
     title: "More",
     links: [
       { label: "Experience", href: "#experience" },
-      { label: "Voices", href: "#testimonials" },
+      { label: "Milestones", href: "#achievements" },
       { label: "Contact", href: "#contact" },
     ],
   },
@@ -28,14 +29,21 @@ export default function Footer() {
           <div className="md:col-span-5">
             <a
               href="#home"
-              className="flex items-center gap-1.5 text-lg font-semibold tracking-tight"
+              className="flex items-center gap-2.5 text-lg font-semibold tracking-tight"
             >
-              <span className="accent-text">Afaq</span>
-              <span className="h-1.5 w-1.5 rounded-full bg-[hsl(var(--brand-cyan))]" />
+              <Image
+                src="/aui-mark.svg"
+                alt="AUI — Afaq Ul Islam"
+                width={36}
+                height={36}
+                unoptimized
+                className="h-9 w-9 shrink-0"
+              />
+              <span>Afaq Ul Islam</span>
             </a>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/50">
-              Frontend developer crafting fast, accessible and beautifully
-              engineered web experiences.
+              Full-stack &amp; AI engineer and Co-Founder &amp; COO at Neofyx,
+              building web apps, AI automation and SaaS products.
             </p>
             <div className="mt-6 flex items-center gap-3">
               {socials.map((social) => {
@@ -90,11 +98,8 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/[0.08] pt-6 text-xs text-white/40 sm:flex-row">
-          <p>
+          <p className="mx-auto sm:mx-0">
             &copy; {new Date().getFullYear()} Afaq Ul Islam. All rights reserved.
-          </p>
-          <p className="font-mono uppercase tracking-[0.18em]">
-            Built with Next.js &amp; Tailwind
           </p>
         </div>
       </div>

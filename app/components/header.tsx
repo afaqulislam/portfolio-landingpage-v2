@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -9,7 +10,7 @@ const NAV = [
   { id: "skills", label: "Skills" },
   { id: "work", label: "Work" },
   { id: "experience", label: "Experience" },
-  { id: "testimonials", label: "Voices" },
+  { id: "achievements", label: "Milestones" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -68,10 +69,17 @@ export default function Header() {
       >
         <a
           href="#home"
-          className="group flex items-center gap-1.5 rounded-full px-3 py-1.5 text-base font-semibold tracking-tight"
+          className="group flex items-center gap-2.5 rounded-full px-2.5 py-1 text-base font-semibold tracking-tight"
         >
-          <span className="accent-text">Afaq</span>
-          <span className="h-1.5 w-1.5 rounded-full bg-[hsl(var(--brand-cyan))] transition-transform duration-500 ease-fluid group-hover:scale-150" />
+          <Image
+            src="/aui-mark.svg"
+            alt="AUI — Afaq Ul Islam"
+            width={32}
+            height={32}
+            unoptimized
+            className="h-8 w-8 shrink-0 transition-transform duration-500 ease-fluid group-hover:scale-105"
+          />
+          <span>Afaq Ul Islam</span>
         </a>
 
         <nav

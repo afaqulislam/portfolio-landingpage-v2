@@ -58,8 +58,8 @@ export default function Contact() {
           </Reveal>
           <Reveal delay={140}>
             <p className="mt-5 max-w-md text-pretty leading-relaxed text-white/55">
-              Have a product to launch or a frontend to rescue? Tell me about it
-              — I usually reply within a day.
+              Have a product, an AI agent or an automation workflow in mind? Tell
+              me about it — I usually reply within a day.
             </p>
           </Reveal>
 
@@ -234,8 +234,8 @@ export default function Contact() {
                       ) : null}
                     </div>
 
-                    <div className="flex items-center gap-4 pt-2">
-                      <button type="submit" className="cta">
+                    <div className="flex flex-col items-stretch gap-4 pt-2 sm:flex-row sm:items-center">
+                      <button type="submit" className="cta w-full justify-center sm:w-auto">
                         Send message
                         <span className="cta-icon">
                           <ArrowUpRight
@@ -245,13 +245,13 @@ export default function Contact() {
                           />
                         </span>
                       </button>
-                      <p className="text-xs text-white/40">
+                      <p className="text-center text-xs text-white/40 sm:text-left">
                         Or email{" "}
                         <a
-                          href="mailto:hello@afaq.dev"
+                          href="mailto:afaqulislam707@gmail.com"
                           className="text-white/70 underline-offset-4 hover:underline"
                         >
-                          hello@afaq.dev
+                          afaqulislam707@gmail.com
                         </a>
                       </p>
                     </div>

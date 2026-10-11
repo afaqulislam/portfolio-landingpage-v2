@@ -11,23 +11,22 @@ export default function About() {
           </Reveal>
           <Reveal delay={80}>
             <h2 className="mt-5 text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl">
-              I build with intent — clarity, speed and craft.
+              I ship end to end — web, AI and automation.
             </h2>
           </Reveal>
           <Reveal delay={140}>
             <div className="mt-6 space-y-5 text-pretty leading-relaxed text-white/55">
               <p>
-                I&apos;m a frontend developer focused on turning ambitious
-                product ideas into interfaces that feel effortless. My work sits
-                at the intersection of engineering and design: semantic,
-                accessible markup, sensible architecture and motion that
-                communicates.
+                I&apos;m a full-stack and AI engineer with hands-on, end-to-end
+                experience building web applications, AI-powered automation
+                systems and SaaS products. As Co-Founder and COO at Neofyx, I
+                lead product engineering and client delivery.
               </p>
               <p>
-                Over the past six years I&apos;ve shipped storefronts,
-                dashboards and design systems — always optimising for the people
-                who use them. I care about the details others skip: focus states,
-                empty states, loading states and the last 5% of polish.
+                I&apos;m comfortable scoping requirements, architecting
+                solutions and shipping working software independently across
+                modern web and AI stacks — optimising for the details others
+                skip: performance, accessibility and the last 5% of polish.
               </p>
             </div>
           </Reveal>
@@ -36,7 +35,7 @@ export default function About() {
               <span className="accent-text text-2xl font-semibold">Afaq</span>
               <span className="h-8 w-px bg-white/10" />
               <span className="font-mono text-xs uppercase tracking-[0.2em] text-white/40">
-                Frontend Developer
+                Full-Stack &amp; AI Engineer
               </span>
             </div>
           </Reveal>

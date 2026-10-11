@@ -11,7 +11,7 @@ export default function Experience() {
             <SectionHeading
               eyebrow="Experience"
               title="A track record of shipping."
-              description="Six years of building products end-to-end — from first commit to production at scale."
+              description="From co-founding Neofyx to internships and freelance builds — product work delivered end to end."
             />
           </div>
         </div>

@@ -20,32 +20,37 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://portfolio-landingpage-v2-aui.vercel.app"),
+  applicationName: "AUI — Afaq Ul Islam",
+  creator: "Afaq Ul Islam",
   title: {
-    default: "Afaq Ul Islam — Frontend Developer",
+    default: "Afaq Ul Islam — Full-Stack & AI Engineer",
     template: "%s | Afaq Ul Islam",
   },
   description:
-    "Afaq Ul Islam — frontend developer crafting fast, accessible, and beautifully engineered web experiences with React, Next.js and TypeScript.",
+    "Full-stack & AI engineer and Co-Founder & COO at Neofyx, building web applications, AI-powered automation systems and SaaS products from Karachi, Pakistan.",
   keywords: [
     "Afaq Ul Islam",
-    "Frontend Developer",
+    "Full-Stack Developer",
+    "AI Engineer",
+    "Neofyx",
     "React",
     "Next.js",
+    "Python",
     "TypeScript",
     "Portfolio",
   ],
   authors: [{ name: "Afaq Ul Islam" }],
   openGraph: {
-    title: "Afaq Ul Islam — Frontend Developer",
+    title: "Afaq Ul Islam — Full-Stack & AI Engineer",
     description:
-      "Crafting fast, accessible, and beautifully engineered web experiences.",
+      "Building web applications, AI-powered automation and SaaS products end to end.",
     type: "website",
     siteName: "Afaq Ul Islam",
     url: "https://portfolio-landingpage-v2-aui.vercel.app",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Afaq Ul Islam — Frontend Developer",
+    title: "Afaq Ul Islam — Full-Stack & AI Engineer",
   },
 };
 

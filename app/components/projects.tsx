@@ -4,7 +4,18 @@ import SectionHeading from "./section-heading";
 import { projects } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
-const spans = ["lg:col-span-2", "lg:col-span-1", "lg:col-span-1", "lg:col-span-2"];
+const spans = [
+  "lg:col-span-2",
+  "lg:col-span-1",
+  "lg:col-span-1",
+  "lg:col-span-2",
+  "lg:col-span-1",
+  "lg:col-span-1",
+  "lg:col-span-1",
+  "lg:col-span-2",
+  "lg:col-span-1",
+  "lg:col-span-1",
+];
 
 export default function Projects() {
   return (
@@ -13,8 +24,8 @@ export default function Projects() {
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <SectionHeading
             eyebrow="Selected work"
-            title="Projects engineered for impact."
-            description="A snapshot of recent product work — from commerce to realtime analytics and design systems."
+            title="Projects built across web and AI."
+            description="A snapshot of what I've shipped — AI agents and automation, full-stack platforms, hackathons and competitions."
           />
           <Reveal delay={160}>
             <a
@@ -32,10 +43,12 @@ export default function Projects() {
             <Reveal
               key={project.title}
               delay={index * 80}
-              className={cn("h-full", spans[index])}
+              className={cn("h-full", spans[index % spans.length])}
             >
               <a
                 href={project.href}
+                target="_blank"
+                rel="noreferrer"
                 className="bezel group block h-full transition-transform duration-500 ease-fluid hover:-translate-y-1"
               >
                 <div className="bezel-core flex h-full flex-col overflow-hidden">

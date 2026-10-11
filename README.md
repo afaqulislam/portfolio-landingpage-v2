@@ -74,7 +74,7 @@ portfolio-landingpage-v2/
 
 ## Customization
 
-- **Content** — edit `lib/data.ts` for projects, experience, testimonials, skills and socials.
+- **Content** — edit `lib/data.ts` for projects, experience, achievements, skills and socials.
 - **Accent colour** — change `--brand-cyan` in `app/globals.css`.
 - **Metadata** — update `metadata` in `app/layout.tsx`.
 
