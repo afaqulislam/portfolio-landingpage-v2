@@ -110,6 +110,7 @@ export type Project = {
   tags: string[];
   year: string;
   href: string;
+  image: string;
   featured?: boolean;
 };
 
@@ -122,6 +123,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "React 19", "Tailwind v4", "Gemini AI"],
     year: "2026",
     href: "https://github.com/afaqulislam/aurelia",
+    image: "/projects/aurelia.svg",
     featured: true,
   },
   {
@@ -132,6 +134,7 @@ export const projects: Project[] = [
     tags: ["Next.js 16", "React 19", "Groq AI", "Framer Motion"],
     year: "2026",
     href: "https://github.com/afaqulislam/tasksnap-ai",
+    image: "/projects/tasksnap-ai.svg",
   },
   {
     title: "StartLaunch AI",
@@ -141,6 +144,7 @@ export const projects: Project[] = [
     tags: ["Multi-Agent AI", "TypeScript", "Reasoning"],
     year: "2026",
     href: "https://github.com/afaqulislam/startuplaunch-ai",
+    image: "/projects/startuplaunch-ai.svg",
   },
   {
     title: "Kisaan Dost AI",
@@ -150,6 +154,7 @@ export const projects: Project[] = [
     tags: ["Google Gemini", "Google Cloud Run", "AI Seekho"],
     year: "2026",
     href: "https://github.com/afaqulislam/kisaan-dost-ai",
+    image: "/projects/kisaan-dost-ai.svg",
     featured: true,
   },
   {
@@ -160,6 +165,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "Sanity CMS", "Clerk", "shadcn/ui"],
     year: "2025",
     href: "https://github.com/afaqulislam/Market-Builder-Hackathon-2025",
+    image: "/projects/morent.svg",
   },
   {
     title: "AUI Blogo",
@@ -169,6 +175,7 @@ export const projects: Project[] = [
     tags: ["Next.js 14", "ISR", "Sanity CMS", "SEO"],
     year: "2025",
     href: "https://github.com/afaqulislam/AUI-Blogo",
+    image: "/projects/aui-blogo.svg",
   },
   {
     title: "ChatAUI",
@@ -178,6 +185,7 @@ export const projects: Project[] = [
     tags: ["Chainlit", "OpenAI Agents SDK", "OAuth 2.0"],
     year: "2025",
     href: "https://github.com/afaqulislam/ChatAUI",
+    image: "/projects/chataui.svg",
   },
   {
     title: "CIRO AI",
@@ -187,6 +195,7 @@ export const projects: Project[] = [
     tags: ["Multi-Agent AI", "AI Seekho", "React"],
     year: "2026",
     href: "https://github.com/afaqulislam/CIRO_AI",
+    image: "/projects/ciro-ai.svg",
   },
   {
     title: "Taskory",
@@ -196,6 +205,7 @@ export const projects: Project[] = [
     tags: ["Python", "FastAPI", "NLP", "JWT"],
     year: "2025",
     href: "https://github.com/afaqulislam/todo-full-stack-ai-chatbot-web-application",
+    image: "/projects/taskory.svg",
   },
   {
     title: "25 Python Projects",
@@ -205,6 +215,7 @@ export const projects: Project[] = [
     tags: ["Python", "Computer Vision", "REST APIs"],
     year: "2025",
     href: "https://github.com/afaqulislam/25-Python-Projects",
+    image: "/projects/25-python-projects.svg",
   },
 ];
 

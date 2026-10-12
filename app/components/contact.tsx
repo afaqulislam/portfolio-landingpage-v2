@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { ArrowUpRight, Check } from "lucide-react";
+import { AlertCircle, ArrowUpRight, Check, Loader2 } from "lucide-react";
 import Reveal from "./reveal";
 import { contactMeta, socials } from "@/lib/data";
 import { cn } from "@/lib/utils";
@@ -14,6 +14,8 @@ const initialForm: FormState = { name: "", email: "", message: "" };
 export default function Contact() {
   const [form, setForm] = useState<FormState>(initialForm);
   const [errors, setErrors] = useState<Errors>({});
+  const [sending, setSending] = useState(false);
+  const [serverError, setServerError] = useState<string | null>(null);
   const [sent, setSent] = useState(false);
 
   function update<K extends keyof FormState>(key: K, value: string) {
@@ -21,7 +23,7 @@ export default function Contact() {
     setErrors((prev) => ({ ...prev, [key]: undefined }));
   }
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const next: Errors = {};
 
@@ -34,7 +36,28 @@ export default function Contact() {
     setErrors(next);
     if (Object.keys(next).length > 0) return;
 
-    setSent(true);
+    setSending(true);
+    setServerError(null);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      const data = (await response.json().catch(() => ({}))) as {
+        error?: string;
+      };
+      if (!response.ok)
+        throw new Error(
+          data.error ?? "Something went wrong. Please try again.",
+        );
+      setSent(true);
+    } catch {
+      setServerError("Something went wrong. Please try again.");
+    } finally {
+      setSending(false);
+    }
   }
 
   const inputClasses = (invalid?: string) =>
@@ -235,25 +258,64 @@ export default function Contact() {
                     </div>
 
                     <div className="flex flex-col items-stretch gap-4 pt-2 sm:flex-row sm:items-center">
-                      <button type="submit" className="cta w-full justify-center sm:w-auto">
-                        Send message
+                      <button
+                        type="submit"
+                        disabled={sending}
+                        aria-busy={sending}
+                        className={cn(
+                          "cta w-full justify-center disabled:cursor-not-allowed disabled:hover:shadow-none sm:w-auto sm:min-w-[190px]",
+                          sending && "disabled:opacity-90",
+                        )}
+                      >
+                        {sending ? "Sending\u2026" : "Send message"}
                         <span className="cta-icon">
-                          <ArrowUpRight
-                            className="size-4"
+                          {sending ? (
+                            <Loader2
+                              className="size-4 animate-spin"
+                              strokeWidth={1.5}
+                              aria-hidden="true"
+                            />
+                          ) : (
+                            <ArrowUpRight
+                              className="size-4"
+                              strokeWidth={1.5}
+                              aria-hidden="true"
+                            />
+                          )}
+                        </span>
+                      </button>
+
+                      {sending ? (
+                        <p className="inline-flex items-center gap-2 text-xs text-white/50">
+                          <span className="relative flex h-1.5 w-1.5 shrink-0">
+                            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[hsl(var(--brand-cyan))] opacity-75" />
+                            <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[hsl(var(--brand-cyan))]" />
+                          </span>
+                          Sending your message\u2026
+                        </p>
+                      ) : serverError ? (
+                        <p
+                          role="alert"
+                          className="inline-flex items-center gap-2 text-center text-xs leading-relaxed text-red-400 sm:text-left"
+                        >
+                          <AlertCircle
+                            className="size-4 shrink-0"
                             strokeWidth={1.5}
                             aria-hidden="true"
                           />
-                        </span>
-                      </button>
-                      <p className="text-center text-xs text-white/40 sm:text-left">
-                        Or email{" "}
-                        <a
-                          href="mailto:afaqulislam707@gmail.com"
-                          className="text-white/70 underline-offset-4 hover:underline"
-                        >
-                          afaqulislam707@gmail.com
-                        </a>
-                      </p>
+                          {serverError}
+                        </p>
+                      ) : (
+                        <p className="text-center text-xs text-white/40 sm:text-left">
+                          Or email{" "}
+                          <a
+                            href="mailto:afaqulislam707@gmail.com"
+                            className="text-white/70 underline-offset-4 hover:underline"
+                          >
+                            afaqulislam707@gmail.com
+                          </a>
+                        </p>
+                      )}
                     </div>
                   </form>
                 )}
