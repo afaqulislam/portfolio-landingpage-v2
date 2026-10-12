@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.4-38bdf8?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/React-19-teal?style=flat-square&logo=react&logoColor=white" alt="React 19" />
-  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License: MIT" />
+  <img src="https://img.shields.io/badge/License-All%20Rights%20Reserved-lightgrey?style=flat-square" alt="License: All Rights Reserved" />
 </p>
 
 <p align="center">
@@ -191,7 +191,9 @@ Contributions are welcome. Please keep the single-accent design language and the
 
 ## License
 
-Distributed under the [MIT License](https://opensource.org/licenses/MIT).
+**© 2026 Afaq Ul Islam. All rights reserved.**
+
+This project is the personal property of **Afaq Ul Islam**. No part of this repository — code, design, copy or assets — may be copied, modified, redistributed or used commercially without explicit written permission from the author.
 
 ---
 

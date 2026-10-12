@@ -1,7 +1,6 @@
 import Reveal from "./reveal";
 import SectionHeading from "./section-heading";
 import { marquee, skillGroups } from "@/lib/data";
-import { cn } from "@/lib/utils";
 
 const spans = [
   "lg:col-span-2",
@@ -30,10 +29,10 @@ export default function Skills() {
               <Reveal
                 key={group.title}
                 delay={index * 80}
-                className={cn("h-full", spans[index % spans.length])}
+                className={spans[index % spans.length]}
               >
-                <div className="bezel h-full">
-                  <div className="bezel-core flex h-full flex-col p-6 sm:p-7">
+                <div className="bezel">
+                  <div className="bezel-core flex flex-col p-6 sm:p-7">
                     <div className="flex items-center justify-between">
                       <div className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.04]">
                         <Icon

@@ -3,7 +3,6 @@ import { ArrowUpRight } from "lucide-react";
 import Reveal from "./reveal";
 import SectionHeading from "./section-heading";
 import { projects } from "@/lib/data";
-import { cn } from "@/lib/utils";
 
 const spans = [
   "lg:col-span-2",
@@ -44,21 +43,16 @@ export default function Projects() {
             <Reveal
               key={project.title}
               delay={index * 80}
-              className={cn("h-full", spans[index % spans.length])}
+              className={spans[index % spans.length]}
             >
               <a
                 href={project.href}
                 target="_blank"
                 rel="noreferrer"
-                className="bezel group block h-full transition-transform duration-500 ease-fluid hover:-translate-y-1"
+                className="bezel group block transition-transform duration-500 ease-fluid hover:-translate-y-1"
               >
-                <div className="bezel-core flex h-full flex-col overflow-hidden">
-                  <div
-                    className={cn(
-                      "relative overflow-hidden",
-                      project.featured ? "min-h-[260px]" : "min-h-[180px]",
-                    )}
-                  >
+                <div className="bezel-core flex flex-col overflow-hidden">
+                  <div className="relative aspect-[5/3] overflow-hidden">
                     <Image
                       src={project.image}
                       alt={`${project.title} preview`}
@@ -75,7 +69,7 @@ export default function Projects() {
                     </span>
                   </div>
 
-                  <div className="flex flex-1 flex-col p-6 sm:p-7">
+                  <div className="flex flex-col p-6 sm:p-7">
                     <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40">
                       {project.tagline}
                     </p>
@@ -85,7 +79,7 @@ export default function Projects() {
                     <p className="mt-3 text-sm leading-relaxed text-white/50">
                       {project.description}
                     </p>
-                    <ul className="mt-auto flex flex-wrap gap-2 pt-6">
+                    <ul className="mt-6 flex flex-wrap gap-2">
                       {project.tags.map((tag) => (
                         <li
                           key={tag}
