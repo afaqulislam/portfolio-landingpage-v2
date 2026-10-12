@@ -32,7 +32,8 @@ export async function POST(request: Request) {
   if (message.length < 10)
     return NextResponse.json(
       {
-        error: "Please add a little more detail (10+ characters).",
+        error:
+          "Your message is a little short — please add at least 10 characters.",
       },
       { status: 400 },
     );
@@ -62,7 +63,7 @@ export async function POST(request: Request) {
 
   if (!response.ok) {
     return NextResponse.json(
-      { error: "Email delivery failed. Please try again." },
+      { error: "Something went wrong. Please try again." },
       { status: 502 },
     );
   }

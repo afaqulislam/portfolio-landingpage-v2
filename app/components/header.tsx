@@ -10,6 +10,7 @@ const NAV = [
   { id: "skills", label: "Skills" },
   { id: "work", label: "Work" },
   { id: "experience", label: "Experience" },
+  { id: "education", label: "Education" },
   { id: "achievements", label: "Milestones" },
   { id: "contact", label: "Contact" },
 ];

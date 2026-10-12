@@ -267,6 +267,46 @@ export const experiences: Experience[] = [
   },
 ];
 
+export type Education = {
+  title: string;
+  institution: string;
+  period?: string;
+  status?: string;
+  bullets?: string[];
+};
+
+export const education: Education[] = [
+  {
+    title: "BS Computational Mathematics",
+    institution: "University of Karachi",
+    status: "In Progress",
+  },
+  {
+    title:
+      "Certificate, Full-Stack Development & AI / AI Agent Systems / Cloud & Web Development",
+    institution: "Governor Sindh Initiative for GenAI, Web3, and Metaverse (GIAIC)",
+    period: "Feb 2024 – Sep 2026",
+    bullets: [
+      "Selected participant in a competitive, government-backed AI and cloud program (Batch 1); top 10% performer, maintaining 90–95th percentile across three quarters.",
+      "Program covers full-stack web development (Next.js, React, TypeScript, FastAPI), database architecture, authentication, scalable system design, AI integrations, agent-based workflows, spec-driven development, and context engineering.",
+    ],
+  },
+  {
+    title: "Intermediate, Pre-Engineering",
+    institution: "Aisha Bawany Government College",
+    period: "Aug 2022 – Aug 2024",
+    bullets: [
+      "Grade A. Focused on Mathematics, Physics, and Chemistry, preparing for higher education in IT, engineering, and software development.",
+    ],
+  },
+  {
+    title: "SSC, Science",
+    institution: "Sadiq Public Primary & Secondary School",
+    period: "May 2020 – May 2022",
+    bullets: ["Grade A1."],
+  },
+];
+
 export type Achievement = {
   title: string;
   text: string;

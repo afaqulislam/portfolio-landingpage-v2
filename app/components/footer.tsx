@@ -1,5 +1,6 @@
 import { ArrowUp } from "lucide-react";
 import Image from "next/image";
+import GlassWordmark from "./glass-wordmark";
 import { socials } from "@/lib/data";
 
 const columns = [
@@ -15,6 +16,7 @@ const columns = [
     title: "More",
     links: [
       { label: "Experience", href: "#experience" },
+      { label: "Education", href: "#education" },
       { label: "Milestones", href: "#achievements" },
       { label: "Contact", href: "#contact" },
     ],
@@ -97,22 +99,14 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/[0.08] pt-6 text-xs text-white/40 sm:flex-row">
-          <p className="mx-auto sm:mx-0">
+        <div className="mt-12 border-t border-white/[0.08] pt-6 text-xs text-white/40">
+          <p className="text-center">
             &copy; {new Date().getFullYear()} Afaq Ul Islam. All rights reserved.
           </p>
         </div>
 
-        <div className="mt-16 flex justify-center">
-          <a
-            href="#home"
-            aria-label="Back to top — Afaq Ul Islam"
-            className="group inline-block"
-          >
-            <span className="font-mono text-4xl font-semibold uppercase leading-none tracking-[0.3em] text-white/35 transition-all duration-500 ease-fluid group-hover:text-[hsl(var(--brand-cyan))] group-hover:[text-shadow:0_0_45px_hsla(187,86%,53%,0.7)] group-focus-visible:text-[hsl(var(--brand-cyan))] group-focus-visible:[text-shadow:0_0_45px_hsla(187,86%,53%,0.7)] sm:text-5xl">
-              Afaq Ul Islam
-            </span>
-          </a>
+        <div className="mt-16">
+          <GlassWordmark />
         </div>
       </div>
     </footer>

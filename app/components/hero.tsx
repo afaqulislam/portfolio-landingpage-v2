@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { ArrowDown, ArrowUpRight, Download, Sparkles } from "lucide-react";
 import Reveal from "./reveal";
+import HeroLogo from "./hero-logo";
 import { stats } from "@/lib/data";
 
 export default function Hero() {
@@ -77,20 +77,9 @@ export default function Hero() {
         </div>
 
         <div className="relative lg:col-span-5">
-          <Reveal delay={200} className="relative mx-auto max-w-sm lg:ml-auto">
-            <div className="bezel">
-              <div className="bezel-core overflow-hidden">
-                <Image
-                  src="/portrait.svg"
-                  alt="Abstract portrait representing Afaq Ul Islam"
-                  width={640}
-                  height={800}
-                  priority
-                  unoptimized
-                  className="h-auto w-full"
-                />
-              </div>
-            </div>
+          <Reveal delay={200} className="relative w-full">
+            <HeroLogo />
+          </Reveal>
 
             <div className="absolute -left-4 top-10 hidden items-center gap-2 rounded-2xl border border-white/10 bg-[#0a0a0b]/80 px-3.5 py-2.5 backdrop-blur-xl sm:flex">
               <Sparkles
@@ -109,7 +98,6 @@ export default function Hero() {
                 70+<span className="text-sm text-white/40"> repos</span>
               </p>
             </div>
-          </Reveal>
         </div>
       </div>
 

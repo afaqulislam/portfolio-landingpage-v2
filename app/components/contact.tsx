@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { AlertCircle, ArrowUpRight, Check, Loader2 } from "lucide-react";
+import { ArrowUpRight, Check, Loader2 } from "lucide-react";
 import Reveal from "./reveal";
 import { contactMeta, socials } from "@/lib/data";
 import { cn } from "@/lib/utils";
@@ -28,10 +28,12 @@ export default function Contact() {
     const next: Errors = {};
 
     if (!form.name.trim()) next.name = "Please enter your name.";
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
+    if (!form.email.trim()) next.email = "Please enter your email address.";
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
       next.email = "Please enter a valid email address.";
     if (form.message.trim().length < 10)
-      next.message = "Please add a little more detail (10+ characters).";
+      next.message =
+        "Your message is a little short — please add at least 10 characters.";
 
     setErrors(next);
     if (Object.keys(next).length > 0) return;
@@ -62,13 +64,13 @@ export default function Contact() {
 
   const inputClasses = (invalid?: string) =>
     cn(
-      "w-full rounded-xl border bg-white/[0.03] px-4 py-3 text-sm text-white placeholder:text-white/30 transition-colors duration-300 focus-visible:outline-none focus-visible:border-[hsl(var(--brand-cyan))] focus-visible:ring-2 focus-visible:ring-[hsl(var(--brand-cyan))]/40",
-      invalid ? "border-red-500/60" : "border-white/10 hover:border-white/20",
+      "w-full rounded-2xl border bg-white/[0.04] px-5 py-4 text-[15px] text-white placeholder:text-white/30 transition-colors duration-300 focus-visible:outline-none focus-visible:border-[hsl(var(--brand-cyan))] focus-visible:ring-2 focus-visible:ring-[hsl(var(--brand-cyan))]/40 sm:text-base sm:px-6 sm:py-5",
+      invalid ? "border-[hsl(var(--brand-cyan))]/60" : "border-white/10 hover:border-white/20",
     );
 
   return (
     <section id="contact" className="py-24 sm:py-28 lg:py-32">
-      <div className="container grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
+      <div className="container grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-5">
           <Reveal>
             <span className="eyebrow">Contact</span>
@@ -87,7 +89,7 @@ export default function Contact() {
           </Reveal>
 
           <Reveal delay={200}>
-            <dl className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2">
+            <dl className="mt-8 grid grid-cols-1 gap-3 sm:mt-10 sm:grid-cols-2">
               {contactMeta.map((meta) => {
                 const Icon = meta.icon;
                 return (
@@ -113,7 +115,7 @@ export default function Contact() {
           </Reveal>
 
           <Reveal delay={260}>
-            <div className="mt-8 flex items-center gap-3">
+            <div className="mt-6 flex items-center gap-3 sm:mt-8">
               {socials.map((social) => {
                 const Icon = social.icon;
                 return (
@@ -144,8 +146,8 @@ export default function Contact() {
                       Message received
                     </h3>
                     <p className="mt-3 max-w-sm text-sm leading-relaxed text-white/55">
-                      Thanks, {form.name.split(" ")[0] || "there"} — I&apos;ll get
-                      back to you shortly.
+                      Thanks for reaching out — I&apos;ll get back to you within a
+                      day.
                     </p>
                     <button
                       type="button"
@@ -159,12 +161,12 @@ export default function Contact() {
                     </button>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} noValidate className="space-y-5">
-                    <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                  <form onSubmit={handleSubmit} noValidate className="flex h-full flex-col gap-4 sm:gap-5">
+                    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5">
                       <div>
                         <label
                           htmlFor="name"
-                          className="mb-2 block text-sm text-white/70"
+                          className="mb-2.5 block text-sm text-white/70 sm:text-[15px]"
                         >
                           Name
                         </label>
@@ -184,7 +186,7 @@ export default function Contact() {
                           <p
                             id="name-error"
                             role="alert"
-                            className="mt-2 text-xs text-red-400"
+                            className="mt-2 text-xs text-[hsl(var(--brand-cyan))]"
                           >
                             {errors.name}
                           </p>
@@ -194,7 +196,7 @@ export default function Contact() {
                       <div>
                         <label
                           htmlFor="email"
-                          className="mb-2 block text-sm text-white/70"
+                          className="mb-2.5 block text-sm text-white/70 sm:text-[15px]"
                         >
                           Email
                         </label>
@@ -218,7 +220,7 @@ export default function Contact() {
                           <p
                             id="email-error"
                             role="alert"
-                            className="mt-2 text-xs text-red-400"
+                            className="mt-2 text-xs text-[hsl(var(--brand-cyan))]"
                           >
                             {errors.email}
                           </p>
@@ -226,17 +228,17 @@ export default function Contact() {
                       </div>
                     </div>
 
-                    <div>
+                    <div className="flex flex-1 flex-col">
                       <label
                         htmlFor="message"
-                        className="mb-2 block text-sm text-white/70"
+                        className="mb-2.5 block text-sm text-white/70 sm:text-[15px]"
                       >
                         Message
                       </label>
                       <textarea
                         id="message"
                         name="message"
-                        rows={5}
+                        rows={4}
                         value={form.message}
                         onChange={(event) => update("message", event.target.value)}
                         placeholder="Tell me about your project..."
@@ -244,20 +246,23 @@ export default function Contact() {
                         aria-describedby={
                           errors.message ? "message-error" : undefined
                         }
-                        className={cn("resize-none", inputClasses(errors.message))}
+                        className={cn(
+                          "min-h-[150px] flex-1 resize-none sm:min-h-[220px]",
+                          inputClasses(errors.message),
+                        )}
                       />
                       {errors.message ? (
                         <p
                           id="message-error"
                           role="alert"
-                          className="mt-2 text-xs text-red-400"
+                          className="mt-2 text-xs text-[hsl(var(--brand-cyan))]"
                         >
                           {errors.message}
                         </p>
                       ) : null}
                     </div>
 
-                    <div className="flex flex-col items-stretch gap-4 pt-2 sm:flex-row sm:items-center">
+                    <div className="flex flex-col items-stretch gap-3 pt-1 sm:flex-row sm:items-center sm:gap-4">
                       <button
                         type="submit"
                         disabled={sending}
@@ -285,37 +290,21 @@ export default function Contact() {
                         </span>
                       </button>
 
-                      {sending ? (
-                        <p className="inline-flex items-center gap-2 text-xs text-white/50">
-                          <span className="relative flex h-1.5 w-1.5 shrink-0">
-                            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[hsl(var(--brand-cyan))] opacity-75" />
-                            <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[hsl(var(--brand-cyan))]" />
-                          </span>
-                          Sending your message\u2026
+                      <p className="text-center text-xs leading-relaxed text-white/40 sm:text-left">
+                          {serverError
+                            ? "Something went wrong. Please try again."
+                            : (
+                                <>
+                                  Prefer email?{" "}
+                                  <a
+                                    href="mailto:afaqulislam707@gmail.com"
+                                    className="text-white/60 underline-offset-4 transition-colors duration-300 hover:text-white hover:underline"
+                                  >
+                                    afaqulislam707@gmail.com
+                                  </a>
+                                </>
+                              )}
                         </p>
-                      ) : serverError ? (
-                        <p
-                          role="alert"
-                          className="inline-flex items-center gap-2 text-center text-xs leading-relaxed text-red-400 sm:text-left"
-                        >
-                          <AlertCircle
-                            className="size-4 shrink-0"
-                            strokeWidth={1.5}
-                            aria-hidden="true"
-                          />
-                          {serverError}
-                        </p>
-                      ) : (
-                        <p className="text-center text-xs text-white/40 sm:text-left">
-                          Or email{" "}
-                          <a
-                            href="mailto:afaqulislam707@gmail.com"
-                            className="text-white/70 underline-offset-4 hover:underline"
-                          >
-                            afaqulislam707@gmail.com
-                          </a>
-                        </p>
-                      )}
                     </div>
                   </form>
                 )}

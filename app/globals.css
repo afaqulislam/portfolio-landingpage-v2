@@ -161,3 +161,125 @@
     filter: none;
   }
 }
+
+/* Hero electric AUI logo */
+.hero-plasma {
+  animation: hero-flicker 8s linear infinite;
+}
+
+@keyframes hero-flicker {
+  0%,
+  3% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  7% {
+    opacity: 0.45;
+  }
+  9% {
+    opacity: 1;
+  }
+  11% {
+    opacity: 0.4;
+  }
+  13% {
+    opacity: 0.9;
+  }
+  16% {
+    opacity: 0.55;
+  }
+  19% {
+    opacity: 1;
+  }
+  23% {
+    opacity: 0.75;
+  }
+  27% {
+    opacity: 1;
+  }
+  84% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.laser {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  will-change: stroke-dashoffset, opacity;
+  animation: hero-draw 8s steps(6, end) infinite;
+}
+
+.laser.wide {
+  stroke: hsl(187 86% 60% / 0.55);
+  stroke-width: 14;
+}
+
+.laser.core {
+  stroke: #eafcff;
+  stroke-width: 6.5;
+}
+
+.laser.dot {
+  stroke-width: 10;
+}
+
+@keyframes hero-draw {
+  0%,
+  2% {
+    stroke-dashoffset: 1;
+  }
+  8% {
+    stroke-dashoffset: 0;
+  }
+  84% {
+    stroke-dashoffset: 0;
+  }
+  90%,
+  100% {
+    stroke-dashoffset: 1;
+  }
+}
+
+.a1 {
+  animation-delay: 0.32s;
+}
+
+.a2 {
+  animation-delay: 0.56s;
+}
+
+.a3 {
+  animation-delay: 0.8s;
+}
+
+.u {
+  animation-delay: 1.04s;
+}
+
+.i {
+  animation-delay: 1.32s;
+}
+
+.dot {
+  animation-delay: 1.68s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-plasma {
+    animation: none;
+    opacity: 1;
+  }
+
+  .laser {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+}
