@@ -18,14 +18,15 @@
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    @apply bg-background;
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply text-foreground font-sans antialiased;
   }
 
   section[id] {
-    scroll-margin-top: 3rem;
+    scroll-margin-top: 4.5rem;
   }
 
   h1,
@@ -48,7 +49,6 @@
   :focus-visible {
     outline: 2px solid hsl(var(--brand-cyan));
     outline-offset: 3px;
-    border-radius: 6px;
   }
 
   /* Film-grain overlay — fixed, non-interactive, never on scroll containers */
@@ -139,6 +139,20 @@
     opacity: 1;
     transform: translateY(0);
     filter: blur(0);
+  }
+
+  @media (hover: none) and (pointer: coarse) {
+    .reveal {
+      filter: none;
+    }
+  }
+
+  @media (scripting: none) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      filter: none;
+    }
   }
 }
 

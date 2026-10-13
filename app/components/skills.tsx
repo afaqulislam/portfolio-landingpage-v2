@@ -69,12 +69,12 @@ export default function Skills() {
         </div>
 
         <div className="mt-16 overflow-hidden">
-          <div className="flex w-max animate-marquee gap-10">
+          <div className="flex w-max animate-marquee">
             {[0, 1].map((copy) => (
               <ul
                 key={copy}
                 aria-hidden={copy === 1}
-                className="flex items-center gap-10"
+                className="flex items-center gap-10 pr-10"
               >
                 {marquee.map((item) => (
                   <li

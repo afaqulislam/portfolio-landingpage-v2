@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[100dvh] items-center pb-20 pt-32 sm:pt-36"
+      className="relative flex min-h-[100dvh] items-center pb-16 pt-28 sm:pt-32 lg:pb-20"
     >
       <div className="container grid grid-cols-1 items-center gap-14 lg:grid-cols-12 lg:gap-10">
         <div className="lg:col-span-7">
@@ -62,7 +62,7 @@ export default function Hero() {
           </Reveal>
 
           <Reveal delay={320}>
-            <dl className="mt-14 grid max-w-lg grid-cols-3 gap-6 border-t border-white/[0.08] pt-8">
+            <dl className="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-white/[0.08] pt-8">
               {stats.map((stat) => (
                 <div key={stat.label}>
                   <dt className="sr-only">{stat.label}</dt>
@@ -77,25 +77,27 @@ export default function Hero() {
         </div>
 
         <div className="relative lg:col-span-5">
-          <Reveal delay={200} className="relative w-full">
+          <Reveal delay={200} className="relative aspect-square w-full">
             <HeroLogo />
           </Reveal>
 
-            <div className="absolute -left-4 top-10 flex items-center gap-2 rounded-2xl border border-white/10 bg-[#0a0a0b]/80 px-3.5 py-2.5 backdrop-blur-xl">
+            <div className="absolute left-0 top-8 flex items-center gap-2 rounded-2xl border border-white/10 bg-[#0a0a0b]/80 px-3 py-2.5 backdrop-blur-xl pointer-events-none md:px-3.5">
               <Sparkles
                 className="size-4 text-[hsl(var(--brand-cyan))]"
                 strokeWidth={1.5}
                 aria-hidden="true"
               />
-              <span className="text-xs font-medium">Co-Founder &amp; COO</span>
+              <span className="text-[11px] font-medium md:text-xs">
+                Co-Founder &amp; COO
+              </span>
             </div>
 
-            <div className="absolute -right-3 bottom-10 rounded-2xl border border-white/10 bg-[#0a0a0b]/80 px-3.5 py-3 backdrop-blur-xl">
+            <div className="absolute bottom-8 right-0 rounded-2xl border border-white/10 bg-[#0a0a0b]/80 px-3 py-3 backdrop-blur-xl pointer-events-none md:px-3.5">
               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40">
-                Open Source
+                Focus
               </p>
-              <p className="mt-1 text-2xl font-semibold tracking-tight">
-                70+<span className="text-sm text-white/40"> repos</span>
+              <p className="mt-1 text-sm font-medium tracking-tight">
+                AI &middot; Automation &middot; Web
               </p>
             </div>
         </div>

@@ -42,11 +42,15 @@ export default function Contact() {
     setServerError(null);
 
     try {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 12000);
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
+        signal: controller.signal,
       });
+      clearTimeout(timeout);
       const data = (await response.json().catch(() => ({}))) as {
         error?: string;
       };
@@ -162,6 +166,14 @@ export default function Contact() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} noValidate className="flex h-full flex-col gap-4 sm:gap-5">
+                    <input
+                      name="website"
+                      type="text"
+                      tabIndex={-1}
+                      autoComplete="off"
+                      aria-hidden="true"
+                      className="absolute -left-[9999px] h-px w-px opacity-0"
+                    />
                     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5">
                       <div>
                         <label
@@ -178,6 +190,7 @@ export default function Contact() {
                           value={form.name}
                           onChange={(event) => update("name", event.target.value)}
                           placeholder="Your name"
+                          maxLength={80}
                           aria-invalid={Boolean(errors.name)}
                           aria-describedby={errors.name ? "name-error" : undefined}
                           className={inputClasses(errors.name)}
@@ -210,6 +223,7 @@ export default function Contact() {
                             update("email", event.target.value)
                           }
                           placeholder="you@example.com"
+                          maxLength={160}
                           aria-invalid={Boolean(errors.email)}
                           aria-describedby={
                             errors.email ? "email-error" : undefined
@@ -242,6 +256,7 @@ export default function Contact() {
                         value={form.message}
                         onChange={(event) => update("message", event.target.value)}
                         placeholder="Tell me about your project..."
+                        maxLength={5000}
                         aria-invalid={Boolean(errors.message)}
                         aria-describedby={
                           errors.message ? "message-error" : undefined
@@ -262,50 +277,49 @@ export default function Contact() {
                       ) : null}
                     </div>
 
-                    <div className="flex flex-col items-stretch gap-3 pt-1 sm:flex-row sm:items-center sm:gap-4">
-                      <button
-                        type="submit"
-                        disabled={sending}
-                        aria-busy={sending}
-                        className={cn(
-                          "cta w-full justify-center disabled:cursor-not-allowed disabled:hover:shadow-none sm:w-auto sm:min-w-[190px]",
-                          sending && "disabled:opacity-90",
-                        )}
-                      >
-                        {sending ? "Sending\u2026" : "Send message"}
-                        <span className="cta-icon">
-                          {sending ? (
-                            <Loader2
-                              className="size-4 animate-spin"
-                              strokeWidth={1.5}
-                              aria-hidden="true"
-                            />
-                          ) : (
-                            <ArrowUpRight
-                              className="size-4"
-                              strokeWidth={1.5}
-                              aria-hidden="true"
-                            />
+                    <div className="flex flex-col items-center gap-2 pt-1">
+                        <button
+                          type="submit"
+                          disabled={sending}
+                          aria-busy={sending}
+                          className={cn(
+                            "cta min-w-[190px] justify-center disabled:cursor-not-allowed disabled:hover:shadow-none",
+                            sending && "disabled:opacity-90",
                           )}
-                        </span>
-                      </button>
+                        >
+                          {sending ? "Sending\u2026" : "Send message"}
+                          <span className="cta-icon">
+                            {sending ? (
+                              <Loader2
+                                className="size-4 animate-spin"
+                                strokeWidth={1.5}
+                                aria-hidden="true"
+                              />
+                            ) : (
+                              <ArrowUpRight
+                                className="size-4"
+                                strokeWidth={1.5}
+                                aria-hidden="true"
+                              />
+                            )}
+                          </span>
+                        </button>
 
-                      <p className="text-center text-xs leading-relaxed text-white/40 sm:text-left">
-                          {serverError
-                            ? "Something went wrong. Please try again."
-                            : (
-                                <>
-                                  Prefer email?{" "}
-                                  <a
-                                    href="mailto:afaqulislam707@gmail.com"
-                                    className="text-white/60 underline-offset-4 transition-colors duration-300 hover:text-white hover:underline"
-                                  >
-                                    afaqulislam707@gmail.com
-                                  </a>
-                                </>
-                              )}
+                        <p className="text-center text-xs leading-relaxed text-white/40">
+                          {serverError ? (
+                            <span className="text-[hsl(var(--brand-cyan))]">
+                              {serverError}{" "}
+                            </span>
+                          ) : null}
+                          Prefer email?{" "}
+                          <a
+                            href="mailto:afaqulislam707@gmail.com"
+                            className="text-white/60 transition-colors duration-300 hover:text-white"
+                          >
+                            afaqulislam707@gmail.com
+                          </a>
                         </p>
-                    </div>
+                      </div>
                   </form>
                 )}
               </div>

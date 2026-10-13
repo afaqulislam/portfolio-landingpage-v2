@@ -18,8 +18,15 @@ const geistMono = localFont({
   display: "swap",
 });
 
+const siteUrl = new URL(
+  process.env.NEXT_PUBLIC_SITE_URL ??
+    (process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : "https://portfolio-landingpage-v2-aui.vercel.app"),
+);
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://portfolio-landingpage-v2-aui.vercel.app"),
+  metadataBase: siteUrl,
   applicationName: "AUI — Afaq Ul Islam",
   creator: "Afaq Ul Islam",
   title: {
@@ -46,7 +53,7 @@ export const metadata: Metadata = {
       "Building web applications, AI-powered automation and SaaS products end to end.",
     type: "website",
     siteName: "Afaq Ul Islam",
-    url: "https://portfolio-landingpage-v2-aui.vercel.app",
+    url: siteUrl,
   },
   twitter: {
     card: "summary_large_image",

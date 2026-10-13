@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -19,6 +19,8 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState("home");
+  const mobileNavRef = useRef<HTMLDivElement>(null);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -35,11 +37,17 @@ export default function Header() {
 
     const observer = new IntersectionObserver(
       (entries) => {
+        let best: HTMLElement | null = null;
+        let bestTop = Infinity;
         for (const entry of entries) {
-          if (entry.isIntersecting) setActive(entry.target.id);
+          if (entry.isIntersecting && entry.boundingClientRect.top < bestTop) {
+            best = entry.target as HTMLElement;
+            bestTop = entry.boundingClientRect.top;
+          }
         }
+        if (best) setActive(best.id);
       },
-      { rootMargin: "-45% 0px -50% 0px", threshold: 0 },
+      { rootMargin: "-35% 0px -35% 0px", threshold: 0 },
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -56,6 +64,15 @@ export default function Header() {
       window.removeEventListener("keydown", onKey);
       document.body.style.overflow = "";
     };
+  }, [open]);
+
+  useEffect(() => {
+    if (open) {
+      const focusable = mobileNavRef.current?.querySelector<HTMLElement>("a");
+      focusable?.focus();
+      return;
+    }
+    menuButtonRef.current?.focus();
   }, [open]);
 
   return (
@@ -110,6 +127,7 @@ export default function Header() {
         </a>
 
         <button
+          ref={menuButtonRef}
           type="button"
           onClick={() => setOpen((value) => !value)}
           aria-expanded={open}
@@ -139,10 +157,15 @@ export default function Header() {
       </div>
 
       <div
+        ref={mobileNavRef}
         id="mobile-nav"
+        inert={!open}
+        aria-hidden={!open}
         className={cn(
-          "fixed inset-0 z-40 flex flex-col justify-center bg-[#050505]/90 px-8 backdrop-blur-3xl transition-opacity duration-500 md:hidden",
-          open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0",
+          "fixed inset-0 z-40 flex flex-col justify-center bg-[#050505]/90 px-8 backdrop-blur-3xl transition-[opacity,visibility] duration-500 md:hidden",
+          open
+            ? "visible pointer-events-auto opacity-100"
+            : "invisible pointer-events-none opacity-0",
         )}
       >
         <nav className="flex flex-col" aria-label="Mobile">

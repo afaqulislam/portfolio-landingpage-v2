@@ -7,13 +7,13 @@ import { projects } from "@/lib/data";
 const spans = [
   "lg:col-span-2",
   "lg:col-span-1",
+  "lg:col-span-2",
   "lg:col-span-1",
   "lg:col-span-2",
   "lg:col-span-1",
-  "lg:col-span-1",
-  "lg:col-span-1",
   "lg:col-span-2",
   "lg:col-span-1",
+  "lg:col-span-2",
   "lg:col-span-1",
 ];
 

@@ -1,7 +1,6 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: "class",
   content: ["./app/**/*.{ts,tsx}", "./lib/**/*.{ts,tsx}"],
   theme: {
     container: {
@@ -19,7 +18,6 @@ const config: Config = {
         12: "0.12",
         15: "0.15",
         35: "0.35",
-        45: "0.45",
         55: "0.55",
       },
       colors: {

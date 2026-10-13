@@ -3,7 +3,7 @@
 import { useRef } from "react";
 
 const textClasses =
-  "font-mono font-semibold uppercase leading-none tracking-[0.25em] text-[clamp(1.5rem,8vw,5.5rem)]";
+  "font-mono font-semibold uppercase leading-none tracking-[0.2em] text-[clamp(1.5rem,8vw,5.5rem)] sm:tracking-[0.25em]";
 
 export default function GlassWordmark() {
   const ref = useRef<HTMLDivElement>(null);
@@ -32,10 +32,11 @@ export default function GlassWordmark() {
         className={`pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-500 ease-fluid group-hover:opacity-100 ${textClasses}`}
         style={{
           background:
-            "radial-gradient(150px circle at var(--shine-x) var(--shine-y), hsl(187 86% 53%), hsla(187, 86%, 53%, 0.35) 45%, transparent 75%)",
+            "radial-gradient(150px circle at var(--shine-x, 50%) var(--shine-y, 40%), hsl(187 86% 53%), hsla(187, 86%, 53%, 0.35) 45%, transparent 75%)",
           WebkitBackgroundClip: "text",
           backgroundClip: "text",
           color: "transparent",
+          WebkitTextFillColor: "transparent",
         }}
       >
         Afaq Ul Islam

@@ -101,6 +101,8 @@ portfolio-landingpage-v2/
 │  ├─ fonts/                # Geist variable fonts
 │  ├─ globals.css           # Design tokens, utilities, base styles
 │  ├─ layout.tsx            # Root layout, metadata, backdrop
+│  ├─ opengraph-image.tsx   # Generated social share image (also twitter-image.tsx)
+│  ├─ not-found.tsx         # Styled 404 page
 │  └─ page.tsx              # Section composition
 ├─ lib/
 │  ├─ data.ts               # All site content (edit here)
@@ -147,12 +149,13 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 | `RESEND_API_KEY`  | ✅ Yes   | —                                    | API key from [resend.com/api-keys](https://resend.com/api-keys) |
 | `CONTACT_TO`      | No       | `afaqulislam707@gmail.com`           | Destination inbox for contact-form messages        |
 | `RESEND_FROM`     | No       | `Afaq Ul Islam <onboarding@resend.dev>` | Verified sender shown in delivered emails      |
+| `NEXT_PUBLIC_SITE_URL` | No  | `https://portfolio-landingpage-v2-aui.vercel.app` | Canonical URL for metadata, Open Graph and the contact-form origin check |
 
 > **Note:** `onboarding@resend.dev` can only send to your own verified email. For other recipients, verify a domain in Resend and set `RESEND_FROM` to one of its addresses.
 
 ## Contact Form API
 
-The form at `#contact` POSTs JSON to `POST /api/contact`, which validates the payload server-side and sends the email via the Resend REST API. Three env vars control delivery — no secrets are ever exposed to the client, and the route returns only generic, non-revealing errors.
+The form at `#contact` POSTs JSON to `POST /api/contact`, which validates the payload server-side and sends the email via the Resend REST API. Three env vars control delivery — no secrets are ever exposed to the client, and the route returns only generic, non-revealing errors. Abuse protection includes an origin check, an in-memory rate limit (5 requests/hour/IP), a honeypot field, payload size caps and an 8-second request timeout.
 
 ## Scripts
 

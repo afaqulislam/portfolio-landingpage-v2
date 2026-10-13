@@ -1,6 +1,7 @@
 import { ArrowUp } from "lucide-react";
 import Image from "next/image";
 import GlassWordmark from "./glass-wordmark";
+import CopyrightYear from "./copyright-year";
 import { socials } from "@/lib/data";
 
 const columns = [
@@ -101,7 +102,7 @@ export default function Footer() {
 
         <div className="mt-12 border-t border-white/[0.08] pt-6 text-xs text-white/40">
           <p className="text-center">
-            &copy; {new Date().getFullYear()} Afaq Ul Islam. All rights reserved.
+            <CopyrightYear />
           </p>
         </div>
 

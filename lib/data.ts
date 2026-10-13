@@ -111,7 +111,6 @@ export type Project = {
   year: string;
   href: string;
   image: string;
-  featured?: boolean;
 };
 
 export const projects: Project[] = [
@@ -124,7 +123,6 @@ export const projects: Project[] = [
     year: "2026",
     href: "https://github.com/afaqulislam/aurelia",
     image: "/projects/aurelia.svg",
-    featured: true,
   },
   {
     title: "TaskSnap AI",
@@ -155,7 +153,6 @@ export const projects: Project[] = [
     year: "2026",
     href: "https://github.com/afaqulislam/kisaan-dost-ai",
     image: "/projects/kisaan-dost-ai.svg",
-    featured: true,
   },
   {
     title: "MORENT",
