@@ -30,7 +30,7 @@ export default function Projects() {
           <Reveal delay={160}>
             <a
               href="#contact"
-              className="hidden items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-white/50 transition-colors hover:text-white md:inline-flex"
+              className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-white/50 transition-colors hover:text-white"
             >
               Start a project
               <ArrowUpRight className="size-4" strokeWidth={1.5} aria-hidden="true" />

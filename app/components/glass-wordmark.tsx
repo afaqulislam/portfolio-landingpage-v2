@@ -6,9 +6,9 @@ const textClasses =
   "font-mono font-semibold uppercase leading-none tracking-[0.25em] text-[clamp(1.5rem,8vw,5.5rem)]";
 
 export default function GlassWordmark() {
-  const ref = useRef<HTMLAnchorElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
-  function handleMove(event: React.MouseEvent<HTMLAnchorElement>) {
+  function handleMove(event: React.MouseEvent<HTMLDivElement>) {
     const el = ref.current;
     if (!el) return;
     const rect = el.getBoundingClientRect();
@@ -17,10 +17,8 @@ export default function GlassWordmark() {
   }
 
   return (
-    <a
+    <div
       ref={ref}
-      href="#home"
-      aria-label="Back to top — Afaq Ul Islam"
       onMouseMove={handleMove}
       className="group relative block w-full select-none text-center"
     >
@@ -42,6 +40,6 @@ export default function GlassWordmark() {
       >
         Afaq Ul Islam
       </span>
-    </a>
+    </div>
   );
 }

@@ -81,7 +81,7 @@ export default function Hero() {
             <HeroLogo />
           </Reveal>
 
-            <div className="absolute -left-4 top-10 hidden items-center gap-2 rounded-2xl border border-white/10 bg-[#0a0a0b]/80 px-3.5 py-2.5 backdrop-blur-xl sm:flex">
+            <div className="absolute -left-4 top-10 flex items-center gap-2 rounded-2xl border border-white/10 bg-[#0a0a0b]/80 px-3.5 py-2.5 backdrop-blur-xl">
               <Sparkles
                 className="size-4 text-[hsl(var(--brand-cyan))]"
                 strokeWidth={1.5}
@@ -90,7 +90,7 @@ export default function Hero() {
               <span className="text-xs font-medium">Co-Founder &amp; COO</span>
             </div>
 
-            <div className="absolute -right-3 bottom-10 hidden rounded-2xl border border-white/10 bg-[#0a0a0b]/80 px-3.5 py-3 backdrop-blur-xl sm:block">
+            <div className="absolute -right-3 bottom-10 rounded-2xl border border-white/10 bg-[#0a0a0b]/80 px-3.5 py-3 backdrop-blur-xl">
               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40">
                 Open Source
               </p>
