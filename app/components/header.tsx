@@ -22,6 +22,7 @@ export default function Header() {
   const [active, setActive] = useState("home");
   const mobileNavRef = useRef<HTMLDivElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
+  const mountedRef = useRef(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -68,12 +69,15 @@ export default function Header() {
   }, [open]);
 
   useEffect(() => {
-    if (open) {
-      const focusable = mobileNavRef.current?.querySelector<HTMLElement>("a");
-      focusable?.focus();
+    if (!mountedRef.current) {
+      mountedRef.current = true;
       return;
     }
-    menuButtonRef.current?.focus();
+    if (open) {
+      mobileNavRef.current?.querySelector<HTMLElement>("a")?.focus();
+    } else {
+      menuButtonRef.current?.focus();
+    }
   }, [open]);
 
   return (
