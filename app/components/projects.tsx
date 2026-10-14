@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import Reveal from "./reveal";
 import SectionHeading from "./section-heading";
@@ -28,13 +29,13 @@ export default function Projects() {
             description="A snapshot of what I've shipped — AI agents and automation, full-stack platforms, hackathons and competitions."
           />
           <Reveal delay={160}>
-            <a
-              href="#contact"
+            <Link
+              href="/#contact"
               className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-white/50 transition-colors hover:text-white"
             >
               Start a project
               <ArrowUpRight className="size-4" strokeWidth={1.5} aria-hidden="true" />
-            </a>
+            </Link>
           </Reveal>
         </div>
 

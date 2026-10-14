@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ArrowDown, ArrowUpRight, Download, Sparkles } from "lucide-react";
 import Reveal from "./reveal";
 import HeroLogo from "./hero-logo";
@@ -40,7 +41,7 @@ export default function Hero() {
 
           <Reveal delay={240}>
             <div className="mt-9 flex flex-wrap items-center gap-3">
-              <a href="#work" className="cta">
+              <Link href="/#work" className="cta">
                 View selected work
                 <span className="cta-icon">
                   <ArrowUpRight
@@ -49,7 +50,7 @@ export default function Hero() {
                     aria-hidden="true"
                   />
                 </span>
-              </a>
+              </Link>
               <a
                 href="/Afaq_Ul_Islam_Resume.pdf"
                 download
@@ -103,8 +104,8 @@ export default function Hero() {
         </div>
       </div>
 
-      <a
-        href="#about"
+      <Link
+        href="/#about"
         aria-label="Scroll to about"
         className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-white/40 transition-colors hover:text-white lg:flex"
       >
@@ -112,7 +113,7 @@ export default function Hero() {
           Scroll
         </span>
         <ArrowDown className="size-4 animate-bounce" strokeWidth={1.5} />
-      </a>
+      </Link>
     </section>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -85,8 +86,8 @@ export default function Header() {
             : "border-white/[0.06] bg-white/[0.02] backdrop-blur-md",
         )}
       >
-        <a
-          href="#home"
+        <Link
+          href="/#home"
           className="group flex items-center gap-2.5 rounded-full px-2.5 py-1 text-base font-semibold tracking-tight"
         >
           <Image
@@ -98,16 +99,16 @@ export default function Header() {
             className="h-8 w-8 shrink-0 transition-transform duration-500 ease-fluid group-hover:scale-105"
           />
           <span>Afaq Ul Islam</span>
-        </a>
+        </Link>
 
         <nav
           className="hidden items-center gap-0.5 md:flex"
           aria-label="Primary"
         >
           {NAV.map((item) => (
-            <a
+            <Link
               key={item.id}
-              href={`#${item.id}`}
+              href={`/#${item.id}`}
               aria-current={active === item.id ? "true" : undefined}
               className={cn(
                 "rounded-full px-3.5 py-1.5 text-sm transition-all duration-300 ease-fluid",
@@ -117,14 +118,14 @@ export default function Header() {
               )}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
-        <a href="#contact" className="cta-ghost hidden md:inline-flex">
+        <Link href="/#contact" className="cta-ghost hidden md:inline-flex">
           Let&apos;s talk
           <ArrowUpRight className="size-4" strokeWidth={1.5} aria-hidden="true" />
-        </a>
+        </Link>
 
         <button
           ref={menuButtonRef}
@@ -170,9 +171,9 @@ export default function Header() {
       >
         <nav className="flex flex-col" aria-label="Mobile">
           {NAV.map((item, index) => (
-            <a
+            <Link
               key={item.id}
-              href={`#${item.id}`}
+              href={`/#${item.id}`}
               onClick={() => setOpen(false)}
               className={cn(
                 "border-b border-white/[0.06] py-4 text-3xl font-medium tracking-tight transition-all duration-500 ease-fluid",
@@ -186,7 +187,7 @@ export default function Header() {
                 0{index + 1}
               </span>
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
       </div>

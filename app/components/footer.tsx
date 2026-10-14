@@ -1,5 +1,6 @@
 import { ArrowUp } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import GlassWordmark from "./glass-wordmark";
 import CopyrightYear from "./copyright-year";
 import { socials } from "@/lib/data";
@@ -8,18 +9,18 @@ const columns = [
   {
     title: "Home",
     links: [
-      { label: "About", href: "#about" },
-      { label: "Skills", href: "#skills" },
-      { label: "Work", href: "#work" },
+      { label: "About", href: "/#about" },
+      { label: "Skills", href: "/#skills" },
+      { label: "Work", href: "/#work" },
     ],
   },
   {
     title: "More",
     links: [
-      { label: "Experience", href: "#experience" },
-      { label: "Education", href: "#education" },
-      { label: "Milestones", href: "#achievements" },
-      { label: "Contact", href: "#contact" },
+      { label: "Experience", href: "/#experience" },
+      { label: "Education", href: "/#education" },
+      { label: "Milestones", href: "/#achievements" },
+      { label: "Contact", href: "/#contact" },
     ],
   },
 ];
@@ -30,8 +31,8 @@ export default function Footer() {
       <div className="container">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
           <div className="md:col-span-5">
-            <a
-              href="#home"
+            <Link
+              href="/#home"
               className="flex items-center gap-2.5 text-lg font-semibold tracking-tight"
             >
               <Image
@@ -43,7 +44,7 @@ export default function Footer() {
                 className="h-9 w-9 shrink-0"
               />
               <span>Afaq Ul Islam</span>
-            </a>
+            </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/50">
               Full-stack &amp; AI engineer and Co-Founder &amp; COO at Neofyx,
               building web apps, AI automation and SaaS products.
@@ -77,12 +78,12 @@ export default function Footer() {
               <ul className="mt-4 space-y-3">
                 {column.links.map((link) => (
                   <li key={link.label}>
-                    <a
+                    <Link
                       href={link.href}
                       className="text-sm text-white/60 transition-colors hover:text-white"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -90,13 +91,13 @@ export default function Footer() {
           ))}
 
           <div className="flex items-start md:col-span-1 md:justify-end">
-            <a
-              href="#home"
+            <Link
+              href="/#home"
               aria-label="Back to top"
               className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white/60 transition-all duration-500 ease-fluid hover:-translate-y-1 hover:text-white"
             >
               <ArrowUp className="size-5" strokeWidth={1.5} aria-hidden="true" />
-            </a>
+            </Link>
           </div>
         </div>
 
