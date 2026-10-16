@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL, structuredData } from "@/lib/seo";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -18,23 +19,21 @@ const geistMono = localFont({
   display: "swap",
 });
 
-const siteUrl = new URL(
-  process.env.NEXT_PUBLIC_SITE_URL ??
-    (process.env.VERCEL_PROJECT_PRODUCTION_URL
-      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-      : "https://portfolio-landingpage-v2-aui.vercel.app"),
-);
+const siteUrl = SITE_URL;
+
+const siteName = SITE_NAME;
+
+const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
 
 export const metadata: Metadata = {
   metadataBase: siteUrl,
-  applicationName: "AUI — Afaq Ul Islam",
-  creator: "Afaq Ul Islam",
+  applicationName: siteName,
+  creator: siteName,
   title: {
     default: "Afaq Ul Islam — Full-Stack & AI Engineer",
     template: "%s | Afaq Ul Islam",
   },
-  description:
-    "Full-stack & AI engineer and Co-Founder & COO at Neofyx, building web applications, AI-powered automation systems and SaaS products from Karachi, Pakistan.",
+  description: SITE_DESCRIPTION,
   keywords: [
     "Afaq Ul Islam",
     "Full-Stack Developer",
@@ -46,18 +45,27 @@ export const metadata: Metadata = {
     "TypeScript",
     "Portfolio",
   ],
-  authors: [{ name: "Afaq Ul Islam" }],
+  authors: [{ name: siteName }],
+  alternates: {
+    canonical: "/",
+  },
+  verification: googleSiteVerification
+    ? { google: googleSiteVerification }
+    : undefined,
   openGraph: {
     title: "Afaq Ul Islam — Full-Stack & AI Engineer",
     description:
       "Building web applications, AI-powered automation and SaaS products end to end.",
     type: "website",
-    siteName: "Afaq Ul Islam",
+    siteName: siteName,
+    locale: "en_US",
     url: siteUrl,
   },
   twitter: {
     card: "summary_large_image",
     title: "Afaq Ul Islam — Full-Stack & AI Engineer",
+    description:
+      "Building web applications, AI-powered automation and SaaS products end to end.",
   },
 };
 
@@ -124,6 +132,13 @@ export default function RootLayout({
         <Header />
         <main id="main">{children}</main>
         <Footer />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData),
+          }}
+        />
       </body>
     </html>
   );

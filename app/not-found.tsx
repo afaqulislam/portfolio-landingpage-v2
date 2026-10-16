@@ -5,6 +5,10 @@ import Reveal from "./components/reveal";
 
 export const metadata: Metadata = {
   title: "Page not found",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function NotFound() {

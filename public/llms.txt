@@ -1,0 +1,33 @@
+# Afaq Ul Islam
+
+> Full-stack & AI engineer and Co-Founder & COO at Neofyx, building web applications, AI-powered automation systems and SaaS products from Karachi, Pakistan.
+
+Afaq Ul Islam is a full-stack and AI engineer who designs, builds and ships products from spec to deployment. He is Co-Founder and Chief Operating Officer at Neofyx, an AI automation and SaaS startup, where he leads product engineering, operations and client delivery. His work spans full-stack web development (Next.js, React, TypeScript, FastAPI, Python), multi-agent AI systems, and cloud deployment.
+
+## Key facts
+- Role: Full-Stack & AI Engineer; Co-Founder & COO at Neofyx
+- Location: Karachi, Pakistan
+- Education: BS Computational Mathematics, University of Karachi (in progress); Certificate in Full-Stack Development & AI, Governor Sindh Initiative for GenAI, Web3 and Metaverse (GIAIC)
+- Recognition: Silver Tier, Google AI Seekho 2026 (Kisaan Dost AI); Top 10%, GIAIC Batch 1
+- Open source: 70+ public repositories on GitHub
+
+## Core skills
+TypeScript, JavaScript, Python, HTML5, CSS3, React, Next.js, Tailwind CSS, Framer Motion, shadcn/ui, FastAPI, Node.js, REST APIs, JWT, OAuth 2.0, OpenAI Agents SDK, Chainlit, Groq AI, Google Gemini, Claude, n8n, Sanity CMS, Clerk, Google Cloud Run, Docker, CI/CD, Vercel, Hugging Face.
+
+## Selected projects
+- AURELIA: Luxury fashion e-commerce with React 19, Tailwind CSS 4 and Google Gemini AI, deployed on Google Cloud Run.
+- TaskSnap AI: Screenshot-to-task extractor turning messages into prioritised task lists with Groq AI.
+- StartLaunch AI: Multi-agent system that runs market research and delivers a Go / No-Go / Pivot verdict.
+- Kisaan Dost AI: AI crop disease detection for Pakistani farmers with Gemini Vision and Roman Urdu diagnosis.
+- MORENT: Premium car rental marketplace and admin portal with Next.js, Sanity CMS and Clerk.
+- AUI Blogo: Production dev blog with Next.js ISR, Sanity CMS, dynamic SEO, sitemap and robots.
+- ChatAUI: Conversational AI assistant built with Chainlit and the OpenAI Agents SDK.
+- CIRO AI: Multi-agent humanitarian crisis-response intelligence system.
+- Taskory: AI full-stack task manager with NLP and JWT auth.
+- 25 Python Projects: Production-ready Python projects including computer vision, AI assistants and REST APIs.
+
+## Contact
+- Email: afaqulislam707@gmail.com
+- GitHub: https://github.com/afaqulislam
+- LinkedIn: https://linkedin.com/in/afaqulislam
+- X: https://x.com/afaqulislam708
