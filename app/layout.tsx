@@ -30,19 +30,23 @@ export const metadata: Metadata = {
   applicationName: siteName,
   creator: siteName,
   title: {
-    default: "Afaq Ul Islam — Full-Stack & AI Engineer",
+    default: "Afaq Ul Islam — Agentic AI Engineer",
     template: "%s | Afaq Ul Islam",
   },
   description: SITE_DESCRIPTION,
   keywords: [
     "Afaq Ul Islam",
+    "Agentic AI Engineer",
+    "AI Agents",
+    "Multi-Agent Systems",
+    "LLM Integration",
     "Full-Stack Developer",
-    "AI Engineer",
     "Neofyx",
-    "React",
     "Next.js",
+    "React",
     "Python",
     "TypeScript",
+    "Automation",
     "Portfolio",
   ],
   authors: [{ name: siteName }],
@@ -53,9 +57,9 @@ export const metadata: Metadata = {
     ? { google: googleSiteVerification }
     : undefined,
   openGraph: {
-    title: "Afaq Ul Islam — Full-Stack & AI Engineer",
+    title: "Afaq Ul Islam — Agentic AI Engineer",
     description:
-      "Building web applications, AI-powered automation and SaaS products end to end.",
+      "Building multi-agent AI systems, automation workflows and full-stack products end to end.",
     type: "website",
     siteName: siteName,
     locale: "en_US",
@@ -63,9 +67,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Afaq Ul Islam — Full-Stack & AI Engineer",
+    title: "Afaq Ul Islam — Agentic AI Engineer",
     description:
-      "Building web applications, AI-powered automation and SaaS products end to end.",
+      "Building multi-agent AI systems, automation workflows and full-stack products end to end.",
   },
 };
 
@@ -102,7 +106,7 @@ export default function RootLayout({
               left: "-5%",
               width: "42rem",
               height: "42rem",
-              background: "hsl(187 86% 53% / 0.18)",
+              background: "hsl(240 100% 50% / 0.18)",
             }}
           />
           <div
@@ -113,7 +117,7 @@ export default function RootLayout({
               width: "38rem",
               height: "38rem",
               animationDelay: "-6s",
-              background: "hsl(187 86% 53% / 0.16)",
+              background: "hsl(240 100% 50% / 0.16)",
             }}
           />
           <div
@@ -124,7 +128,7 @@ export default function RootLayout({
               width: "34rem",
               height: "34rem",
               animationDelay: "-12s",
-              background: "hsl(187 86% 53% / 0.12)",
+              background: "hsl(240 100% 50% / 0.12)",
             }}
           />
         </div>

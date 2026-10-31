@@ -2,7 +2,6 @@ import {
   Atom,
   Award,
   Boxes,
-  Cloud,
   Cog,
   Cpu,
   Database,
@@ -32,74 +31,48 @@ export type SkillGroup = {
 
 export const skillGroups: SkillGroup[] = [
   {
-    title: "Languages",
+    title: "Programming",
     description: "The primitives I build products with.",
     icon: Terminal,
-    items: ["TypeScript", "JavaScript", "Python", "HTML5", "CSS3"],
+    items: ["Python", "JavaScript", "TypeScript"],
   },
   {
     title: "Frontend",
     description: "Accessible, responsive interfaces that scale.",
     icon: Atom,
-    items: [
-      "React",
-      "Next.js",
-      "Tailwind CSS",
-      "Framer Motion",
-      "shadcn/ui",
-      "Lucide",
-      "Responsive Design",
-    ],
+    items: ["React", "Next.js", "Tailwind CSS"],
   },
   {
     title: "Backend",
-    description: "APIs and auth built for production.",
+    description: "APIs built for production.",
     icon: Server,
-    items: ["FastAPI", "Node.js", "REST APIs", "JWT", "OAuth 2.0"],
+    items: ["FastAPI", "REST APIs"],
   },
   {
-    title: "AI & Agentic Development",
-    description: "Multi-agent systems and automation.",
+    title: "Databases",
+    description: "Data modelled and stored cleanly.",
+    icon: Database,
+    items: ["PostgreSQL", "Firebase"],
+  },
+  {
+    title: "AI & Agentic AI",
+    description: "Agents, LLM integration and multi-agent systems.",
     icon: Sparkles,
     items: [
-      "OpenAI Agents SDK",
-      "Chainlit",
-      "Groq AI",
+      "AI Agents",
+      "Multi-Agent Systems",
+      "LLM Integration",
       "Google Gemini",
-      "Claude",
-      "n8n",
+      "OpenAI",
+      "Anthropic Claude",
+      "Groq",
     ],
   },
   {
-    title: "Data, CMS & Auth",
-    description: "Content and identity, wired cleanly.",
-    icon: Database,
-    items: ["Sanity CMS", "Clerk"],
-  },
-  {
-    title: "Cloud & Deployment",
-    description: "From container to edge, reliably.",
-    icon: Cloud,
-    items: [
-      "Google Cloud Run",
-      "Containerization",
-      "CI/CD",
-      "Vercel",
-      "Hugging Face",
-    ],
-  },
-  {
-    title: "Tools & Practices",
-    description: "The workflow behind working software.",
+    title: "Automation",
+    description: "Workflows that run themselves.",
     icon: Cog,
-    items: [
-      "Git/GitHub",
-      "Docker",
-      "ESLint",
-      "ReportLab",
-      "Prompt Engineering",
-      "Scalable System Design",
-    ],
+    items: ["n8n", "AI Workflow Automation"],
   },
 ];
 
@@ -115,34 +88,24 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "AURELIA",
-    tagline: "Luxury fashion e-commerce",
+    title: "StartupLaunch AI",
+    tagline: "Multi-agent startup validator",
     description:
-      "Luxury fashion e-commerce with React 19, Tailwind CSS 4 and Google Gemini AI. Live on Google Cloud Run — built for Google Build with AI 2026.",
-    tags: ["Next.js", "React 19", "Tailwind v4", "Gemini AI"],
-    year: "2026",
-    href: "https://github.com/afaqulislam/aurelia",
-    image: "/projects/aurelia.svg",
-  },
-  {
-    title: "TaskSnap AI",
-    tagline: "Screenshot-to-task extractor",
-    description:
-      "Turn messy messages into actionable tasks in seconds — a screenshot becomes a prioritised, deadline-aware task list with Groq AI.",
-    tags: ["Next.js 16", "React 19", "Groq AI", "Framer Motion"],
-    year: "2026",
-    href: "https://github.com/afaqulislam/tasksnap-ai",
-    image: "/projects/tasksnap-ai.svg",
-  },
-  {
-    title: "StartLaunch AI",
-    tagline: "AI agents that validate ideas",
-    description:
-      "A swarm of specialized AI agents runs market research, competitor analysis and risk assessment in parallel, then delivers a Go / No-Go / Pivot verdict.",
-    tags: ["Multi-Agent AI", "TypeScript", "Reasoning"],
+      "A multi-agent system that runs market research, competitor analysis and risk assessment in parallel, then delivers a Go / No-Go / Pivot verdict.",
+    tags: ["Next.js", "TypeScript", "FastAPI", "Multi-Agent AI"],
     year: "2026",
     href: "https://github.com/afaqulislam/startuplaunch-ai",
     image: "/projects/startuplaunch-ai.svg",
+  },
+  {
+    title: "ShiftSathi",
+    tagline: "Shift management, simplified",
+    description:
+      "A full-stack shift management web app built with Next.js and TypeScript, shipped and live on Vercel.",
+    tags: ["Next.js", "TypeScript", "Vercel"],
+    year: "2026",
+    href: "https://shiftsathi-aui.vercel.app",
+    image: "/projects/shiftsathi.svg",
   },
   {
     title: "Kisaan Dost AI",
@@ -155,64 +118,14 @@ export const projects: Project[] = [
     image: "/projects/kisaan-dost-ai.svg",
   },
   {
-    title: "MORENT",
-    tagline: "Car rental marketplace",
+    title: "Neofyx",
+    tagline: "AI automation & SaaS startup",
     description:
-      "Premium car rental marketplace and admin portal with smart filters, a booking calendar, interactive charts and wishlist.",
-    tags: ["Next.js", "Sanity CMS", "Clerk", "shadcn/ui"],
+      "Co-founded an AI automation and SaaS studio building agentic workflows, automation systems and web products for clients.",
+    tags: ["AI Automation", "SaaS", "Agentic Workflows"],
     year: "2025",
-    href: "https://github.com/afaqulislam/Market-Builder-Hackathon-2025",
-    image: "/projects/morent.svg",
-  },
-  {
-    title: "AUI Blogo",
-    tagline: "Dev blog platform",
-    description:
-      "Production dev blog with Next.js 14 ISR, Sanity CMS, dark mode, auto table-of-contents, dynamic SEO, sitemap and robots.",
-    tags: ["Next.js 14", "ISR", "Sanity CMS", "SEO"],
-    year: "2025",
-    href: "https://github.com/afaqulislam/AUI-Blogo",
-    image: "/projects/aui-blogo.svg",
-  },
-  {
-    title: "ChatAUI",
-    tagline: "Conversational AI assistant",
-    description:
-      "Enterprise-grade conversational AI assistant powered by Chainlit, the OpenAI Agents SDK, OAuth 2.0 and modern Python architecture.",
-    tags: ["Chainlit", "OpenAI Agents SDK", "OAuth 2.0"],
-    year: "2025",
-    href: "https://github.com/afaqulislam/ChatAUI",
-    image: "/projects/chataui.svg",
-  },
-  {
-    title: "CIRO AI",
-    tagline: "Multi-agent crisis response",
-    description:
-      "Humanitarian emergency intelligence and multi-agent response operating system coordinating AI agents for crisis-response workflows.",
-    tags: ["Multi-Agent AI", "AI Seekho", "React"],
-    year: "2026",
-    href: "https://github.com/afaqulislam/CIRO_AI",
-    image: "/projects/ciro-ai.svg",
-  },
-  {
-    title: "Taskory",
-    tagline: "AI full-stack task manager",
-    description:
-      "Task manager with natural language processing, JWT auth, real-time management and multi-AI-provider support on a Python backend.",
-    tags: ["Python", "FastAPI", "NLP", "JWT"],
-    year: "2025",
-    href: "https://github.com/afaqulislam/todo-full-stack-ai-chatbot-web-application",
-    image: "/projects/taskory.svg",
-  },
-  {
-    title: "25 Python Projects",
-    tagline: "Production-ready portfolio",
-    description:
-      "25 production-ready Python projects — socket games, computer vision, AI assistants, REST APIs and full-stack integration, built for GIAIC.",
-    tags: ["Python", "Computer Vision", "REST APIs"],
-    year: "2025",
-    href: "https://github.com/afaqulislam/25-Python-Projects",
-    image: "/projects/25-python-projects.svg",
+    href: "https://neofyx.com",
+    image: "/projects/neofyx.svg",
   },
 ];
 
@@ -232,7 +145,7 @@ export const experiences: Experience[] = [
     period: "Dec 2025 — Present",
     location: "Karachi, Pakistan",
     summary:
-      "Co-Founder and COO of an AI automation and SaaS startup, leading product engineering and client delivery.",
+      "Co-Founder and COO of an AI automation and SaaS startup, leading agentic AI products, engineering and client delivery.",
     achievements: [
       "Lead operations, technical execution and product delivery, structuring workflows from concept to deployment.",
       "Build full-stack features and AI-powered functionality end to end for client-facing applications.",
@@ -340,9 +253,9 @@ export const stats = [
 ] as const;
 
 export const socials = [
-  { label: "X", href: "https://x.com/afaqulislam708", icon: Twitter },
+  { label: "X", href: "https://x.com/afaqulislam707", icon: Twitter },
   { label: "GitHub", href: "https://github.com/afaqulislam", icon: Github },
-  { label: "LinkedIn", href: "https://linkedin.com/in/afaqulislam", icon: Linkedin },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/afaqulislam", icon: Linkedin },
   { label: "Email", href: "mailto:afaqulislam707@gmail.com", icon: Mail },
   { label: "Portfolio", href: "https://afaqulislam.vercel.app", icon: Globe },
 ] as const;
@@ -354,24 +267,27 @@ export const marquee = [
   "React",
   "FastAPI",
   "Tailwind CSS",
+  "AI Agents",
+  "Multi-Agent Systems",
   "Google Gemini",
-  "OpenAI Agents SDK",
-  "Groq AI",
-  "Framer Motion",
-  "Google Cloud Run",
-  "Docker",
+  "OpenAI",
+  "Anthropic Claude",
+  "Groq",
+  "n8n",
+  "PostgreSQL",
+  "Firebase",
 ] as const;
 
 export const principles = [
   {
-    icon: Zap,
-    title: "Full-stack ownership",
-    text: "From spec to deployment — web, AI and automation, end to end.",
+    icon: Sparkles,
+    title: "Agentic AI systems",
+    text: "AI agents, multi-agent orchestration and LLM integration in production.",
   },
   {
-    icon: ShieldCheck,
-    title: "AI-powered systems",
-    text: "Agentic automation across video, voice, data and workflows.",
+    icon: Zap,
+    title: "Full-stack ownership",
+    text: "From spec to deployment — web, APIs and AI, end to end.",
   },
   {
     icon: Layers,
@@ -379,15 +295,15 @@ export const principles = [
     text: "Co-founding Neofyx and leading scoping, architecture and delivery.",
   },
   {
-    icon: Sparkles,
-    title: "Open source first",
-    text: "70+ public repositories and active contribution on GitHub.",
+    icon: ShieldCheck,
+    title: "Automation first",
+    text: "n8n workflows and AI automation that remove manual work.",
   },
 ] as const;
 
 export const contactMeta = [
-  { icon: Cpu, label: "Role", value: "Full-Stack & AI Engineer" },
+  { icon: Cpu, label: "Role", value: "Agentic AI Engineer" },
   { icon: Boxes, label: "Company", value: "Neofyx — Co-Founder & COO" },
   { icon: MapPin, label: "Location", value: "Karachi, Pakistan" },
-  { icon: Cog, label: "Availability", value: "Open to work" },
+  { icon: Cog, label: "Availability", value: "Open to select work" },
 ] as const;

@@ -32,7 +32,7 @@ export default function GlassWordmark() {
         className={`pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-500 ease-fluid group-hover:opacity-100 ${textClasses}`}
         style={{
           background:
-            "radial-gradient(150px circle at var(--shine-x, 50%) var(--shine-y, 40%), hsl(187 86% 53%), hsla(187, 86%, 53%, 0.35) 45%, transparent 75%)",
+            "radial-gradient(150px circle at var(--shine-x, 50%) var(--shine-y, 40%), hsl(240 100% 74%), hsla(240, 100%, 74%, 0.35) 45%, transparent 75%)",
           WebkitBackgroundClip: "text",
           backgroundClip: "text",
           color: "transparent",

@@ -19,8 +19,8 @@ export function OgImageContent() {
           width: "112px",
           height: "112px",
           borderRadius: "28px",
-          border: "3px solid rgb(34 211 238 / 0.6)",
-          color: "#22d3ee",
+          border: "3px solid rgb(0 0 255 / 0.75)",
+          color: "#3d3dff",
           fontSize: "56px",
           fontWeight: 700,
           alignItems: "center",
@@ -48,7 +48,7 @@ export function OgImageContent() {
           textTransform: "uppercase",
         }}
       >
-        Full-Stack &amp; AI Engineer &middot; Neofyx
+        Agentic AI Engineer &middot; Neofyx
       </div>
     </div>
   );

@@ -11,16 +11,16 @@ export default function About() {
           </Reveal>
           <Reveal delay={80}>
             <h2 className="mt-5 text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl">
-              I ship end to end — web, AI and automation.
+              I build agentic AI systems and ship full-stack products.
             </h2>
           </Reveal>
           <Reveal delay={140}>
             <div className="mt-6 space-y-5 text-pretty leading-relaxed text-white/55">
               <p>
-                I&apos;m a full-stack and AI engineer with hands-on, end-to-end
-                experience building web applications, AI-powered automation
-                systems and SaaS products. As Co-Founder and COO at Neofyx, I
-                lead product engineering and client delivery.
+                I&apos;m an Agentic AI Engineer and Full-Stack Developer with
+                hands-on experience building multi-agent systems, LLM-powered
+                automation and production web applications. As Co-Founder and COO
+                at Neofyx, I lead product engineering and client delivery.
               </p>
               <p>
                 I&apos;m comfortable scoping requirements, architecting
@@ -35,7 +35,7 @@ export default function About() {
               <span className="accent-text text-2xl font-semibold">Afaq</span>
               <span className="h-8 w-px bg-white/10" />
               <span className="font-mono text-xs uppercase tracking-[0.2em] text-white/40">
-                Full-Stack &amp; AI Engineer
+                Agentic AI &amp; Full-Stack
               </span>
             </div>
           </Reveal>
@@ -49,7 +49,7 @@ export default function About() {
                 <div className="group rounded-[1.75rem] border border-white/[0.08] bg-white/[0.03] p-6 transition-all duration-500 ease-fluid hover:-translate-y-1 hover:border-white/15 hover:bg-white/[0.05]">
                   <div className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.04]">
                     <Icon
-                      className="size-5 text-[hsl(var(--brand-cyan))]"
+                      className="size-5 text-[hsl(var(--brand-blue-bright))]"
                       strokeWidth={1.5}
                       aria-hidden="true"
                     />

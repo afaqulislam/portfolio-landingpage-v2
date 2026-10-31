@@ -18,7 +18,7 @@ export default function NotFound() {
         <Reveal className="mx-auto max-w-xl">
           <div className="bezel">
             <div className="bezel-core flex flex-col items-center px-6 py-14 text-center sm:px-10 sm:py-16">
-              <span className="flex h-14 w-14 items-center justify-center rounded-full border border-[hsl(var(--brand-cyan))]/30 bg-[hsl(var(--brand-cyan))]/10 text-[hsl(var(--brand-cyan))]">
+              <span className="flex h-14 w-14 items-center justify-center rounded-full border border-[hsl(var(--brand-blue))]/30 bg-[hsl(var(--brand-blue))]/10 text-[hsl(var(--brand-blue-bright))]">
                 <FileQuestion
                   className="size-6"
                   strokeWidth={1.5}

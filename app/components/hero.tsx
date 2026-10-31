@@ -15,8 +15,8 @@ export default function Hero() {
           <Reveal>
             <span className="eyebrow">
               <span className="relative flex h-1.5 w-1.5">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[hsl(var(--brand-cyan))] opacity-75" />
-                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[hsl(var(--brand-cyan))]" />
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[hsl(var(--brand-blue))] opacity-75" />
+                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[hsl(var(--brand-blue))]" />
               </span>
               Open to select work — Karachi, Pakistan
             </span>
@@ -24,7 +24,7 @@ export default function Hero() {
 
           <Reveal delay={80}>
             <h1 className="mt-6 text-balance text-5xl font-semibold leading-[1.03] tracking-tight sm:text-6xl lg:text-7xl">
-              Full-stack &amp; AI engineer <br className="hidden sm:block" />
+              Agentic AI engineer <br className="hidden sm:block" />
               building{" "}
               <span className="accent-text">products that ship.</span>
             </h1>
@@ -33,9 +33,10 @@ export default function Hero() {
           <Reveal delay={160}>
             <p className="mt-7 max-w-xl text-pretty text-base leading-relaxed text-white/60 sm:text-lg">
               I&apos;m{" "}
-              <span className="font-medium text-white/90">Afaq Ul Islam</span> — Co-Founder &amp; COO at Neofyx. I
-              design, build and ship full-stack web applications, AI-powered
-              automation and SaaS products from spec to deployment.
+              <span className="font-medium text-white/90">Afaq Ul Islam</span> —
+              Agentic AI Engineer and Full-Stack Developer, and Co-Founder &amp;
+              COO at Neofyx. I design and ship multi-agent AI systems, automation
+              workflows and web applications from spec to deployment.
             </p>
           </Reveal>
 
@@ -84,7 +85,7 @@ export default function Hero() {
 
             <div className="absolute left-0 top-8 flex items-center gap-2 rounded-2xl border border-white/10 bg-[#0a0a0b]/80 px-3 py-2.5 backdrop-blur-xl pointer-events-none md:px-3.5">
               <Sparkles
-                className="size-4 text-[hsl(var(--brand-cyan))]"
+                className="size-4 text-[hsl(var(--brand-blue-bright))]"
                 strokeWidth={1.5}
                 aria-hidden="true"
               />
@@ -98,7 +99,7 @@ export default function Hero() {
                 Focus
               </p>
               <p className="mt-1 text-sm font-medium tracking-tight">
-                AI &middot; Automation &middot; Web
+                Agentic AI &middot; Full-stack &middot; Automation
               </p>
             </div>
         </div>

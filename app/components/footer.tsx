@@ -46,8 +46,8 @@ export default function Footer() {
               <span>Afaq Ul Islam</span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/50">
-              Full-stack &amp; AI engineer and Co-Founder &amp; COO at Neofyx,
-              building web apps, AI automation and SaaS products.
+              Agentic AI engineer and full-stack developer, and Co-Founder &amp;
+              COO at Neofyx — building AI agents, automation and SaaS products.
             </p>
             <div className="mt-6 flex items-center gap-3">
               {socials.map((social) => {

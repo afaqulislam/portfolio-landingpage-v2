@@ -7,7 +7,8 @@
     --background: 0 0% 2%;
     --foreground: 0 0% 98%;
 
-    --brand-cyan: 187 86% 53%;
+    --brand-blue: 240 100% 50%;
+    --brand-blue-bright: 240 100% 74%;
   }
 
   * {
@@ -42,12 +43,12 @@
   }
 
   ::selection {
-    background: hsl(var(--brand-cyan) / 0.28);
+    background: hsl(var(--brand-blue) / 0.4);
     color: #fff;
   }
 
   :focus-visible {
-    outline: 2px solid hsl(var(--brand-cyan));
+    outline: 2px solid hsl(var(--brand-blue-bright));
     outline-offset: 3px;
   }
 
@@ -96,7 +97,7 @@
   }
 
   .accent-text {
-    color: hsl(var(--brand-cyan));
+    color: hsl(var(--brand-blue-bright));
   }
 
   /* Nested island CTA button */
@@ -106,7 +107,7 @@
   }
 
   .cta:hover {
-    box-shadow: 0 10px 40px -8px hsla(187, 86%, 53%, 0.55);
+    box-shadow: 0 10px 40px -8px hsla(240, 100%, 50%, 0.55);
   }
 
   .cta-icon {
@@ -232,12 +233,12 @@
 }
 
 .laser.wide {
-  stroke: hsl(187 86% 60% / 0.55);
+  stroke: hsl(240 100% 66% / 0.55);
   stroke-width: 14;
 }
 
 .laser.core {
-  stroke: #eafcff;
+  stroke: #eef0ff;
   stroke-width: 6.5;
 }
 

@@ -19,7 +19,7 @@ export default function Experience() {
         <ol className="relative lg:col-span-8">
           <span
             aria-hidden="true"
-            className="absolute left-[9px] top-2 h-[calc(100%-1rem)] w-px bg-[hsl(var(--brand-cyan))]/20"
+            className="absolute left-[9px] top-2 h-[calc(100%-1rem)] w-px bg-[hsl(var(--brand-blue))]/20"
           />
           {experiences.map((item, index) => (
             <li
@@ -30,13 +30,13 @@ export default function Experience() {
                 aria-hidden="true"
                 className="absolute left-0 top-1.5 flex h-5 w-5 items-center justify-center rounded-full border border-white/15 bg-[#0a0a0b]"
               >
-                <span className="h-2 w-2 rounded-full bg-[hsl(var(--brand-cyan))]" />
+                <span className="h-2 w-2 rounded-full bg-[hsl(var(--brand-blue))]" />
               </span>
 
               <Reveal delay={index * 90}>
                 <div className="rounded-[1.75rem] border border-white/[0.08] bg-white/[0.03] p-6 transition-colors duration-500 hover:border-white/15 hover:bg-white/[0.05] sm:p-7">
                   <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-                    <span className="font-mono text-xs uppercase tracking-[0.18em] text-[hsl(var(--brand-cyan))]">
+                    <span className="font-mono text-xs uppercase tracking-[0.18em] text-[hsl(var(--brand-blue-bright))]">
                       {item.period}
                     </span>
                     <span className="h-1 w-1 rounded-full bg-white/20" />
@@ -57,7 +57,7 @@ export default function Experience() {
                       >
                         <span
                           aria-hidden="true"
-                          className="mt-2 h-1 w-1 shrink-0 rounded-full bg-[hsl(var(--brand-cyan))]"
+                          className="mt-2 h-1 w-1 shrink-0 rounded-full bg-[hsl(var(--brand-blue))]"
                         />
                         {achievement}
                       </li>

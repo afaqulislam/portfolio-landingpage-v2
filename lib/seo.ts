@@ -4,12 +4,12 @@ export const SITE_URL = new URL(
   process.env.NEXT_PUBLIC_SITE_URL ??
     (process.env.VERCEL_PROJECT_PRODUCTION_URL
       ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-      : "https://portfolio-landingpage-v2-aui.vercel.app"),
+      : "https://afaqulislam.vercel.app"),
 );
 
 export const SITE_NAME = "Afaq Ul Islam";
 export const SITE_DESCRIPTION =
-  "Full-stack & AI engineer and Co-Founder & COO at Neofyx, building web applications, AI-powered automation systems and SaaS products from Karachi, Pakistan.";
+  "Agentic AI engineer and full-stack developer, Co-Founder & COO at Neofyx — building multi-agent AI systems, automation workflows and web applications from Karachi, Pakistan.";
 
 const SOCIAL_PROFILES = socials
   .map((social) => social.href)
@@ -32,7 +32,7 @@ export const personJsonLd = {
   alternateName: "AUI",
   url: SITE_URL.toString(),
   image: new URL("/opengraph-image", SITE_URL).toString(),
-  jobTitle: "Full-Stack & AI Engineer",
+  jobTitle: "Agentic AI Engineer & Full-Stack Developer",
   description: SITE_DESCRIPTION,
   email: "mailto:afaqulislam707@gmail.com",
   address: {
@@ -56,7 +56,7 @@ export const structuredData = {
       "@type": "WebSite",
       "@id": new URL("/#website", SITE_URL).toString(),
       url: SITE_URL.toString(),
-      name: `${SITE_NAME} — Full-Stack & AI Engineer`,
+      name: `${SITE_NAME} — Agentic AI Engineer`,
       description: SITE_DESCRIPTION,
       inLanguage: "en",
       publisher: { "@id": new URL("/#person", SITE_URL).toString() },
@@ -65,7 +65,7 @@ export const structuredData = {
       "@type": "ProfilePage",
       "@id": new URL("/#webpage", SITE_URL).toString(),
       url: SITE_URL.toString(),
-      name: `${SITE_NAME} — Full-Stack & AI Engineer`,
+      name: `${SITE_NAME} — Agentic AI Engineer`,
       description: SITE_DESCRIPTION,
       inLanguage: "en",
       isPartOf: { "@id": new URL("/#website", SITE_URL).toString() },

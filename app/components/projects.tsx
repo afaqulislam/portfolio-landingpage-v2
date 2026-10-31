@@ -25,8 +25,8 @@ export default function Projects() {
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <SectionHeading
             eyebrow="Selected work"
-            title="Projects built across web and AI."
-            description="A snapshot of what I've shipped — AI agents and automation, full-stack platforms, hackathons and competitions."
+            title="Projects built across AI and web."
+            description="A snapshot of what I've shipped — agentic AI systems, automation, full-stack platforms and the startup I co-founded."
           />
           <Reveal delay={160}>
             <Link

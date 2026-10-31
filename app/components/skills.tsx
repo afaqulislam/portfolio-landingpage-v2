@@ -2,41 +2,27 @@ import Reveal from "./reveal";
 import SectionHeading from "./section-heading";
 import { marquee, skillGroups } from "@/lib/data";
 
-const spans = [
-  "lg:col-span-2",
-  "lg:col-span-1",
-  "lg:col-span-1",
-  "lg:col-span-2",
-  "lg:col-span-1",
-  "lg:col-span-1",
-  "lg:col-span-1",
-];
-
 export default function Skills() {
   return (
     <section id="skills" className="py-24 sm:py-28 lg:py-32">
       <div className="container">
         <SectionHeading
           eyebrow="Skills"
-          title="A toolkit honed across the full stack."
-          description="Languages, frontend, backend, AI agents, auth and cloud — the tools I use to ship working software end to end."
+          title="An agentic AI and full-stack toolkit."
+          description="Programming, frontend, backend, databases, AI agents and automation — the tools I use to ship working software end to end."
         />
 
         <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {skillGroups.map((group, index) => {
             const Icon = group.icon;
             return (
-              <Reveal
-                key={group.title}
-                delay={index * 80}
-                className={spans[index % spans.length]}
-              >
+              <Reveal key={group.title} delay={index * 80}>
                 <div className="bezel">
                   <div className="bezel-core flex flex-col p-6 sm:p-7">
                     <div className="flex items-center justify-between">
                       <div className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.04]">
                         <Icon
-                          className="size-5 text-[hsl(var(--brand-cyan))]"
+                          className="size-5 text-[hsl(var(--brand-blue-bright))]"
                           strokeWidth={1.5}
                           aria-hidden="true"
                         />
