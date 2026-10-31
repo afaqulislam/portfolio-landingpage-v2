@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <a href="https://afaqulislam.vercel.app"><strong>View live site →</strong></a>
+  <a href="https://portfolio-landingpage-v2-aui.vercel.app"><strong>View live site →</strong></a>
   · <a href="https://github.com/afaqulislam"><strong>GitHub profile</strong></a>
 </p>
 
@@ -156,7 +156,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 | `RESEND_API_KEY`  | ✅ Yes   | —                                    | API key from [resend.com/api-keys](https://resend.com/api-keys) |
 | `CONTACT_TO`      | No       | `afaqulislam707@gmail.com`           | Destination inbox for contact-form messages        |
 | `RESEND_FROM`     | No       | `Afaq Ul Islam <onboarding@resend.dev>` | Verified sender shown in delivered emails      |
-| `NEXT_PUBLIC_SITE_URL` | No  | `https://afaqulislam.vercel.app`     | Canonical URL for metadata, Open Graph and the contact-form origin check |
+| `NEXT_PUBLIC_SITE_URL` | No  | `https://portfolio-landingpage-v2-aui.vercel.app` | Canonical URL for metadata, Open Graph and the contact-form origin check |
 | `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | No | — | Optional Google Search Console verification token |
 
 > **Note:** `onboarding@resend.dev` can only send to your own verified email. For other recipients, verify a domain in Resend and set `RESEND_FROM` to one of its addresses.
