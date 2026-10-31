@@ -19,22 +19,22 @@ export default function Education() {
         <ol className="relative lg:col-span-8">
           <span
             aria-hidden="true"
-            className="absolute left-[9px] top-2 h-[calc(100%-1rem)] w-px bg-[hsl(var(--brand-blue))]/20"
+            className="absolute left-[9px] top-2 h-[calc(100%-1rem)] w-px bg-[hsl(var(--accent))]/20"
           />
           {education.map((item, index) => (
             <li key={item.title} className="relative pl-10 pb-8 last:pb-0">
               <span
                 aria-hidden="true"
-                className="absolute left-0 top-1.5 flex h-5 w-5 items-center justify-center rounded-full border border-white/15 bg-[#0a0a0b]"
+                className="absolute left-0 top-1.5 flex h-5 w-5 items-center justify-center rounded-full border border-white/15 bg-[#0B1310]"
               >
-                <span className="h-2 w-2 rounded-full bg-[hsl(var(--brand-blue))]" />
+                <span className="h-2 w-2 rounded-full bg-[hsl(var(--accent))]" />
               </span>
 
               <Reveal delay={index * 90}>
                 <div className="rounded-[1.75rem] border border-white/[0.08] bg-white/[0.03] p-6 transition-colors duration-500 hover:border-white/15 hover:bg-white/[0.05] sm:p-7">
                   <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
                     {item.status ? (
-                      <span className="rounded-full border border-[hsl(var(--brand-blue))]/30 bg-[hsl(var(--brand-blue))]/10 px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-[0.18em] text-[hsl(var(--brand-blue-bright))]">
+                      <span className="rounded-full border border-[hsl(var(--accent))]/30 bg-[hsl(var(--accent))]/10 px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-[0.18em] text-[hsl(var(--accent))]">
                         {item.status}
                       </span>
                     ) : null}
@@ -57,7 +57,7 @@ export default function Education() {
                         >
                           <span
                             aria-hidden="true"
-                            className="mt-2 h-1 w-1 shrink-0 rounded-full bg-[hsl(var(--brand-blue))]"
+                            className="mt-2 h-1 w-1 shrink-0 rounded-full bg-[hsl(var(--accent))]"
                           />
                           {bullet}
                         </li>

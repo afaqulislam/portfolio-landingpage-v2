@@ -8,8 +8,8 @@ export function OgImageContent() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "#050505",
-        color: "#fafafa",
+    backgroundColor: "#0B1310",
+    color: "#FFFFFF",
         fontFamily: "monospace",
       }}
     >
@@ -19,8 +19,8 @@ export function OgImageContent() {
           width: "112px",
           height: "112px",
           borderRadius: "28px",
-          border: "3px solid rgb(0 0 255 / 0.75)",
-          color: "#3d3dff",
+    border: "3px solid rgb(166 255 0 / 0.75)",
+    color: "#A6FF00",
           fontSize: "56px",
           fontWeight: 700,
           alignItems: "center",
@@ -42,7 +42,7 @@ export function OgImageContent() {
       <div
         style={{
           marginTop: "14px",
-          color: "rgba(250,250,250,0.6)",
+          color: "rgba(255,255,255,0.65)",
           fontSize: "26px",
           letterSpacing: "6px",
           textTransform: "uppercase",

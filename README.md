@@ -12,9 +12,9 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Next.js-15.0.7-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js 15" />
-  <img src="https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-3.4-38bdf8?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/React-19-0000FF?style=flat-square&logo=react&logoColor=white" alt="React 19" />
+  <img src="https://img.shields.io/badge/TypeScript-5-5E615E?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-3.4-A6FF00?style=flat-square&logo=tailwindcss&logoColor=0B1310" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/React-19-A6FF00?style=flat-square&logo=react&logoColor=0B1310" alt="React 19" />
   <img src="https://img.shields.io/badge/License-All%20Rights%20Reserved-lightgrey?style=flat-square" alt="License: All Rights Reserved" />
 </p>
 
@@ -45,7 +45,7 @@
 
 ## Overview
 
-This is the personal portfolio of **Afaq Ul Islam** — Agentic AI Engineer, Full-Stack Developer and Co-Founder & COO at **Neofyx**. It showcases product work, engineering experience, education and milestones in a visually meticulous, single-accent design language: dark glass surfaces, a constant blue accent (`#0000FF`), fluid motion and an accessibility-first build.
+This is the personal portfolio of **Afaq Ul Islam** — Agentic AI Engineer, Full-Stack Developer and Co-Founder & COO at **Neofyx**. It showcases product work, engineering experience, education and milestones in a visually meticulous, single-accent design language: dark glass surfaces, a constant lime accent (`#A6FF00`), fluid motion and an accessibility-first build.
 
 The showpiece is a **laser-drawn AUI monogram** in the hero — the logo builds itself stroke by stroke with an electric spark effect, holds, then redraws on a loop. No animation library; it is pure SVG `stroke-dashoffset` keyframes.
 
@@ -53,7 +53,7 @@ The showpiece is a **laser-drawn AUI monogram** in the hero — the logo builds 
 
 - **⚡ Electric hero logo** — the AUI monogram is drawn with a jagged, crackling laser stroke (`steps` + flicker keyframes), holds fully visible, then redraws — looped, with `prefers-reduced-motion` support.
 - **✨ Glassmorphism system** — double-bezel cards, film-grain overlay, layered depth and a mouse-tracked glass wordmark in the footer (Neofyx-style shine that follows the cursor).
-- **🎨 One constant accent colour** — a single blue hue applied consistently across the entire UI.
+- **🎨 One constant accent colour** — a single lime hue applied consistently across the entire UI.
 - **📨 Working contact form** — client-side validation, sending/failure/success states, delivered via the Resend API route (`app/api/contact`).
 - **📜 Scroll-reveal animations** — lightweight `IntersectionObserver` reveals that respect `prefers-reduced-motion`.
 - **♿ Accessible by default** — semantic landmarks, a skip link, keyboard-friendly navigation, visible focus rings and tested colour contrast.
@@ -222,5 +222,5 @@ This project is the personal property of **Afaq Ul Islam**. No part of this repo
 </p>
 
 <p align="center">
-  <sub>© 2026 Afaq Ul Islam · Crafted with Next.js, Tailwind CSS &amp; a touch of blue.</sub>
+  <sub>© 2026 Afaq Ul Islam · Crafted with Next.js, Tailwind CSS &amp; a touch of lime.</sub>
 </p>

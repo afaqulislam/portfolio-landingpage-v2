@@ -49,7 +49,7 @@ export default function About() {
                 <div className="group rounded-[1.75rem] border border-white/[0.08] bg-white/[0.03] p-6 transition-all duration-500 ease-fluid hover:-translate-y-1 hover:border-white/15 hover:bg-white/[0.05]">
                   <div className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.04]">
                     <Icon
-                      className="size-5 text-[hsl(var(--brand-blue-bright))]"
+                      className="size-5 text-[hsl(var(--accent))]"
                       strokeWidth={1.5}
                       aria-hidden="true"
                     />

@@ -15,8 +15,8 @@ export default function Hero() {
           <Reveal>
             <span className="eyebrow">
               <span className="relative flex h-1.5 w-1.5">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[hsl(var(--brand-blue))] opacity-75" />
-                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[hsl(var(--brand-blue))]" />
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[hsl(var(--accent))] opacity-75" />
+                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[hsl(var(--accent))]" />
               </span>
               Open to select work — Karachi, Pakistan
             </span>
@@ -83,9 +83,9 @@ export default function Hero() {
             <HeroLogo />
           </Reveal>
 
-            <div className="absolute left-0 top-8 flex items-center gap-2 rounded-2xl border border-white/10 bg-[#0a0a0b]/80 px-3 py-2.5 backdrop-blur-xl pointer-events-none md:px-3.5">
+            <div className="absolute left-0 top-8 flex items-center gap-2 rounded-2xl border border-white/10 bg-[#0B1310]/80 px-3 py-2.5 backdrop-blur-xl pointer-events-none md:px-3.5">
               <Sparkles
-                className="size-4 text-[hsl(var(--brand-blue-bright))]"
+                className="size-4 text-[hsl(var(--accent))]"
                 strokeWidth={1.5}
                 aria-hidden="true"
               />
@@ -94,7 +94,7 @@ export default function Hero() {
               </span>
             </div>
 
-            <div className="absolute bottom-8 right-0 rounded-2xl border border-white/10 bg-[#0a0a0b]/80 px-3 py-3 backdrop-blur-xl pointer-events-none md:px-3.5">
+            <div className="absolute bottom-8 right-0 rounded-2xl border border-white/10 bg-[#0B1310]/80 px-3 py-3 backdrop-blur-xl pointer-events-none md:px-3.5">
               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40">
                 Focus
               </p>

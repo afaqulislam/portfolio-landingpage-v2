@@ -22,7 +22,7 @@ export default function Achievements() {
                   <div className="bezel-core flex flex-col p-7">
                     <div className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.04]">
                       <Icon
-                        className="size-5 text-[hsl(var(--brand-blue-bright))]"
+                        className="size-5 text-[hsl(var(--accent))]"
                         strokeWidth={1.5}
                         aria-hidden="true"
                       />

@@ -74,7 +74,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#050505",
+  themeColor: "#0B1310",
   width: "device-width",
   initialScale: 1,
 };
@@ -92,7 +92,7 @@ export default function RootLayout({
       <body className="min-h-[100dvh] overflow-x-hidden">
         <a
           href="#main"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[70] focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-black"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[70] focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-[#0B1310]"
         >
           Skip to content
         </a>
@@ -106,7 +106,7 @@ export default function RootLayout({
               left: "-5%",
               width: "42rem",
               height: "42rem",
-              background: "hsl(240 100% 50% / 0.18)",
+              background: "hsl(81 100% 50% / 0.10)",
             }}
           />
           <div
@@ -117,7 +117,7 @@ export default function RootLayout({
               width: "38rem",
               height: "38rem",
               animationDelay: "-6s",
-              background: "hsl(240 100% 50% / 0.16)",
+              background: "hsl(95 100% 47% / 0.10)",
             }}
           />
           <div
@@ -128,7 +128,7 @@ export default function RootLayout({
               width: "34rem",
               height: "34rem",
               animationDelay: "-12s",
-              background: "hsl(240 100% 50% / 0.12)",
+              background: "hsl(81 100% 50% / 0.08)",
             }}
           />
         </div>

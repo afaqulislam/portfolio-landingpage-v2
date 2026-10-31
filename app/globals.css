@@ -4,15 +4,16 @@
 
 @layer base {
   :root {
-    --background: 0 0% 2%;
-    --foreground: 0 0% 98%;
+    --background: 157 27% 6%;
+    --foreground: 0 0% 100%;
 
-    --brand-blue: 240 100% 50%;
-    --brand-blue-bright: 240 100% 74%;
+    --accent: 81 100% 50%;
+    --accent-alt: 95 100% 47%;
+    --muted: 120 2% 37%;
   }
 
   * {
-    @apply border-white/10;
+    @apply border-[#5E615E]/25;
   }
 
   html {
@@ -43,12 +44,12 @@
   }
 
   ::selection {
-    background: hsl(var(--brand-blue) / 0.4);
-    color: #fff;
+    background: hsl(var(--accent) / 0.9);
+    color: hsl(var(--background));
   }
 
   :focus-visible {
-    outline: 2px solid hsl(var(--brand-blue-bright));
+    outline: 2px solid hsl(var(--accent));
     outline-offset: 3px;
   }
 
@@ -83,12 +84,12 @@
 
   /* Double-bezel card: outer shell + inner core */
   .bezel {
-    @apply rounded-[2rem] bg-white/[0.04] p-1.5 ring-1 ring-white/10;
+    @apply rounded-[2rem] bg-white/[0.04] p-1.5 ring-1 ring-[#5E615E]/40;
     box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
   }
 
   .bezel-core {
-    @apply rounded-[calc(2rem-0.375rem)] bg-[#0a0a0b] ring-1 ring-inset ring-white/[0.06];
+    @apply rounded-[calc(2rem-0.375rem)] bg-[#0B1310] ring-1 ring-inset ring-[#5E615E]/25;
     box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.08);
   }
 
@@ -97,21 +98,21 @@
   }
 
   .accent-text {
-    color: hsl(var(--brand-blue-bright));
+    color: hsl(var(--accent));
   }
 
   /* Nested island CTA button */
   .cta {
-    @apply inline-flex items-center gap-3 rounded-full bg-white px-5 py-2.5 text-sm font-medium text-[#050505] transition-all duration-500 active:scale-[0.97];
+    @apply inline-flex items-center gap-3 rounded-full bg-white px-5 py-2.5 text-sm font-medium text-[#0B1310] transition-all duration-500 active:scale-[0.97];
     transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
   }
 
   .cta:hover {
-    box-shadow: 0 10px 40px -8px hsla(240, 100%, 50%, 0.55);
+    box-shadow: 0 10px 40px -8px hsla(95, 100%, 47%, 0.5);
   }
 
   .cta-icon {
-    @apply flex h-8 w-8 items-center justify-center rounded-full bg-black/10 transition-all duration-500;
+    @apply flex h-8 w-8 items-center justify-center rounded-full bg-[#0B1310]/10 transition-all duration-500;
     transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
   }
 
@@ -233,12 +234,12 @@
 }
 
 .laser.wide {
-  stroke: hsl(240 100% 66% / 0.55);
+  stroke: hsl(95 100% 47% / 0.55);
   stroke-width: 14;
 }
 
 .laser.core {
-  stroke: #eef0ff;
+  stroke: #FFFFFF;
   stroke-width: 6.5;
 }
 

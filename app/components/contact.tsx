@@ -68,8 +68,8 @@ export default function Contact() {
 
   const inputClasses = (invalid?: string) =>
     cn(
-      "w-full rounded-2xl border bg-white/[0.04] px-5 py-4 text-[15px] text-white placeholder:text-white/30 transition-colors duration-300 focus-visible:outline-none focus-visible:border-[hsl(var(--brand-blue))] focus-visible:ring-2 focus-visible:ring-[hsl(var(--brand-blue))]/40 sm:text-base sm:px-6 sm:py-5",
-      invalid ? "border-[hsl(var(--brand-blue))]/60" : "border-white/10 hover:border-white/20",
+      "w-full rounded-2xl border bg-white/[0.04] px-5 py-4 text-[15px] text-white placeholder:text-white/30 transition-colors duration-300 focus-visible:outline-none focus-visible:border-[hsl(var(--accent))] focus-visible:ring-2 focus-visible:ring-[hsl(var(--accent))]/40 sm:text-base sm:px-6 sm:py-5",
+      invalid ? "border-[hsl(var(--accent))]/60" : "border-white/10 hover:border-white/20",
     );
 
   return (
@@ -102,7 +102,7 @@ export default function Contact() {
                     className="flex items-center gap-3 rounded-2xl border border-white/[0.08] bg-white/[0.02] p-4"
                   >
                     <Icon
-                      className="size-5 text-[hsl(var(--brand-blue-bright))]"
+                      className="size-5 text-[hsl(var(--accent))]"
                       strokeWidth={1.5}
                       aria-hidden="true"
                     />
@@ -143,7 +143,7 @@ export default function Contact() {
               <div className="bezel-core h-full p-6 sm:p-8">
                 {sent ? (
                   <div className="flex h-full min-h-[320px] flex-col items-center justify-center text-center">
-                    <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[hsl(var(--brand-blue))] text-white">
+                    <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[hsl(var(--accent))] text-[#0B1310]">
                       <Check className="size-7" strokeWidth={2} aria-hidden="true" />
                     </span>
                     <h3 className="mt-6 text-2xl font-medium tracking-tight">
@@ -199,7 +199,7 @@ export default function Contact() {
                           <p
                             id="name-error"
                             role="alert"
-                            className="mt-2 text-xs text-[hsl(var(--brand-blue-bright))]"
+                            className="mt-2 text-xs text-[hsl(var(--accent))]"
                           >
                             {errors.name}
                           </p>
@@ -234,7 +234,7 @@ export default function Contact() {
                           <p
                             id="email-error"
                             role="alert"
-                            className="mt-2 text-xs text-[hsl(var(--brand-blue-bright))]"
+                            className="mt-2 text-xs text-[hsl(var(--accent))]"
                           >
                             {errors.email}
                           </p>
@@ -270,7 +270,7 @@ export default function Contact() {
                         <p
                           id="message-error"
                           role="alert"
-                          className="mt-2 text-xs text-[hsl(var(--brand-blue-bright))]"
+                          className="mt-2 text-xs text-[hsl(var(--accent))]"
                         >
                           {errors.message}
                         </p>
@@ -307,7 +307,7 @@ export default function Contact() {
 
                         <p className="text-center text-xs leading-relaxed text-white/40">
                           {serverError ? (
-                            <span className="text-[hsl(var(--brand-blue-bright))]">
+                            <span className="text-[hsl(var(--accent))]">
                               {serverError}{" "}
                             </span>
                           ) : null}
