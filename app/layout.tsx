@@ -97,42 +97,6 @@ export default function RootLayout({
           Skip to content
         </a>
 
-        {/* Fixed mesh glow backdrop (single accent hue, never on scroll containers) */}
-        <div className="mesh-backdrop" aria-hidden="true">
-          <div
-            className="mesh-orb animate-orb-drift"
-            style={{
-              top: "-10%",
-              left: "-5%",
-              width: "42rem",
-              height: "42rem",
-              background: "hsl(81 100% 50% / 0.10)",
-            }}
-          />
-          <div
-            className="mesh-orb animate-orb-drift"
-            style={{
-              top: "20%",
-              right: "-10%",
-              width: "38rem",
-              height: "38rem",
-              animationDelay: "-6s",
-              background: "hsl(95 100% 47% / 0.10)",
-            }}
-          />
-          <div
-            className="mesh-orb animate-orb-drift"
-            style={{
-              bottom: "-15%",
-              left: "25%",
-              width: "34rem",
-              height: "34rem",
-              animationDelay: "-12s",
-              background: "hsl(81 100% 50% / 0.08)",
-            }}
-          />
-        </div>
-
         <Header />
         <main id="main">{children}</main>
         <Footer />
