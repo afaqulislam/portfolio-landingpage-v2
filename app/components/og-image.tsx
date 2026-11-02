@@ -8,7 +8,7 @@ export function OgImageContent() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-    backgroundColor: "#0B1310",
+    backgroundColor: "#050505",
     color: "#FFFFFF",
         fontFamily: "monospace",
       }}

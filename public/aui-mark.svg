@@ -5,7 +5,7 @@
     </filter>
   </defs>
 
-  <rect width="128" height="128" rx="30" fill="#0B1310"/>
+  <rect width="128" height="128" rx="30" fill="#050505"/>
   <rect x="5" y="5" width="118" height="118" rx="25" stroke="#ffffff" stroke-opacity="0.06" stroke-width="3"/>
 
   <circle cx="70" cy="44" r="42" fill="#A6FF00" opacity="0.16" filter="url(#glow)"/>

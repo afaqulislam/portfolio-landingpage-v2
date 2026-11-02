@@ -4,7 +4,7 @@ import { marquee, skillGroups } from "@/lib/data";
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 sm:py-28 lg:py-32">
+    <section id="skills" className="py-16 sm:py-20 lg:py-24">
       <div className="container">
         <SectionHeading
           eyebrow="Skills"

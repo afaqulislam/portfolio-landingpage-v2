@@ -4,7 +4,7 @@ import { achievements } from "@/lib/data";
 
 export default function Achievements() {
   return (
-    <section id="achievements" className="py-24 sm:py-28 lg:py-32">
+    <section id="achievements" className="py-16 sm:py-20 lg:py-24">
       <div className="container">
         <SectionHeading
           align="center"

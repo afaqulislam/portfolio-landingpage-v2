@@ -152,6 +152,20 @@ export const experiences: Experience[] = [
     ],
   },
   {
+    role: "Full Stack Development Intern",
+    company: "Aptura Tech Solutions",
+    period: "Aug 2026 — Sep 2026",
+    location: "Karachi, Pakistan · Remote",
+    summary:
+      "Completed a one-month internship (Batch 03) covering full stack web development, moving from single-page builds to production-style applications.",
+    achievements: [
+      "Built a portfolio website, a SaaS landing page (NovaSaaS), a multi-page responsive website, an interactive JavaScript dashboard, and a full-stack blog platform (AUI-Blogo).",
+      "Developed StartupLaunch AI, an AI agent-based tool that evaluates startup ideas with a Go, No-Go, or Pivot workflow using Next.js, React, TypeScript, and FastAPI.",
+      "Worked on authentication, role-based access control, database integration, testing, and CI workflows.",
+      "Focused on accessibility, SEO, and performance across all projects.",
+    ],
+  },
+  {
     role: "Frontend Development Intern",
     company: "CodeAlpha",
     period: "Sep 2024",
@@ -190,12 +204,14 @@ export const education: Education[] = [
     title: "BS Computational Mathematics",
     institution: "University of Karachi",
     status: "In Progress",
+    period: "Jan 2026 — Present",
   },
   {
     title:
       "Certificate, Full-Stack Development & AI / AI Agent Systems / Cloud & Web Development",
     institution: "Governor Sindh Initiative for GenAI, Web3, and Metaverse (GIAIC)",
-    period: "Feb 2024 – Sep 2026",
+    status: "In Progress",
+    period: "Feb 2024 — Present",
     bullets: [
       "Selected participant in a competitive, government-backed AI and cloud program (Batch 1); top 10% performer, maintaining 90–95th percentile across three quarters.",
       "Program covers full-stack web development (Next.js, React, TypeScript, FastAPI), database architecture, authentication, scalable system design, AI integrations, agent-based workflows, spec-driven development, and context engineering.",

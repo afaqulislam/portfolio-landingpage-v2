@@ -20,7 +20,7 @@ const spans = [
 
 export default function Projects() {
   return (
-    <section id="work" className="py-24 sm:py-28 lg:py-32">
+    <section id="work" className="py-16 sm:py-20 lg:py-24">
       <div className="container">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <SectionHeading
@@ -62,10 +62,10 @@ export default function Projects() {
                       sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover transition-transform duration-700 ease-fluid group-hover:scale-[1.04]"
                     />
-                    <span className="absolute left-5 top-5 rounded-full bg-[#0B1310]/30 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.2em] text-white backdrop-blur-md">
+                    <span className="absolute left-5 top-5 rounded-full bg-[#050505]/30 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.2em] text-white backdrop-blur-md">
                       {project.year}
                     </span>
-                    <span className="absolute bottom-5 right-5 flex h-11 w-11 items-center justify-center rounded-full bg-[#0B1310]/35 text-white backdrop-blur-md transition-all duration-500 ease-fluid group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:scale-105">
+                    <span className="absolute bottom-5 right-5 flex h-11 w-11 items-center justify-center rounded-full bg-[#050505]/35 text-white backdrop-blur-md transition-all duration-500 ease-fluid group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:scale-105">
                       <ArrowUpRight className="size-5" strokeWidth={1.5} aria-hidden="true" />
                     </span>
                   </div>

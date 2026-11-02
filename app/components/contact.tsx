@@ -73,7 +73,7 @@ export default function Contact() {
     );
 
   return (
-    <section id="contact" className="py-24 sm:py-28 lg:py-32">
+    <section id="contact" className="py-16 sm:py-20 lg:py-24">
       <div className="container grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-5">
           <Reveal>
@@ -143,7 +143,7 @@ export default function Contact() {
               <div className="bezel-core h-full p-6 sm:p-8">
                 {sent ? (
                   <div className="flex h-full min-h-[320px] flex-col items-center justify-center text-center">
-                    <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[hsl(var(--accent))] text-[#0B1310]">
+                    <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[hsl(var(--accent))] text-[#050505]">
                       <Check className="size-7" strokeWidth={2} aria-hidden="true" />
                     </span>
                     <h3 className="mt-6 text-2xl font-medium tracking-tight">

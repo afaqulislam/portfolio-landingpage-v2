@@ -86,7 +86,7 @@ export default function Header() {
         className={cn(
           "relative z-50 mx-auto flex w-full max-w-5xl items-center justify-between rounded-full border px-2.5 py-2 transition-all duration-500 ease-fluid",
           scrolled
-            ? "border-[#5E615E]/25 bg-[#0B1310]/70 shadow-[0_8px_40px_-12px_rgba(11,19,16,0.75)] backdrop-blur-xl"
+            ? "border-[#5E615E]/25 bg-[#050505]/70 shadow-[0_8px_40px_-12px_rgba(5,5,5,0.75)] backdrop-blur-xl"
             : "border-white/[0.06] bg-white/[0.02] backdrop-blur-md",
         )}
       >
@@ -167,7 +167,7 @@ export default function Header() {
         inert={!open}
         aria-hidden={!open}
         className={cn(
-          "fixed inset-0 z-40 flex flex-col justify-center bg-[#0B1310]/90 px-8 backdrop-blur-3xl transition-[opacity,visibility] duration-500 md:hidden",
+          "fixed inset-0 z-40 flex flex-col justify-center bg-[#050505]/90 px-8 backdrop-blur-3xl transition-[opacity,visibility] duration-500 md:hidden",
           open
             ? "visible pointer-events-auto opacity-100"
             : "invisible pointer-events-none opacity-0",

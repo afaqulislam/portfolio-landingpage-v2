@@ -4,7 +4,7 @@ import { experiences } from "@/lib/data";
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-24 sm:py-28 lg:py-32">
+    <section id="experience" className="py-16 sm:py-20 lg:py-24">
       <div className="container grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-4">
           <div className="lg:sticky lg:top-28">
@@ -28,7 +28,7 @@ export default function Experience() {
             >
               <span
                 aria-hidden="true"
-                className="absolute left-0 top-1.5 flex h-5 w-5 items-center justify-center rounded-full border border-white/15 bg-[#0B1310]"
+                className="absolute left-0 top-1.5 flex h-5 w-5 items-center justify-center rounded-full border border-white/15 bg-[#050505]"
               >
                 <span className="h-2 w-2 rounded-full bg-[hsl(var(--accent))]" />
               </span>

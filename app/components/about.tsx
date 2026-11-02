@@ -3,7 +3,7 @@ import { principles } from "@/lib/data";
 
 export default function About() {
   return (
-    <section id="about" className="py-24 sm:py-28 lg:py-32">
+    <section id="about" className="py-16 sm:py-20 lg:py-24">
       <div className="container grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-5">
           <Reveal>
