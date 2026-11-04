@@ -23,7 +23,7 @@ export default function Hero() {
           </Reveal>
 
           <Reveal delay={80}>
-            <h1 className="mt-6 text-balance text-5xl font-semibold leading-[1.03] tracking-tight sm:text-6xl lg:text-7xl">
+            <h1 className="mt-6 text-balance text-[2.5rem] font-semibold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
               Agentic AI engineer <br className="hidden sm:block" />
               building{" "}
               <span className="accent-text">products that ship.</span>
@@ -64,11 +64,11 @@ export default function Hero() {
           </Reveal>
 
           <Reveal delay={320}>
-            <dl className="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-white/[0.08] pt-8">
+            <dl className="mt-12 grid max-w-lg grid-cols-3 gap-4 border-t border-white/[0.08] pt-8 sm:gap-6 lg:mt-10 lg:pt-7">
               {stats.map((stat) => (
                 <div key={stat.label}>
                   <dt className="sr-only">{stat.label}</dt>
-                  <dd className="text-2xl font-semibold tracking-tight sm:text-3xl">
+                  <dd className="text-xl font-semibold tracking-tight sm:text-3xl lg:text-[1.75rem]">
                     {stat.value}
                   </dd>
                   <dd className="mt-1 text-xs text-white/50">{stat.label}</dd>
@@ -78,7 +78,7 @@ export default function Hero() {
           </Reveal>
         </div>
 
-        <div className="relative lg:col-span-5">
+        <div className="relative lg:col-span-5 lg:max-w-[26rem] lg:justify-self-end">
           <Reveal delay={200} className="relative aspect-square w-full">
             <HeroLogo />
           </Reveal>

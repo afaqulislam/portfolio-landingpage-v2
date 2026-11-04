@@ -24,7 +24,7 @@ export default function Experience() {
           {experiences.map((item, index) => (
             <li
               key={`${item.company}-${item.role}`}
-              className="relative pl-10 pb-8 last:pb-0"
+              className="relative pl-8 pb-8 last:pb-0 sm:pl-10"
             >
               <span
                 aria-hidden="true"
@@ -34,7 +34,7 @@ export default function Experience() {
               </span>
 
               <Reveal delay={index * 90}>
-                <div className="rounded-[1.75rem] border border-white/[0.08] bg-white/[0.03] p-6 transition-colors duration-500 hover:border-white/15 hover:bg-white/[0.05] sm:p-7">
+                <div className="rounded-[1.75rem] border border-white/[0.08] bg-white/[0.03] p-5 transition-colors duration-500 hover:border-white/15 hover:bg-white/[0.05] sm:p-7">
                   <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
                     <span className="font-mono text-xs uppercase tracking-[0.18em] text-[hsl(var(--accent))]">
                       {item.period}

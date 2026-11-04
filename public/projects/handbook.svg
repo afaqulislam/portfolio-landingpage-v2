@@ -17,9 +17,9 @@
   <circle cx="52" cy="28" r="5" fill="#ffffff" fill-opacity="0.4"/>
   <circle cx="72" cy="28" r="5" fill="#ffffff" fill-opacity="0.4"/>
   <rect x="96" y="16" width="504" height="24" rx="12" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.08"/>
-  <text x="348" y="33" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="13" fill="#5E615E">neofyx.com</text>
-  <text x="400" y="272" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="210" font-weight="700" fill="#A6FF00">NX</text>
-  <text x="400" y="384" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="54" font-weight="600" fill="#ffffff">NEO FYX</text>
+  <text x="348" y="33" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="13" fill="#5E615E">github.com/afaqulislam/handbook</text>
+  <text x="400" y="272" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="210" font-weight="700" fill="#A6FF00">HB</text>
+  <text x="400" y="384" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="42" font-weight="600" fill="#ffffff">HANDBOOK</text>
   <rect x="358" y="410" width="84" height="3" rx="1.5" fill="#A6FF00"/>
-  <text x="400" y="448" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="15" font-weight="500" fill="#A6FF00" letter-spacing="4">AI AUTOMATION &amp; SAAS</text>
+  <text x="400" y="448" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="15" font-weight="500" fill="#A6FF00" letter-spacing="4">GOVERNED KNOWLEDGE AI</text>
 </svg>

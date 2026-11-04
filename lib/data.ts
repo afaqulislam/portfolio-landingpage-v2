@@ -98,14 +98,14 @@ export const projects: Project[] = [
     image: "/projects/startuplaunch-ai.svg",
   },
   {
-    title: "ShiftSathi",
-    tagline: "Shift management, simplified",
+    title: "Aurelia",
+    tagline: "AI luxury fashion commerce",
     description:
-      "A full-stack shift management web app built with Next.js and TypeScript, shipped and live on Vercel.",
-    tags: ["Next.js", "TypeScript", "Vercel"],
+      "An AI-powered luxury fashion e-commerce experience built for Google Build with AI 2026 — Gemini-driven styling, React 19 and Tailwind CSS 4, live on Vercel.",
+    tags: ["React 19", "Tailwind CSS 4", "Gemini AI", "Vercel"],
     year: "2026",
-    href: "https://shiftsathi-aui.vercel.app",
-    image: "/projects/shiftsathi.svg",
+    href: "https://aurelia-aui.vercel.app",
+    image: "/projects/aurelia.svg",
   },
   {
     title: "Kisaan Dost AI",
@@ -118,14 +118,24 @@ export const projects: Project[] = [
     image: "/projects/kisaan-dost-ai.svg",
   },
   {
-    title: "Neofyx",
-    tagline: "AI automation & SaaS startup",
+    title: "Handbook",
+    tagline: "Governed knowledge AI",
     description:
-      "Co-founded an AI automation and SaaS studio building agentic workflows, automation systems and web products for clients.",
-    tags: ["AI Automation", "SaaS", "Agentic Workflows"],
-    year: "2025",
-    href: "https://neofyx.com",
-    image: "/projects/neofyx.svg",
+      "A governed Knowledge System of Record that turns scattered policies into cited, permission-aware answers with RAG, pgvector and an MCP server.",
+    tags: ["Next.js", "RAG", "pgvector", "MCP"],
+    year: "2026",
+    href: "https://handbook-aui.vercel.app",
+    image: "/projects/handbook.svg",
+  },
+  {
+    title: "ShiftSathi",
+    tagline: "AI-grounded ops assistant",
+    description:
+      "An AI-grounded frontline operations assistant for factories and workshops, built with Next.js and TypeScript and live on Vercel.",
+    tags: ["Next.js", "TypeScript", "AI Assistant", "Vercel"],
+    year: "2026",
+    href: "https://shiftsathi-aui.vercel.app",
+    image: "/projects/shiftsathi.svg",
   },
 ];
 
@@ -273,7 +283,11 @@ export const socials = [
   { label: "GitHub", href: "https://github.com/afaqulislam", icon: Github },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/afaqulislam", icon: Linkedin },
   { label: "Email", href: "mailto:afaqulislam707@gmail.com", icon: Mail },
-  { label: "Portfolio", href: "https://afaqulislam.vercel.app", icon: Globe },
+  {
+    label: "Portfolio",
+    href: "https://portfolio-landingpage-v2-aui.vercel.app",
+    icon: Globe,
+  },
 ] as const;
 
 export const marquee = [
