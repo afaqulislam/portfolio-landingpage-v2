@@ -21,7 +21,7 @@ Afaq Ul Islam is an Agentic AI engineer and full-stack developer who designs, bu
 
 ## Selected projects
 - StartupLaunch AI: Multi-agent system that runs market research, competitor analysis and risk assessment, then delivers a Go / No-Go / Pivot verdict (Next.js, TypeScript, FastAPI).
-- Aurelia: AI-powered luxury fashion e-commerce experience built for Google Build with AI 2026 using Gemini AI, React 19 and Tailwind CSS 4.
+- TaskSnap AI: Turns screenshots of messy messages into prioritized, deadline-aware task lists using Tesseract.js OCR and Groq AI (Next.js 16, React 19, Tailwind CSS 4).
 - Kisaan Dost AI: AI crop disease detection for Pakistani farmers with Gemini Vision, Roman Urdu diagnosis and voice reports.
 - Handbook: Governed Knowledge System of Record turning scattered policies into cited, permission-aware answers with RAG, pgvector and an MCP server.
 - ShiftSathi: AI-grounded frontline operations assistant for factories and workshops, built with Next.js and TypeScript.

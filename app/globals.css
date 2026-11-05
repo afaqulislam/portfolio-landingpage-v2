@@ -119,8 +119,10 @@
     transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
   }
 
-  .cta:hover {
-    box-shadow: 0 10px 40px -8px hsla(95, 100%, 47%, 0.5);
+  @media (hover: hover) and (pointer: fine) {
+    .cta:hover {
+      box-shadow: 0 10px 40px -8px hsla(95, 100%, 47%, 0.5);
+    }
   }
 
   .cta-icon {
@@ -128,8 +130,10 @@
     transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
   }
 
-  .cta:hover .cta-icon {
-    @apply translate-x-0.5 -translate-y-px scale-105;
+  @media (hover: hover) and (pointer: fine) {
+    .cta:hover .cta-icon {
+      @apply translate-x-0.5 -translate-y-px scale-105;
+    }
   }
 
   .cta-ghost {

@@ -127,7 +127,7 @@ export default function Contact() {
                     key={social.label}
                     href={social.href}
                     aria-label={social.label}
-                    className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white/60 transition-all duration-500 ease-fluid hover:-translate-y-0.5 hover:border-white/25 hover:text-white"
+                    className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white/60 transition-all duration-500 ease-fluid hover:-translate-y-0.5 hover:border-white/25 hover:text-white active:scale-95"
                   >
                     <Icon className="size-5" strokeWidth={1.5} aria-hidden="true" />
                   </a>

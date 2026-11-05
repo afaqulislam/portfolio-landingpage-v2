@@ -83,6 +83,7 @@ export type Project = {
   tags: string[];
   year: string;
   href: string;
+  github: string;
   image: string;
 };
 
@@ -94,18 +95,20 @@ export const projects: Project[] = [
       "A multi-agent system that runs market research, competitor analysis and risk assessment in parallel, then delivers a Go / No-Go / Pivot verdict.",
     tags: ["Next.js", "TypeScript", "FastAPI", "Multi-Agent AI"],
     year: "2026",
-    href: "https://github.com/afaqulislam/startuplaunch-ai",
+    href: "https://startuplaunchai-aui.vercel.app",
+    github: "https://github.com/afaqulislam/startuplaunch-ai",
     image: "/projects/startuplaunch-ai.svg",
   },
   {
-    title: "Aurelia",
-    tagline: "AI luxury fashion commerce",
+    title: "TaskSnap AI",
+    tagline: "Messages into tasks",
     description:
-      "An AI-powered luxury fashion e-commerce experience built for Google Build with AI 2026 — Gemini-driven styling, React 19 and Tailwind CSS 4, live on Vercel.",
-    tags: ["React 19", "Tailwind CSS 4", "Gemini AI", "Vercel"],
+      "Upload a screenshot and get a prioritized, deadline-aware task list — Tesseract.js OCR and Groq AI extract every action item in seconds.",
+    tags: ["Next.js 16", "React 19", "Groq AI", "Tesseract.js"],
     year: "2026",
-    href: "https://aurelia-aui.vercel.app",
-    image: "/projects/aurelia.svg",
+    href: "https://tasksnapai-aui.vercel.app",
+    github: "https://github.com/afaqulislam/tasksnap-ai",
+    image: "/projects/tasksnap-ai.svg",
   },
   {
     title: "Kisaan Dost AI",
@@ -114,7 +117,8 @@ export const projects: Project[] = [
       "AI-powered crop disease detection for Pakistani farmers — Gemini Vision, Roman Urdu diagnosis and voice reports. Silver Tier at Google AI Seekho 2026.",
     tags: ["Google Gemini", "Google Cloud Run", "AI Seekho"],
     year: "2026",
-    href: "https://github.com/afaqulislam/kisaan-dost-ai",
+    href: "https://kisaan-dost-ai-1055174968017.asia-southeast1.run.app/",
+    github: "https://github.com/afaqulislam/kisaan-dost-ai",
     image: "/projects/kisaan-dost-ai.svg",
   },
   {
@@ -125,6 +129,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "RAG", "pgvector", "MCP"],
     year: "2026",
     href: "https://handbook-aui.vercel.app",
+    github: "https://github.com/afaqulislam/handbook",
     image: "/projects/handbook.svg",
   },
   {
@@ -135,6 +140,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "TypeScript", "AI Assistant", "Vercel"],
     year: "2026",
     href: "https://shiftsathi-aui.vercel.app",
+    github: "https://github.com/afaqulislam/shiftsathi",
     image: "/projects/shiftsathi.svg",
   },
 ];
@@ -285,7 +291,7 @@ export const socials = [
   { label: "Email", href: "mailto:afaqulislam707@gmail.com", icon: Mail },
   {
     label: "Portfolio",
-    href: "https://portfolio-landingpage-v2-aui.vercel.app",
+    href: "https://afaqulislam.vercel.app",
     icon: Globe,
   },
 ] as const;

@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="container grid grid-cols-1 items-center gap-14 lg:grid-cols-12 lg:gap-10">
         <div className="lg:col-span-7">
           <Reveal>
-            <span className="eyebrow">
+            <span className="eyebrow max-w-full text-[9px] tracking-[0.18em] sm:text-[10px] sm:tracking-[0.22em]">
               <span className="relative flex h-1.5 w-1.5">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[hsl(var(--accent))] opacity-75" />
                 <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[hsl(var(--accent))]" />
@@ -78,7 +78,7 @@ export default function Hero() {
           </Reveal>
         </div>
 
-        <div className="relative lg:col-span-5 lg:max-w-[26rem] lg:justify-self-end">
+        <div className="relative mx-auto w-full max-w-[22rem] lg:col-span-5 lg:mx-0 lg:max-w-[26rem] lg:justify-self-end">
           <Reveal delay={200} className="relative aspect-square w-full">
             <HeroLogo />
           </Reveal>
@@ -98,7 +98,7 @@ export default function Hero() {
               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40">
                 Focus
               </p>
-              <p className="mt-1 text-sm font-medium tracking-tight">
+              <p className="mt-1 text-xs font-medium tracking-tight sm:text-sm">
                 Agentic AI &middot; Full-stack &middot; Automation
               </p>
             </div>

@@ -106,7 +106,7 @@ export default function Header() {
         </Link>
 
         <nav
-          className="hidden items-center gap-0.5 md:flex"
+          className="hidden items-center gap-0.5 lg:flex"
           aria-label="Primary"
         >
           {NAV.map((item) => (
@@ -117,7 +117,7 @@ export default function Header() {
               className={cn(
                 "rounded-full px-3.5 py-1.5 text-sm transition-all duration-300 ease-fluid",
                 active === item.id
-                  ? "bg-white/10 text-white"
+                  ? "bg-white/10 text-white active:bg-white/15"
                   : "text-white/60 hover:bg-white/5 hover:text-white",
               )}
             >
@@ -126,7 +126,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <Link href="/#contact" className="cta-ghost hidden md:inline-flex">
+        <Link href="/#contact" className="cta-ghost hidden lg:inline-flex">
           Let&apos;s talk
           <ArrowUpRight className="size-4" strokeWidth={1.5} aria-hidden="true" />
         </Link>
@@ -138,7 +138,7 @@ export default function Header() {
           aria-expanded={open}
           aria-controls="mobile-nav"
           aria-label={open ? "Close menu" : "Open menu"}
-          className="relative flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] md:hidden"
+          className="relative flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] transition-all duration-300 hover:border-white/25 hover:bg-white/[0.06] active:scale-95 lg:hidden"
         >
           <span
             className={cn(
@@ -167,7 +167,7 @@ export default function Header() {
         inert={!open}
         aria-hidden={!open}
         className={cn(
-          "fixed inset-0 z-40 flex flex-col justify-center bg-[#050505]/90 px-8 backdrop-blur-3xl transition-[opacity,visibility] duration-500 md:hidden",
+          "fixed inset-0 z-40 flex flex-col justify-center bg-[#050505]/90 px-8 backdrop-blur-3xl transition-[opacity,visibility] duration-500 lg:hidden",
           open
             ? "visible pointer-events-auto opacity-100"
             : "invisible pointer-events-none opacity-0",
@@ -180,7 +180,7 @@ export default function Header() {
               href={`/#${item.id}`}
               onClick={() => setOpen(false)}
               className={cn(
-                "border-b border-white/[0.06] py-4 text-3xl font-medium tracking-tight transition-all duration-500 ease-fluid",
+                "border-b border-white/[0.06] py-4 text-3xl font-medium tracking-tight transition-all duration-500 ease-fluid active:text-[hsl(var(--accent))]",
                 open ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0",
               )}
               style={{
