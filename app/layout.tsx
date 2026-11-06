@@ -48,10 +48,37 @@ export const metadata: Metadata = {
     "TypeScript",
     "Automation",
     "Portfolio",
+    "TaskSnap AI",
+    "Kisaan Dost AI",
+    "AI Engineer Karachi",
+    "Hire AI Engineer",
   ],
-  authors: [{ name: siteName }],
+  authors: [{ name: siteName, url: siteUrl }],
+  publisher: siteName,
+  category: "technology",
   alternates: {
     canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  formatDetection: {
+    telephone: false,
+    email: false,
+    address: false,
+  },
+  appleWebApp: {
+    capable: true,
+    title: "Afaq Ul Islam",
+    statusBarStyle: "black-translucent",
   },
   verification: googleSiteVerification
     ? { google: googleSiteVerification }
@@ -67,6 +94,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@afaqulislam707",
+    creator: "@afaqulislam707",
     title: "Afaq Ul Islam — Agentic AI Engineer",
     description:
       "Building multi-agent AI systems, automation workflows and full-stack products end to end.",

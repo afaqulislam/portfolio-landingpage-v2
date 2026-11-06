@@ -1,3 +1,4 @@
+import { Building2 } from "lucide-react";
 import Reveal from "./reveal";
 import SectionHeading from "./section-heading";
 import { experiences } from "@/lib/data";
@@ -45,7 +46,14 @@ export default function Experience() {
                   <h3 className="mt-3 text-xl font-medium tracking-tight">
                     {item.role}
                   </h3>
-                  <p className="mt-1 text-sm text-white/60">{item.company}</p>
+                  <p className="mt-2 flex items-center gap-2 text-sm font-medium text-white/80">
+                    <Building2
+                      className="size-3.5 shrink-0 text-[hsl(var(--accent))]"
+                      strokeWidth={1.5}
+                      aria-hidden="true"
+                    />
+                    {item.company}
+                  </p>
                   <p className="mt-4 text-sm leading-relaxed text-white/50">
                     {item.summary}
                   </p>

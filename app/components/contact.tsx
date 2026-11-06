@@ -127,7 +127,7 @@ export default function Contact() {
                     key={social.label}
                     href={social.href}
                     aria-label={social.label}
-                    className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white/60 transition-all duration-500 ease-fluid hover:-translate-y-0.5 hover:border-white/25 hover:text-white active:scale-95"
+                    className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white/60 transition-all duration-500 ease-fluid hover:-translate-y-0.5 hover:border-white/25 hover:text-white active:scale-95 sm:h-11 sm:w-11"
                   >
                     <Icon className="size-5" strokeWidth={1.5} aria-hidden="true" />
                   </a>
@@ -283,7 +283,7 @@ export default function Contact() {
                           disabled={sending}
                           aria-busy={sending}
                           className={cn(
-                            "cta min-w-[190px] justify-center disabled:cursor-not-allowed disabled:hover:shadow-none",
+                            "cta min-w-0 justify-center disabled:cursor-not-allowed disabled:hover:shadow-none sm:min-w-[190px]",
                             sending && "disabled:opacity-90",
                           )}
                         >

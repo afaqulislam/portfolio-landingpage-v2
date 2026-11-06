@@ -94,7 +94,7 @@ export default function Footer() {
             <Link
               href="/#home"
               aria-label="Back to top"
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white/60 transition-all duration-500 ease-fluid hover:-translate-y-1 hover:text-white active:scale-95"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white/60 transition-all duration-500 ease-fluid hover:-translate-y-1 hover:text-white active:scale-95 sm:h-11 sm:w-11"
             >
               <ArrowUp className="size-5" strokeWidth={1.5} aria-hidden="true" />
             </Link>

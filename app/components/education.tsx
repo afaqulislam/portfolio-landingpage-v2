@@ -1,3 +1,4 @@
+import { GraduationCap } from "lucide-react";
 import Reveal from "./reveal";
 import SectionHeading from "./section-heading";
 import { education } from "@/lib/data";
@@ -53,7 +54,14 @@ export default function Education() {
                   <h3 className="mt-3 text-lg font-medium tracking-tight sm:text-xl">
                     {item.title}
                   </h3>
-                  <p className="mt-1 text-sm text-white/60">{item.institution}</p>
+                  <p className="mt-2 flex items-start gap-2 text-sm font-medium text-white/80">
+                    <GraduationCap
+                      className="mt-0.5 size-3.5 shrink-0 text-[hsl(var(--accent))]"
+                      strokeWidth={1.5}
+                      aria-hidden="true"
+                    />
+                    {item.institution}
+                  </p>
                   {item.bullets ? (
                     <ul className="mt-4 space-y-2">
                       {item.bullets.map((bullet) => (

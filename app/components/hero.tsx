@@ -41,12 +41,12 @@ export default function Hero() {
           </Reveal>
 
           <Reveal delay={240}>
-            <div className="mt-9 flex flex-wrap items-center gap-3">
+            <div className="mt-9 flex flex-nowrap items-center gap-1 min-[380px]:gap-2 sm:gap-3">
               <Link href="/#work" className="cta">
                 View selected work
                 <span className="cta-icon">
                   <ArrowUpRight
-                    className="size-4"
+                    className="size-3.5 sm:size-4"
                     strokeWidth={1.5}
                     aria-hidden="true"
                   />
@@ -57,8 +57,10 @@ export default function Hero() {
                 download
                 className="cta-ghost"
               >
-                <Download className="size-4" strokeWidth={1.5} aria-hidden="true" />
                 Download CV
+                <span className="cta-icon bg-white/10">
+                  <Download className="size-3.5 sm:size-4" strokeWidth={1.5} aria-hidden="true" />
+                </span>
               </a>
             </div>
           </Reveal>

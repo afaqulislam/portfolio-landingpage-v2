@@ -2,9 +2,6 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: ["./app/**/*.{ts,tsx}", "./lib/**/*.{ts,tsx}"],
-  future: {
-    hoverOnlyWhenSupported: true,
-  },
   theme: {
     container: {
       center: true,
