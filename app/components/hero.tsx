@@ -55,12 +55,10 @@ export default function Hero() {
               <a
                 href="/Afaq_Ul_Islam_Resume.pdf"
                 download
-                className="cta-ghost"
+                className="cta-ghost h-[38px] gap-1.5 px-2 text-[11px] min-[380px]:px-2.5 min-[380px]:text-xs sm:h-[46px] sm:gap-2 sm:px-4 sm:py-0 sm:text-[13.5px]"
               >
+                <Download className="size-3.5 sm:size-4" strokeWidth={1.5} aria-hidden="true" />
                 Download CV
-                <span className="cta-icon bg-white/10">
-                  <Download className="size-3.5 sm:size-4" strokeWidth={1.5} aria-hidden="true" />
-                </span>
               </a>
             </div>
           </Reveal>

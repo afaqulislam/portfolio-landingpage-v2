@@ -32,3 +32,8 @@ Afaq Ul Islam is an Agentic AI engineer and full-stack developer who designs, bu
 - LinkedIn: https://www.linkedin.com/in/afaqulislam
 - X: https://x.com/afaqulislam707
 - Portfolio: https://portfolio-landingpage-v2-aui.vercel.app
+
+## Portfolio site
+- Stack: Next.js 15 (App Router), React 19, TypeScript, Tailwind CSS 3.4
+- Sections: hero, about, skills, projects, experience, education, milestones, contact
+- Source: https://github.com/afaqulislam/portfolio-landingpage-v2

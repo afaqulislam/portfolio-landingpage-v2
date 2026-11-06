@@ -5,7 +5,6 @@ import {
   useRef,
   useState,
   type CSSProperties,
-  type ElementType,
   type ReactNode,
 } from "react";
 import { cn } from "@/lib/utils";
@@ -14,16 +13,14 @@ type RevealProps = {
   children: ReactNode;
   className?: string;
   delay?: number;
-  as?: ElementType;
 };
 
 export default function Reveal({
   children,
   className,
   delay = 0,
-  as: Tag = "div",
 }: RevealProps) {
-  const ref = useRef<HTMLElement | null>(null);
+  const ref = useRef<HTMLDivElement | null>(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -52,12 +49,12 @@ export default function Reveal({
   }, []);
 
   return (
-    <Tag
+    <div
       ref={ref}
       className={cn("reveal", visible && "is-visible", className)}
       style={{ "--reveal-delay": `${delay}ms` } as CSSProperties}
     >
       {children}
-    </Tag>
+    </div>
   );
 }

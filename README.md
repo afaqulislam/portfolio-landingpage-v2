@@ -98,13 +98,17 @@ portfolio-landingpage-v2/
 │  ├─ components/           # Section + layout components
 │  │  ├─ hero-logo.tsx      # Electric AUI laser monogram
 │  │  ├─ glass-wordmark.tsx # Mouse-tracked footer wordmark
-│  │  └─ ...                # about, skills, projects, education, ...
+│  │  ├─ og-image.tsx       # Shared Open Graph / Twitter image
+│  │  └─ ...                # header, hero, about, skills, ...
 │  ├─ fonts/                # Geist variable fonts
 │  ├─ globals.css           # Design tokens, utilities, base styles
-│  ├─ icon.svg              # Favicon / PWA icon
+│  ├─ favicon.ico           # Browser favicon
+│  ├─ icon.svg              # App icon
+│  ├─ apple-icon.png        # Apple touch icon
 │  ├─ layout.tsx            # Root layout, metadata, backdrop
 │  ├─ manifest.ts           # Web app manifest
-│  ├─ opengraph-image.tsx   # Generated social share image (also twitter-image.tsx)
+│  ├─ opengraph-image.tsx   # Social share image
+│  ├─ twitter-image.tsx     # X / Twitter share image
 │  ├─ robots.ts             # robots.txt route
 │  ├─ sitemap.ts            # sitemap.xml route
 │  ├─ not-found.tsx         # Styled 404 page
@@ -114,6 +118,7 @@ portfolio-landingpage-v2/
 │  ├─ seo.ts                # Site constants + JSON-LD structured data
 │  └─ utils.ts              # `cn` class-merge helper
 ├─ public/
+│  ├─ icons/                # PWA icons (192, 512, maskable)
 │  ├─ projects/             # Project preview SVGs
 │  ├─ aui-mark.svg          # AUI monogram (header/footer/README)
 │  ├─ llms.txt              # AI crawler summary

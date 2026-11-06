@@ -8,8 +8,6 @@
     --foreground: 0 0% 100%;
 
     --accent: 81 100% 50%;
-    --accent-alt: 95 100% 47%;
-    --muted: 120 2% 37%;
   }
 
   * {
@@ -61,8 +59,7 @@
 
   h1,
   h2,
-  h3,
-  h4 {
+  h3 {
     @apply font-sans;
     text-wrap: balance;
   }

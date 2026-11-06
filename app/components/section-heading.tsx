@@ -1,13 +1,11 @@
 import type { ReactNode } from "react";
 import Reveal from "./reveal";
-import { cn } from "@/lib/utils";
 
 type SectionHeadingProps = {
   eyebrow: string;
   title: ReactNode;
   description?: string;
   align?: "left" | "center";
-  className?: string;
 };
 
 export default function SectionHeading({
@@ -15,15 +13,12 @@ export default function SectionHeading({
   title,
   description,
   align = "left",
-  className,
 }: SectionHeadingProps) {
   return (
     <div
-      className={cn(
-        "max-w-2xl",
-        align === "center" && "mx-auto text-center",
-        className,
-      )}
+      className={
+        align === "center" ? "mx-auto max-w-2xl text-center" : "max-w-2xl"
+      }
     >
       <Reveal>
         <span className="eyebrow">{eyebrow}</span>
