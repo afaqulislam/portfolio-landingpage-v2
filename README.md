@@ -1,26 +1,57 @@
 <p align="center">
-  <img src="public/aui-mark.svg" width="128" height="128" alt="AUI monogram — Afaq Ul Islam" />
+  <img src="public/aui-mark.svg" width="112" height="112" alt="AUI monogram — Afaq Ul Islam" />
 </p>
 
 <h1 align="center">Afaq Ul Islam — Portfolio</h1>
 
 <p align="center">
-  A premium, animated portfolio landing page for an agentic AI engineer &amp; full-stack developer —
-  built with <strong>Next.js 15</strong>, <strong>TypeScript</strong> and <strong>Tailwind CSS</strong>, with an
-  electric laser-drawn <strong>AUI</strong> monogram, glassmorphism, and a working contact form powered by <strong>Resend</strong>.
+  <strong>Agentic AI Engineer · Full-Stack Developer · Co-Founder &amp; COO at Neofyx</strong>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Next.js-15.0.7-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js 15" />
-  <img src="https://img.shields.io/badge/TypeScript-5-5E615E?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-3.4-A6FF00?style=flat-square&logo=tailwindcss&logoColor=0B1310" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/React-19-A6FF00?style=flat-square&logo=react&logoColor=0B1310" alt="React 19" />
-  <img src="https://img.shields.io/badge/License-All%20Rights%20Reserved-lightgrey?style=flat-square" alt="License: All Rights Reserved" />
+  A premium, animated portfolio built with Next.js 15, TypeScript and Tailwind CSS —
+  featuring an electric laser-drawn AUI monogram, glassmorphism, a working Resend-powered
+  contact form, and a fully static, SEO-first App Router build.
 </p>
 
 <p align="center">
-  <a href="https://portfolio-landingpage-v2-aui.vercel.app"><strong>View live site →</strong></a>
-  · <a href="https://github.com/afaqulislam"><strong>GitHub profile</strong></a>
+  <a href="https://portfolio-landingpage-v2-aui.vercel.app">
+    <img src="https://img.shields.io/badge/Live_Site-portfolio--landingpage--v2-A6FF00?style=for-the-badge&logo=vercel&logoColor=0B1310" alt="Live site" />
+  </a>
+  <a href="https://github.com/afaqulislam/portfolio-landingpage-v2">
+    <img src="https://img.shields.io/badge/Source_Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Source code on GitHub" />
+  </a>
+  <a href="https://github.com/afaqulislam">
+    <img src="https://img.shields.io/badge/GitHub-afaqulislam-181717?style=for-the-badge&logo=github&logoColor=white" alt="Afaq Ul Islam on GitHub" />
+  </a>
+  <a href="https://www.linkedin.com/in/afaqulislam">
+    <img src="https://img.shields.io/badge/LinkedIn-Afaq_Ul_Islam-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Afaq Ul Islam on LinkedIn" />
+  </a>
+  <a href="https://x.com/afaqulislam707">
+    <img src="https://img.shields.io/badge/X-@afaqulislam707-000000?style=for-the-badge&logo=x&logoColor=white" alt="Afaq Ul Islam on X" />
+  </a>
+  <a href="mailto:afaqulislam707@gmail.com">
+    <img src="https://img.shields.io/badge/Email-afaqulislam707@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Afaq Ul Islam" />
+  </a>
+  <a href="https://portfolio-landingpage-v2-aui.vercel.app/Afaq_Ul_Islam_Resume.pdf">
+    <img src="https://img.shields.io/badge/Resume-PDF-EA4335?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Download resume" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-15.0.7-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js 15.0.7" />
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=0B1310" alt="React 19" />
+  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript 5" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-3.4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS 3.4" />
+  <img src="https://img.shields.io/badge/Resend-Email_API-000000?style=flat-square&logo=resend&logoColor=white" alt="Resend email API" />
+  <img src="https://img.shields.io/badge/Vercel-Deployed-000000?style=flat-square&logo=vercel&logoColor=white" alt="Deployed on Vercel" />
+  <img src="https://img.shields.io/badge/License-All_Rights_Reserved-lightgrey?style=flat-square" alt="License: All Rights Reserved" />
+</p>
+
+<p align="center">
+  <a href="https://portfolio-landingpage-v2-aui.vercel.app">
+    <img src="https://portfolio-landingpage-v2-aui.vercel.app/opengraph-image" alt="Afaq Ul Islam portfolio preview" width="100%" />
+  </a>
 </p>
 
 ---
@@ -28,7 +59,8 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [Features](#features)
+- [Live Site](#live-site)
+- [Highlights](#highlights)
 - [Sections](#sections)
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
@@ -36,92 +68,102 @@
 - [Environment Variables](#environment-variables)
 - [Contact Form API](#contact-form-api)
 - [Scripts](#scripts)
-- [Accessibility & Performance](#accessibility--performance)
+- [SEO & Performance](#seo--performance)
+- [Accessibility](#accessibility)
 - [Deployment](#deployment)
-- [Contributing](#contributing)
+- [Connect](#connect)
 - [License](#license)
 
 ---
 
 ## Overview
 
-This is the personal portfolio of **Afaq Ul Islam** — Agentic AI Engineer, Full-Stack Developer and Co-Founder & COO at **Neofyx**. It showcases product work, engineering experience, education and milestones in a visually meticulous, single-accent design language: dark glass surfaces, a constant lime accent (`#A6FF00`), fluid motion and an accessibility-first build.
+This is the personal portfolio of **Afaq Ul Islam** — an Agentic AI Engineer, Full-Stack Developer and Co-Founder & COO at **Neofyx**. It presents selected AI and web work, engineering experience, education and milestones through a deliberately restrained design language: dark glass surfaces, a single lime accent (`#A6FF00`), fluid motion and an accessibility-first build.
 
-The showpiece is a **laser-drawn AUI monogram** in the hero — the logo builds itself stroke by stroke with an electric spark effect, holds, then redraws on a loop. No animation library; it is pure SVG `stroke-dashoffset` keyframes.
+The centrepiece is a **laser-drawn AUI monogram** in the hero. The logo builds itself stroke by stroke with an electric spark effect, holds, then redraws on a loop. It is implemented with pure SVG `stroke-dashoffset` keyframes — no animation library.
 
-## Features
+## Live Site
 
-- **⚡ Electric hero logo** — the AUI monogram is drawn with a jagged, crackling laser stroke (`steps` + flicker keyframes), holds fully visible, then redraws — looped, with `prefers-reduced-motion` support.
-- **✨ Glassmorphism system** — double-bezel cards, film-grain overlay, layered depth and a mouse-tracked glass wordmark in the footer (Neofyx-style shine that follows the cursor).
-- **🎨 One constant accent colour** — a single lime hue applied consistently across the entire UI.
-- **📨 Working contact form** — client-side validation, sending/failure/success states, delivered via the Resend API route (`app/api/contact`).
-- **📜 Scroll-reveal animations** — lightweight `IntersectionObserver` reveals that respect `prefers-reduced-motion`.
-- **♿ Accessible by default** — semantic landmarks, a skip link, keyboard-friendly navigation, visible focus rings and tested colour contrast.
-- **📱 Fully responsive** — fluid layouts from mobile through ultra-wide.
-- **⚡ Performance focused** — server-first components, GPU-only animation and stable layout.
-- **🛠 Content-driven** — all copy lives in a single `lib/data.ts` file (edit content without touching JSX).
-- **SEO-ready** - robots, sitemap, web app manifest, JSON-LD structured data (Person/WebSite/ProfilePage), canonical URLs, `og:locale`, `llms.txt` for AI crawlers, and `noindex` on 404 pages.
+| Resource | Link |
+| -------- | ---- |
+| Portfolio | [portfolio-landingpage-v2-aui.vercel.app](https://portfolio-landingpage-v2-aui.vercel.app) |
+| Source | [github.com/afaqulislam/portfolio-landingpage-v2](https://github.com/afaqulislam/portfolio-landingpage-v2) |
+| Resume | [Afaq_Ul_Islam_Resume.pdf](https://portfolio-landingpage-v2-aui.vercel.app/Afaq_Ul_Islam_Resume.pdf) |
+| Email | [afaqulislam707@gmail.com](mailto:afaqulislam707@gmail.com) |
+
+## Highlights
+
+- **Electric hero logo** — jagged laser strokes with a flicker effect, built with SVG and CSS only.
+- **Glassmorphism system** — double-bezel cards, film-grain overlay, layered depth and a cursor-tracked glass wordmark.
+- **One constant accent** — a single lime hue applied consistently across every surface.
+- **Working contact form** — client validation, sending, success and error states, delivered through Resend.
+- **Content-driven** — all copy lives in `lib/data.ts`; edit content without touching JSX.
+- **Responsive by default** — tuned for normal mobile, tablet, desktop-site mode and desktop widths.
+- **SEO-first** — canonical URL, Open Graph and Twitter cards, JSON-LD, sitemap, robots and `llms.txt`.
+- **Accessible** — semantic landmarks, skip link, keyboard navigation, visible focus rings and reduced-motion support.
+- **Performance focused** — server-first components, static rendering, local fonts and GPU-only animation.
 
 ## Sections
 
-| Section        | Id             | Highlights                                             |
-| -------------- | -------------- | ------------------------------------------------------ |
-| Hero           | `#home`        | Electric AUI logo, tagline, CTAs, stats                |
-| About          | `#about`       | Personal intro + details                               |
-| Skills         | `#skills`      | Tech stack / capabilities                              |
-| Projects       | `#work`        | Project previews, live & GitHub links                   |
-| Experience     | `#experience`  | Timeline: Neofyx, internships, freelance                |
-| Education      | `#education`   | Timeline: KU, GIAIC, college, SSC                       |
-| Milestones     | `#achievements`| Highlights & wins                                       |
-| Contact        | `#contact`     | Resend-powered form + socials                           |
+| Section | Id | Highlights |
+| ------- | -- | ---------- |
+| Hero | `#home` | Electric AUI logo, tagline, CTAs, stats |
+| About | `#about` | Personal intro and working principles |
+| Skills | `#skills` | Tools and capabilities across the stack |
+| Projects | `#work` | Project previews, live and GitHub links |
+| Experience | `#experience` | Neofyx, internships and freelance work |
+| Education | `#education` | University, GIAIC, college and SSC |
+| Milestones | `#achievements` | Competition wins and open-source work |
+| Contact | `#contact` | Resend-powered form and social links |
 
 ## Tech Stack
 
-| Layer       | Technology                              |
-| ----------- | --------------------------------------- |
-| Framework   | Next.js 15 (App Router)                 |
-| Language    | TypeScript                              |
-| UI          | React 19                                |
-| Styling     | Tailwind CSS 3.4                        |
-| Icons       | lucide-react                            |
-| Fonts       | Geist (local, via `next/font/local`)    |
-| Email       | Resend (REST API)                       |
-| Animation   | Native SVG / CSS keyframes              |
+| Layer | Technology |
+| ----- | ---------- |
+| Framework | Next.js 15 (App Router) |
+| Language | TypeScript |
+| UI | React 19 |
+| Styling | Tailwind CSS 3.4 |
+| Icons | lucide-react |
+| Fonts | Geist (local, via `next/font/local`) |
+| Email | Resend REST API |
+| Animation | Native SVG and CSS keyframes |
+| Hosting | Vercel |
 
 ## Project Structure
 
-```
+```text
 portfolio-landingpage-v2/
 ├─ app/
 │  ├─ api/
-│  │  └─ contact/route.ts   # Resend email delivery endpoint
-│  ├─ components/           # Section + layout components
-│  │  ├─ hero-logo.tsx      # Electric AUI laser monogram
-│  │  ├─ glass-wordmark.tsx # Mouse-tracked footer wordmark
-│  │  ├─ og-image.tsx       # Shared Open Graph / Twitter image
-│  │  └─ ...                # header, hero, about, skills, ...
-│  ├─ fonts/                # Geist variable fonts
-│  ├─ globals.css           # Design tokens, utilities, base styles
-│  ├─ favicon.ico           # Browser favicon
-│  ├─ icon.svg              # App icon
-│  ├─ apple-icon.png        # Apple touch icon
-│  ├─ layout.tsx            # Root layout, metadata, backdrop
-│  ├─ manifest.ts           # Web app manifest
-│  ├─ opengraph-image.tsx   # Social share image
-│  ├─ twitter-image.tsx     # X / Twitter share image
-│  ├─ robots.ts             # robots.txt route
-│  ├─ sitemap.ts            # sitemap.xml route
-│  ├─ not-found.tsx         # Styled 404 page
-│  └─ page.tsx              # Section composition
+│  │  └─ contact/route.ts    # Resend email delivery endpoint
+│  ├─ components/            # Section and layout components
+│  │  ├─ hero-logo.tsx       # Electric AUI laser monogram
+│  │  ├─ glass-wordmark.tsx  # Cursor-tracked footer wordmark
+│  │  ├─ og-image.tsx        # Shared Open Graph / Twitter image
+│  │  └─ ...                 # header, hero, about, skills, ...
+│  ├─ fonts/                 # Geist variable fonts
+│  ├─ globals.css            # Design tokens, utilities and base styles
+│  ├─ favicon.ico            # Browser favicon
+│  ├─ icon.svg               # App icon
+│  ├─ apple-icon.png         # Apple touch icon
+│  ├─ layout.tsx             # Root layout, metadata and JSON-LD
+│  ├─ manifest.ts            # Web app manifest
+│  ├─ opengraph-image.tsx    # Social share image
+│  ├─ twitter-image.tsx      # X / Twitter share image
+│  ├─ robots.ts              # robots.txt route
+│  ├─ sitemap.ts             # sitemap.xml route
+│  ├─ not-found.tsx          # Styled 404 page
+│  └─ page.tsx               # Section composition
 ├─ lib/
-│  ├─ data.ts               # All site content (edit here)
-│  ├─ seo.ts                # Site constants + JSON-LD structured data
-│  └─ utils.ts              # `cn` class-merge helper
+│  ├─ data.ts                # All site content (edit here)
+│  ├─ seo.ts                 # Site constants + JSON-LD structured data
+│  └─ utils.ts               # `cn` class-merge helper
 ├─ public/
-│  ├─ icons/                # PWA icons (192, 512, maskable)
-│  ├─ projects/             # Project preview SVGs
-│  ├─ aui-mark.svg          # AUI monogram (header/footer/README)
-│  ├─ llms.txt              # AI crawler summary
+│  ├─ icons/                 # PWA icons (192, 512, maskable)
+│  ├─ projects/              # Project preview SVGs
+│  ├─ aui-mark.svg           # AUI monogram
+│  ├─ llms.txt               # AI crawler summary
 │  └─ Afaq_Ul_Islam_Resume.pdf
 ├─ tailwind.config.ts
 └─ next.config.ts
@@ -148,62 +190,96 @@ npm install
 cp .env.example .env
 # → then fill in your RESEND_API_KEY
 
-# 4. Run the dev server
+# 4. Run the development server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000).
 
 ## Environment Variables
 
-| Variable          | Required | Default                              | Description                                        |
-| ----------------- | -------- | ------------------------------------ | -------------------------------------------------- |
-| `RESEND_API_KEY`  | ✅ Yes   | —                                    | API key from [resend.com/api-keys](https://resend.com/api-keys) |
-| `CONTACT_TO`      | No       | `afaqulislam707@gmail.com`           | Destination inbox for contact-form messages        |
-| `RESEND_FROM`     | No       | `Afaq Ul Islam <onboarding@resend.dev>` | Verified sender shown in delivered emails      |
-| `NEXT_PUBLIC_SITE_URL` | No  | `https://portfolio-landingpage-v2-aui.vercel.app` | Canonical URL for metadata, Open Graph and the contact-form origin check |
+| Variable | Required | Default | Description |
+| -------- | -------- | ------- | ----------- |
+| `RESEND_API_KEY` | Yes | — | API key from [resend.com/api-keys](https://resend.com/api-keys) |
+| `CONTACT_TO` | No | `afaqulislam707@gmail.com` | Destination inbox for contact messages |
+| `RESEND_FROM` | No | `Afaq Ul Islam <onboarding@resend.dev>` | Verified sender shown in delivered emails |
+| `NEXT_PUBLIC_SITE_URL` | No | `https://portfolio-landingpage-v2-aui.vercel.app` | Canonical URL for metadata, Open Graph and the contact-form origin check |
 | `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | No | — | Optional Google Search Console verification token |
 
-> **Note:** `onboarding@resend.dev` can only send to your own verified email. For other recipients, verify a domain in Resend and set `RESEND_FROM` to one of its addresses.
+> **Note:** `onboarding@resend.dev` can only send to your own verified email. For other recipients, verify a domain in Resend and set `RESEND_FROM` to an address on that domain.
 
 ## Contact Form API
 
-The form at `#contact` POSTs JSON to `POST /api/contact`, which validates the payload server-side and sends the email via the Resend REST API. Three env vars control delivery — no secrets are ever exposed to the client, and the route returns only generic, non-revealing errors. Abuse protection includes an origin check, an in-memory rate limit (5 requests/hour/IP), a honeypot field, payload size caps and an 8-second request timeout.
+The form at `#contact` posts JSON to `POST /api/contact`, which validates the payload server-side and sends the email through the Resend REST API. No secrets are exposed to the client, and the route returns only generic, non-revealing errors.
+
+Abuse protection includes:
+
+- Origin checks
+- In-memory rate limiting (5 requests per hour per IP)
+- Honeypot field
+- Payload size caps
+- Request timeout
 
 ## Scripts
 
-| Command          | Description                       |
-| ---------------- | --------------------------------- |
-| `npm run dev`    | Start the dev server (Turbopack)  |
-| `npm run build`  | Create a production build         |
-| `npm run start`  | Run the production build          |
-| `npm run lint`   | Lint with ESLint                  |
+| Command | Description |
+| ------- | ----------- |
+| `npm run dev` | Start the development server (Turbopack) |
+| `npm run build` | Create a production build |
+| `npm run start` | Run the production build |
+| `npm run lint` | Lint with ESLint |
 
-## Accessibility & Performance
+## SEO & Performance
 
-- Semantic landmarks, a skip-to-content link and keyboard-friendly navigation.
-- `prefers-reduced-motion` respected across reveals, the laser logo and the glass wordmark.
-- GPU-only animations, local fonts (`display: swap`), `next/image` driven previews.
-- Validated colour contrast on top of a constant accent palette.
+- Canonical URL, Open Graph and Twitter card metadata
+- JSON-LD structured data: `Person`, `WebSite` and `ProfilePage`
+- Generated `sitemap.xml`, `robots.txt` and web app manifest
+- `llms.txt` summary for AI crawlers
+- `noindex` on the 404 page
+- Static rendering for the main page
+- Local Geist fonts with `display: swap`
+- Responsive images through `next/image`
+- Edge-cached social share images
+- GPU-only animations with `prefers-reduced-motion` support
+
+## Accessibility
+
+- Semantic landmarks and a skip-to-content link
+- Keyboard-friendly navigation and focus-visible rings
+- Descriptive labels on icon-only links
+- `prefers-reduced-motion` respected across all motion
+- Validated colour contrast on the dark palette
 
 ## Deployment
 
 Deploys out-of-the-box on any Next.js host — easiest on **[Vercel](https://vercel.com/new)**:
 
 1. Push this repository to GitHub.
-2. Import the repository into Vercel.
-3. Add the environment variables above (especially `RESEND_API_KEY`) under **Settings → Environment Variables**.
-4. Deploy — no extra configuration required.
+2. Import it into Vercel.
+3. Add the environment variables above under **Settings → Environment Variables**.
+4. Deploy. No extra configuration is required.
 
-## Contributing
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/afaqulislam/portfolio-landingpage-v2)
 
-Contributions are welcome. Please keep the single-accent design language and the conventions in `app/globals.css`.
+## Connect
 
-1. Fork the repository.
-2. Create a feature branch: `git checkout -b feat/my-feature`
-3. Commit your changes: `git commit -m "feat: add my feature"`
-4. Push the branch: `git push origin feat/my-feature`
-5. Open a pull request.
+<p>
+  <a href="https://github.com/afaqulislam">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <a href="https://www.linkedin.com/in/afaqulislam">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://x.com/afaqulislam707">
+    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
+  </a>
+  <a href="mailto:afaqulislam707@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://portfolio-landingpage-v2-aui.vercel.app">
+    <img src="https://img.shields.io/badge/Portfolio-A6FF00?style=for-the-badge&logo=vercel&logoColor=0B1310" alt="Portfolio" />
+  </a>
+</p>
 
 ## License
 
@@ -219,13 +295,12 @@ This project is the personal property of **Afaq Ul Islam**. No part of this repo
 </p>
 
 <p align="center">
-  <a href="https://github.com/afaqulislam">GitHub</a>
-  ·
-  <a href="https://www.linkedin.com/in/afaqulislam">LinkedIn</a>
-  ·
+  <a href="https://github.com/afaqulislam">GitHub</a> ·
+  <a href="https://www.linkedin.com/in/afaqulislam">LinkedIn</a> ·
+  <a href="https://x.com/afaqulislam707">X</a> ·
   <a href="mailto:afaqulislam707@gmail.com">Email</a>
 </p>
 
 <p align="center">
-  <sub>© 2026 Afaq Ul Islam · Crafted with Next.js, Tailwind CSS &amp; a touch of lime.</sub>
+  <sub>© 2026 Afaq Ul Islam · Crafted with Next.js, Tailwind CSS and a touch of lime.</sub>
 </p>

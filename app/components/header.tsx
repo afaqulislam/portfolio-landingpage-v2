@@ -99,6 +99,7 @@ export default function Header() {
             alt="AUI — Afaq Ul Islam"
             width={32}
             height={32}
+            priority
             unoptimized
             className="h-8 w-8 shrink-0 transition-transform duration-500 ease-fluid group-hover:scale-105"
           />

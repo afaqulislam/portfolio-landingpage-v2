@@ -7,5 +7,10 @@ export const contentType = "image/png";
 export const runtime = "edge";
 
 export default function TwitterImage() {
-  return new ImageResponse(<OgImageContent />, size);
+  return new ImageResponse(<OgImageContent />, {
+    ...size,
+    headers: {
+      "Cache-Control": "public, max-age=86400, stale-while-revalidate=604800",
+    },
+  });
 }

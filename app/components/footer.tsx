@@ -9,18 +9,18 @@ const columns = [
   {
     title: "Home",
     links: [
-      { label: "About", href: "/#about" },
-      { label: "Skills", href: "/#skills" },
-      { label: "Work", href: "/#work" },
+      { label: "About Afaq", href: "/#about" },
+      { label: "AI & web skills", href: "/#skills" },
+      { label: "AI projects", href: "/#work" },
     ],
   },
   {
     title: "More",
     links: [
-      { label: "Experience", href: "/#experience" },
-      { label: "Education", href: "/#education" },
-      { label: "Milestones", href: "/#achievements" },
-      { label: "Contact", href: "/#contact" },
+      { label: "Work experience", href: "/#experience" },
+      { label: "Education & training", href: "/#education" },
+      { label: "Awards & milestones", href: "/#achievements" },
+      { label: "Get in touch", href: "/#contact" },
     ],
   },
 ];
@@ -52,14 +52,19 @@ export default function Footer() {
             <div className="mt-6 flex items-center gap-3">
               {socials.map((social) => {
                 const Icon = social.icon;
+                const label =
+                  social.label === "Email"
+                    ? "Email Afaq Ul Islam"
+                    : `Afaq Ul Islam on ${social.label}`;
                 return (
                   <a
                     key={social.label}
                     href={social.href}
-                    aria-label={social.label}
+                    aria-label={label}
                     className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white/60 transition-all duration-500 ease-fluid hover:-translate-y-0.5 hover:text-white active:scale-95"
                   >
                     <Icon className="size-5" strokeWidth={1.5} aria-hidden="true" />
+                    <span className="sr-only">{label}</span>
                   </a>
                 );
               })}
@@ -72,9 +77,9 @@ export default function Footer() {
               aria-label={column.title}
               className="md:col-span-3"
             >
-              <h2 className="font-mono text-[10px] uppercase tracking-[0.22em] text-white/40">
+              <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-white/40">
                 {column.title}
-              </h2>
+              </p>
               <ul className="mt-4 space-y-3">
                 {column.links.map((link) => (
                   <li key={link.label}>
@@ -97,6 +102,7 @@ export default function Footer() {
               className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white/60 transition-all duration-500 ease-fluid hover:-translate-y-1 hover:text-white active:scale-95 sm:h-11 sm:w-11"
             >
               <ArrowUp className="size-5" strokeWidth={1.5} aria-hidden="true" />
+              <span className="sr-only">Back to top</span>
             </Link>
           </div>
         </div>
@@ -107,7 +113,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="mt-16">
+        <div className="mt-10">
           <GlassWordmark />
         </div>
       </div>

@@ -9,7 +9,7 @@ export const SITE_URL = new URL(
 
 export const SITE_NAME = "Afaq Ul Islam";
 export const SITE_DESCRIPTION =
-  "Agentic AI engineer and full-stack developer, Co-Founder & COO at Neofyx — building multi-agent AI systems, automation workflows and web applications from Karachi, Pakistan.";
+  "Agentic AI Engineer and Full-Stack Developer at Neofyx, building Multi-Agent AI systems, automation and web apps from Karachi, Pakistan.";
 
 const SOCIAL_PROFILES = socials
   .map((social) => social.href)

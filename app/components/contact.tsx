@@ -122,14 +122,21 @@ export default function Contact() {
             <div className="mt-6 flex items-center gap-3 sm:mt-8">
               {socials.map((social) => {
                 const Icon = social.icon;
+                const label =
+                  social.label === "Email"
+                    ? "Email Afaq Ul Islam"
+                    : social.label === "Portfolio"
+                      ? "View Afaq Ul Islam's portfolio"
+                      : `Connect with Afaq Ul Islam on ${social.label}`;
                 return (
                   <a
                     key={social.label}
                     href={social.href}
-                    aria-label={social.label}
+                    aria-label={label}
                     className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white/60 transition-all duration-500 ease-fluid hover:-translate-y-0.5 hover:border-white/25 hover:text-white active:scale-95 sm:h-11 sm:w-11"
                   >
                     <Icon className="size-5" strokeWidth={1.5} aria-hidden="true" />
+                    <span className="sr-only">{label}</span>
                   </a>
                 );
               })}

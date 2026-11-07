@@ -38,9 +38,11 @@ export const metadata: Metadata = {
     "Afaq Ul Islam",
     "Agentic AI Engineer",
     "AI Agents",
+    "Multi-Agent AI",
     "Multi-Agent Systems",
     "LLM Integration",
     "Full-Stack Developer",
+    "Full-Stack Web Development",
     "Neofyx",
     "Next.js",
     "React",
@@ -85,8 +87,7 @@ export const metadata: Metadata = {
     : undefined,
   openGraph: {
     title: "Afaq Ul Islam — Agentic AI Engineer",
-    description:
-      "Building multi-agent AI systems, automation workflows and full-stack products end to end.",
+    description: SITE_DESCRIPTION,
     type: "website",
     siteName: siteName,
     locale: "en_US",
@@ -97,8 +98,7 @@ export const metadata: Metadata = {
     site: "@afaqulislam707",
     creator: "@afaqulislam707",
     title: "Afaq Ul Islam — Agentic AI Engineer",
-    description:
-      "Building multi-agent AI systems, automation workflows and full-stack products end to end.",
+    description: SITE_DESCRIPTION,
   },
 };
 

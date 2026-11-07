@@ -58,7 +58,11 @@ export default function Projects() {
                       rel="noreferrer"
                       aria-label={`Open ${project.title} live site`}
                       className="absolute inset-0 z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[hsl(var(--accent))]/60"
-                    />
+                    >
+                      <span className="sr-only">
+                        View {project.title} live project
+                      </span>
+                    </a>
                     <span className="pointer-events-none absolute left-5 top-5 rounded-full bg-[#050505]/30 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.2em] text-white backdrop-blur-md">
                       {project.year}
                     </span>
@@ -83,6 +87,9 @@ export default function Projects() {
                         className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white/50 transition-all duration-300 hover:border-white/25 hover:bg-white/[0.06] hover:text-white active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(var(--accent))]/50"
                       >
                         <Github className="size-4" strokeWidth={1.5} aria-hidden="true" />
+                        <span className="sr-only">
+                          View {project.title} source code on GitHub
+                        </span>
                       </a>
                     </div>
                     <p className="mt-3 text-sm leading-relaxed text-white/50">
