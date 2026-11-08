@@ -13,13 +13,13 @@ export default function Achievements() {
           description="Results from competitions, hackathons and years of open-source contribution."
         />
 
-        <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
           {achievements.map((item, index) => {
             const Icon = item.icon;
             return (
-              <Reveal key={item.title} delay={index * 90}>
-                <div className="bezel">
-                  <div className="bezel-core flex flex-col p-7">
+              <Reveal key={item.title} delay={index * 90} className="h-full">
+                <div className="bezel h-full">
+                  <div className="bezel-core flex h-full flex-col p-7">
                     <div className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.04]">
                       <Icon
                         className="size-5 text-[hsl(var(--accent))]"

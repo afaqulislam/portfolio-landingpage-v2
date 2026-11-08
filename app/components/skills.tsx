@@ -16,9 +16,9 @@ export default function Skills() {
           {skillGroups.map((group, index) => {
             const Icon = group.icon;
             return (
-              <Reveal key={group.title} delay={index * 80}>
-                <div className="bezel">
-                  <div className="bezel-core flex flex-col p-6 sm:p-7">
+              <Reveal key={group.title} delay={index * 80} className="h-full">
+                <div className="bezel h-full">
+                  <div className="bezel-core flex h-full flex-col p-6 sm:p-7">
                     <div className="flex items-center justify-between">
                       <div className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.04]">
                         <Icon
@@ -37,7 +37,7 @@ export default function Skills() {
                     <p className="mt-2 text-sm leading-relaxed text-white/50">
                       {group.description}
                     </p>
-                    <ul className="mt-6 flex flex-wrap gap-2">
+                    <ul className="mt-auto flex flex-wrap gap-2 pt-6">
                       {group.items.map((item) => (
                         <li
                           key={item}

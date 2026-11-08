@@ -3,7 +3,10 @@ import { principles } from "@/lib/data";
 
 export default function About() {
   return (
-    <section id="about" className="py-16 sm:py-20 lg:py-24">
+    <section
+      id="about"
+      className="pb-16 pt-8 sm:pb-20 sm:pt-10 lg:pb-24 lg:pt-12"
+    >
       <div className="container grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-5">
           <Reveal>
@@ -45,8 +48,8 @@ export default function About() {
           {principles.map((principle, index) => {
             const Icon = principle.icon;
             return (
-              <Reveal key={principle.title} delay={index * 90}>
-                <div className="group rounded-[1.75rem] border border-white/[0.08] bg-white/[0.03] p-6 transition-all duration-500 ease-fluid hover:-translate-y-1 hover:border-white/15 hover:bg-white/[0.05]">
+              <Reveal key={principle.title} delay={index * 90} className="h-full">
+                <div className="group flex h-full flex-col rounded-[1.75rem] border border-white/[0.08] bg-white/[0.03] p-6 transition-all duration-500 ease-fluid hover:-translate-y-1 hover:border-white/15 hover:bg-white/[0.05] active:-translate-y-0.5 active:border-white/15 active:bg-white/[0.05]">
                   <div className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.04]">
                     <Icon
                       className="size-5 text-[hsl(var(--accent))]"

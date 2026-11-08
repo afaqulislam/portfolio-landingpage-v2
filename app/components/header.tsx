@@ -115,12 +115,7 @@ export default function Header() {
               key={item.id}
               href={`/#${item.id}`}
               aria-current={active === item.id ? "true" : undefined}
-              className={cn(
-                "rounded-full px-3.5 py-1.5 text-sm transition-all duration-300 ease-fluid",
-                active === item.id
-                  ? "bg-white/10 text-white active:bg-white/15"
-                  : "text-white/60 hover:bg-white/5 hover:text-white",
-              )}
+              className="nav-link"
             >
               {item.label}
             </Link>
@@ -180,15 +175,16 @@ export default function Header() {
               key={item.id}
               href={`/#${item.id}`}
               onClick={() => setOpen(false)}
+              aria-current={active === item.id ? "true" : undefined}
               className={cn(
-                "border-b border-white/[0.06] py-4 text-3xl font-medium tracking-tight transition-all duration-500 ease-fluid active:text-[hsl(var(--accent))]",
+                "mobile-nav-link border-b border-white/[0.06] py-4 text-3xl font-medium tracking-tight transition-all duration-500 ease-fluid",
                 open ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0",
               )}
               style={{
                 transitionDelay: open ? `${120 + index * 60}ms` : "0ms",
               }}
             >
-              <span className="mr-4 font-mono text-xs text-white/40">
+              <span className="mobile-nav-number mr-4 font-mono text-xs text-white/40 transition-colors duration-300">
                 0{index + 1}
               </span>
               {item.label}
