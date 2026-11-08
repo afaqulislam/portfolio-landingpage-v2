@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="pb-16 pt-8 sm:pb-20 sm:pt-10 lg:pb-24 lg:pt-12"
+      className="pb-16 pt-8 sm:pb-20 sm:pt-10 lg:pb-24 lg:pt-0"
     >
       <div className="container grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-5">
