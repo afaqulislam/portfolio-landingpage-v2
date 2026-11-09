@@ -391,3 +391,9 @@
     stroke-dashoffset: 0;
   }
 }
+
+@media (min-width: 980px) and (hover: none) and (pointer: coarse) {
+  #home {
+    min-height: 0;
+  }
+}
