@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowDown, ArrowUpRight, Download, Sparkles } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Download } from "lucide-react";
 import Reveal from "./reveal";
 import HeroLogo from "./hero-logo";
 import { stats } from "@/lib/data";
@@ -82,26 +82,6 @@ export default function Hero() {
           <Reveal delay={200} className="relative aspect-square w-full">
             <HeroLogo />
           </Reveal>
-
-            <div className="absolute left-0 top-8 flex items-center gap-2 rounded-2xl border border-white/10 bg-[#050505]/80 px-3 py-2.5 backdrop-blur-xl pointer-events-none md:px-3.5">
-              <Sparkles
-                className="size-4 text-[hsl(var(--accent))]"
-                strokeWidth={1.5}
-                aria-hidden="true"
-              />
-              <span className="text-[11px] font-medium md:text-xs">
-                Co-Founder &amp; COO
-              </span>
-            </div>
-
-            <div className="absolute bottom-8 right-0 rounded-2xl border border-white/10 bg-[#050505]/80 px-3 py-3 backdrop-blur-xl pointer-events-none md:px-3.5">
-              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40">
-                Focus
-              </p>
-              <p className="mt-1 text-xs font-medium tracking-tight sm:text-sm">
-                Agentic AI &middot; Full-stack &middot; Automation
-              </p>
-            </div>
         </div>
       </div>
 

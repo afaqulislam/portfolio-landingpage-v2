@@ -10,8 +10,8 @@
 
 <p align="center">
   A premium, animated portfolio built with Next.js 15, TypeScript and Tailwind CSS —
-  featuring an electric laser-drawn AUI monogram, glassmorphism, a working Resend-powered
-  contact form, and a fully static, SEO-first App Router build.
+  featuring a dimensional AUI monogram rendered with React Three Fiber, glassmorphism,
+  a working Resend-powered contact form, and a fully static, SEO-first App Router build.
 </p>
 
 <p align="center">
@@ -80,7 +80,7 @@
 
 This is the personal portfolio of **Afaq Ul Islam** — an Agentic AI Engineer, Full-Stack Developer and Co-Founder & COO at **Neofyx**. It presents selected AI and web work, engineering experience, education and milestones through a deliberately restrained design language: dark glass surfaces, a single lime accent (`#A6FF00`), fluid motion and an accessibility-first build.
 
-The centrepiece is a **laser-drawn AUI monogram** in the hero. The logo builds itself stroke by stroke with an electric spark effect, holds, then redraws on a loop. It is implemented with pure SVG `stroke-dashoffset` keyframes — no animation library.
+The centrepiece is a **dimensional AUI monogram** in the hero, rendered with Three.js and React Three Fiber. It combines a dark chrome frame, a lime emissive core, orbital rings, reflective materials and a restrained floating motion. The scene loads on the client only and respects reduced-motion preferences.
 
 ## Live Site
 
@@ -93,7 +93,7 @@ The centrepiece is a **laser-drawn AUI monogram** in the hero. The logo builds i
 
 ## Highlights
 
-- **Electric hero logo** — jagged laser strokes with a flicker effect, built with SVG and CSS only.
+- **Dimensional hero logo** — dark chrome and lime emissive 3D monogram with orbital rings, layered depth and subtle motion.
 - **Glassmorphism system** — double-bezel cards, film-grain overlay, layered depth and a cursor-tracked glass wordmark.
 - **One constant accent** — a single lime hue applied consistently across every surface.
 - **Working contact form** — client validation, sending, success and error states, delivered through Resend.
@@ -107,7 +107,7 @@ The centrepiece is a **laser-drawn AUI monogram** in the hero. The logo builds i
 
 | Section | Id | Highlights |
 | ------- | -- | ---------- |
-| Hero | `#home` | Electric AUI logo, tagline, CTAs, stats |
+| Hero | `#home` | Dimensional AUI logo, tagline, CTAs, stats |
 | About | `#about` | Personal intro and working principles |
 | Skills | `#skills` | Tools and capabilities across the stack |
 | Projects | `#work` | Project previews, live and GitHub links |
@@ -127,7 +127,8 @@ The centrepiece is a **laser-drawn AUI monogram** in the hero. The logo builds i
 | Icons | lucide-react |
 | Fonts | Geist (local, via `next/font/local`) |
 | Email | Resend REST API |
-| Animation | Native SVG and CSS keyframes |
+| 3D | Three.js, React Three Fiber, drei |
+| Animation | React Three Fiber motion and CSS keyframes |
 | Hosting | Vercel |
 
 ## Project Structure
@@ -138,7 +139,8 @@ portfolio-landingpage-v2/
 │  ├─ api/
 │  │  └─ contact/route.ts    # Resend email delivery endpoint
 │  ├─ components/            # Section and layout components
-│  │  ├─ hero-logo.tsx       # Electric AUI laser monogram
+│  │  ├─ hero-logo.tsx       # Client-only 3D hero logo wrapper
+│  │  ├─ hero-logo-scene.tsx # Three.js / React Three Fiber monogram scene
 │  │  ├─ glass-wordmark.tsx  # Cursor-tracked footer wordmark
 │  │  ├─ og-image.tsx        # Shared Open Graph / Twitter image
 │  │  └─ ...                 # header, hero, about, skills, ...
