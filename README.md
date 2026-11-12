@@ -49,8 +49,21 @@
 </p>
 
 <p align="center">
-  <a href="https://portfolio-landingpage-v2-aui.vercel.app">
-    <img src="https://portfolio-landingpage-v2-aui.vercel.app/opengraph-image" alt="Afaq Ul Islam portfolio preview" width="100%" />
+  <video
+    src="public/afaqulislam-portfolio-video.mp4"
+    poster="https://portfolio-landingpage-v2-aui.vercel.app/opengraph-image"
+    controls
+    playsinline
+    preload="metadata"
+    width="100%"
+  >
+    <a href="public/afaqulislam-portfolio-video.mp4">Watch the portfolio showcase</a>
+  </video>
+</p>
+
+<p align="center">
+  <a href="public/afaqulislam-portfolio-video.mp4">
+    <strong>▶ Watch the full portfolio showcase video</strong>
   </a>
 </p>
 
