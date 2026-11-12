@@ -48,6 +48,28 @@
   <img src="https://img.shields.io/badge/License-All_Rights_Reserved-lightgrey?style=flat-square" alt="License: All Rights Reserved" />
 </p>
 
+<p align="center">
+  <a href="https://github.com/afaqulislam/portfolio-landingpage-v2/stargazers">
+    <img src="https://img.shields.io/github/stars/afaqulislam/portfolio-landingpage-v2?style=flat-square&logo=github&label=Stars" alt="GitHub stars" />
+  </a>
+  <a href="https://github.com/afaqulislam/portfolio-landingpage-v2/network/members">
+    <img src="https://img.shields.io/github/forks/afaqulislam/portfolio-landingpage-v2?style=flat-square&logo=github&label=Forks" alt="GitHub forks" />
+  </a>
+  <a href="https://github.com/afaqulislam/portfolio-landingpage-v2/issues">
+    <img src="https://img.shields.io/github/issues/afaqulislam/portfolio-landingpage-v2?style=flat-square&logo=github&label=Issues" alt="GitHub issues" />
+  </a>
+  <img src="https://img.shields.io/github/last-commit/afaqulislam/portfolio-landingpage-v2?style=flat-square&logo=git&label=Last%20commit" alt="Last commit" />
+  <img src="https://img.shields.io/github/repo-size/afaqulislam/portfolio-landingpage-v2?style=flat-square&label=Repo%20size" alt="Repository size" />
+</p>
+
+<p align="center">
+  <a href="https://portfolio-landingpage-v2-aui.vercel.app">
+    <img src="https://portfolio-landingpage-v2-aui.vercel.app/opengraph-image" alt="Afaq Ul Islam portfolio - Next.js 15, React 19, TypeScript and Tailwind CSS developer portfolio" width="100%" />
+  </a>
+  <br />
+  <sub>Live preview - open the deployed portfolio</sub>
+</p>
+
 <div align="center">
 
 https://github.com/user-attachments/assets/af988670-3a2e-4146-ac1d-48f2a520b6d4
@@ -73,6 +95,10 @@ https://github.com/user-attachments/assets/af988670-3a2e-4146-ac1d-48f2a520b6d4
 - [SEO & Performance](#seo--performance)
 - [Accessibility](#accessibility)
 - [Deployment](#deployment)
+- [Topics & Keywords](#topics--keywords)
+- [FAQ](#faq)
+- [Support](#support)
+- [Author](#author)
 - [Connect](#connect)
 - [License](#license)
 
@@ -284,6 +310,100 @@ Deploys out-of-the-box on any Next.js host — easiest on **[Vercel](https://ver
     <img src="https://img.shields.io/badge/Portfolio-A6FF00?style=for-the-badge&logo=vercel&logoColor=0B1310" alt="Portfolio" />
   </a>
 </p>
+
+## Topics & Keywords
+
+This repository is a complete, production-ready example of a **Next.js developer portfolio**. It is a good reference if you are looking for:
+
+- A **Next.js 15 portfolio website** built with the App Router and React Server Components
+- A **React 19 + TypeScript portfolio** starter with strict typing
+- A **Tailwind CSS personal portfolio** with a custom design-token system
+- A **Three.js / React Three Fiber portfolio** with an interactive 3D hero logo
+- A **glassmorphism, dark-mode portfolio** with accessible motion
+- An **SEO-first portfolio** with JSON-LD, Open Graph, sitemap, robots and `llms.txt`
+- A **full-stack portfolio** with a validated, Resend-powered contact form
+
+Search terms people use to find projects like this: developer portfolio, personal portfolio website, portfolio landing page, Next.js portfolio, Next.js 15 portfolio, React portfolio, TypeScript portfolio, Tailwind CSS portfolio, 3D portfolio, Three.js portfolio, React Three Fiber portfolio, WebGL portfolio, glassmorphism UI, dark mode website, SEO portfolio, Vercel portfolio, Afaq Ul Islam.
+
+If you build your own version from this reference, please keep the [license](#license) in mind.
+
+## FAQ
+
+<details>
+<summary><strong>What is this project?</strong></summary>
+
+This is the personal portfolio of **Afaq Ul Islam** — Agentic AI Engineer, Full-Stack Developer and Co-Founder & COO at Neofyx. It showcases selected AI and web projects, skills, experience, education and milestones, and includes a working contact form.
+
+</details>
+
+<details>
+<summary><strong>Which technologies does it use?</strong></summary>
+
+Next.js 15 (App Router), React 19, TypeScript, Tailwind CSS 3.4, Three.js with React Three Fiber and drei, lucide-react icons, local Geist fonts, the Resend REST API for email, and Vercel for hosting. See [Tech Stack](#tech-stack).
+
+</details>
+
+<details>
+<summary><strong>How does the 3D hero logo work?</strong></summary>
+
+The hero monogram is rendered with **Three.js and React Three Fiber** in a client-only scene. It uses a dark chrome frame, a lime emissive core, orbital rings and reflective materials, and it respects `prefers-reduced-motion` so the site stays usable and comfortable.
+
+</details>
+
+<details>
+<summary><strong>Does the contact form actually send email?</strong></summary>
+
+Yes. The form posts to `POST /api/contact`, which validates the payload server-side and sends mail through **Resend**. You need a `RESEND_API_KEY` in your environment for local or self-hosted use. See [Contact Form API](#contact-form-api).
+
+</details>
+
+<details>
+<summary><strong>How is SEO handled?</strong></summary>
+
+The build includes a canonical URL, Open Graph and Twitter cards, JSON-LD structured data (`Person`, `WebSite`, `ProfilePage`), generated `sitemap.xml` and `robots.txt`, a web app manifest, and an `llms.txt` summary for AI crawlers. See [SEO & Performance](#seo--performance).
+
+</details>
+
+<details>
+<summary><strong>Can I use this project as a template?</strong></summary>
+
+The code, design, copy and assets are **all rights reserved**. You may read and learn from the source, but copying, modifying, redistributing or using it commercially requires explicit written permission. See [License](#license).
+
+</details>
+
+<details>
+<summary><strong>How do I run it locally?</strong></summary>
+
+Clone the repository, run `npm install`, copy `.env.example` to `.env`, add your `RESEND_API_KEY`, then run `npm run dev` and open [http://localhost:3000](http://localhost:3000). See [Getting Started](#getting-started).
+
+</details>
+
+## Support
+
+If this repository helped you or inspired your own portfolio:
+
+- **Star** the repository so more developers can find it.
+- **Share** it on LinkedIn or X.
+- **Open an issue** for bugs, broken links or ideas.
+- **Reach out** for collaboration, AI agent work or freelance projects.
+
+<p align="center">
+  <a href="https://github.com/afaqulislam/portfolio-landingpage-v2/stargazers">
+    <img src="https://img.shields.io/github/stars/afaqulislam/portfolio-landingpage-v2?style=social" alt="Star this repository" />
+  </a>
+</p>
+
+## Author
+
+**Afaq Ul Islam** — Agentic AI Engineer, Full-Stack Developer, and Co-Founder & COO at **Neofyx**.
+
+| Platform | Link |
+| -------- | ---- |
+| GitHub | [github.com/afaqulislam](https://github.com/afaqulislam) |
+| LinkedIn | [linkedin.com/in/afaqulislam](https://www.linkedin.com/in/afaqulislam) |
+| X | [x.com/afaqulislam707](https://x.com/afaqulislam707) |
+| Email | [afaqulislam707@gmail.com](mailto:afaqulislam707@gmail.com) |
+| Portfolio | [portfolio-landingpage-v2-aui.vercel.app](https://portfolio-landingpage-v2-aui.vercel.app) |
 
 ## License
 
