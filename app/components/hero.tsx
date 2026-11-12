@@ -78,7 +78,7 @@ export default function Hero() {
           </Reveal>
         </div>
 
-        <div className="relative mx-auto w-full max-w-[22rem] lg:col-span-5 lg:mx-0 lg:max-w-[26rem] lg:justify-self-end">
+        <div className="relative mx-auto w-full max-w-[24rem] sm:max-w-[27rem] lg:col-span-5 lg:-translate-y-5 lg:mx-0 lg:max-w-[29rem] lg:justify-self-end xl:max-w-[30rem]">
           <Reveal delay={200} className="relative aspect-square w-full">
             <HeroLogo />
           </Reveal>
