@@ -48,24 +48,13 @@
   <img src="https://img.shields.io/badge/License-All_Rights_Reserved-lightgrey?style=flat-square" alt="License: All Rights Reserved" />
 </p>
 
-<p align="center">
-  <video
-    src="https://portfolio-landingpage-v2-aui.vercel.app/afaqulislam-portfolio-video.mp4"
-    poster="https://portfolio-landingpage-v2-aui.vercel.app/opengraph-image"
-    controls
-    playsinline
-    preload="metadata"
-    width="100%"
-  >
-    <a href="https://portfolio-landingpage-v2-aui.vercel.app/afaqulislam-portfolio-video.mp4">Watch the portfolio showcase</a>
-  </video>
-</p>
+<div align="center">
 
-<p align="center">
-  <a href="https://portfolio-landingpage-v2-aui.vercel.app/afaqulislam-portfolio-video.mp4">
-    <strong>▶ Watch the full portfolio showcase video</strong>
-  </a>
-</p>
+https://github.com/user-attachments/assets/af988670-3a2e-4146-ac1d-48f2a520b6d4
+
+<sub>Portfolio showcase · 62 s · full walkthrough</sub>
+
+</div>
 
 ---
 
